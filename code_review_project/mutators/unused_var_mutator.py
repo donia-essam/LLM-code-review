@@ -2,7 +2,6 @@ import ast
 import sys
 from pathlib import Path
 
-# Add tools folder to import logging_utils
 sys.path.append(str(Path(__file__).parent.parent))
 from tools.logging_utils import log_injection
 
@@ -15,7 +14,6 @@ def inject_unused_variable(clean_file_path, target_func_name, output_dir="data/m
     
     tree = ast.parse(original_content)
     
-    # Find the target function
     target_node = None
     for node in ast.walk(tree):
         if isinstance(node, ast.FunctionDef) and node.name == target_func_name:
@@ -27,10 +25,8 @@ def inject_unused_variable(clean_file_path, target_func_name, output_dir="data/m
         return None
     
     lines = original_content.splitlines()
+    insert_idx = target_node.lineno
     
-    # Determine insertion point: after function def, skipping docstring
-    insert_idx = target_node.lineno  # 1-indexed line number of def
-    # If there's a docstring, insert after it
     if target_node.body and isinstance(target_node.body[0], ast.Expr):
         docstring_node = target_node.body[0]
         if isinstance(docstring_node.value, ast.Constant) and isinstance(docstring_node.value.value, str):
@@ -40,38 +36,33 @@ def inject_unused_variable(clean_file_path, target_func_name, output_dir="data/m
     else:
         insert_idx = target_node.lineno + 1
     
-    # But we need 0-indexed for list insertion
     insert_pos = insert_idx - 1
     
-    # Detect indentation from the first line of the function body
-    indent = "    "  # default
+    indent = "    "
     if target_node.body:
         first_body_line = target_node.body[0].lineno - 1
         if first_body_line < len(lines) and lines[first_body_line].strip():
-            # Get leading spaces
             indent = lines[first_body_line][:len(lines[first_body_line]) - len(lines[first_body_line].lstrip())]
     
-    # Build mutated content
     mutated_lines = lines[:insert_pos]
     mutated_lines.append(f"{indent}unused_temp = 42  # injected unused variable")
     mutated_lines.extend(lines[insert_pos:])
     mutated_content = "\n".join(mutated_lines)
     
-    # Determine output path
-    rel_path = clean_file_path.relative_to("data/clean")
-    mutated_path = output_dir / rel_path
+    # Determine output path relative to data/clean/algorithms/algorithms/
+    rel_path = clean_file_path.relative_to("data/clean/algorithms/algorithms")
+    mutated_path = output_dir / "algorithms" / rel_path
     mutated_path.parent.mkdir(parents=True, exist_ok=True)
     
     with open(mutated_path, 'w', encoding='utf-8') as f:
         f.write(mutated_content)
     
-    # Log
     log_injection(
         file_path=str(mutated_path),
         function_name=target_func_name,
         line_num=insert_idx,
         bug_type="unused_variable",
-        description=f"Injected unused variable 'unused_temp = 42' in {target_func_name} at line {insert_idx}",
+        description=f"Injected unused variable in {target_func_name} at line {insert_idx}",
         original_code=original_content,
         mutated_code=mutated_content
     )
@@ -80,18 +71,18 @@ def inject_unused_variable(clean_file_path, target_func_name, output_dir="data/m
     return mutated_path
 
 if __name__ == "__main__":
-    import sys
     import json
-    from pathlib import Path
-
-    if len(sys.argv) > 1 and sys.argv[1] == "--all":
-        # Run on all target functions
-        with open("ground_truth/target_functions.json", "r") as f:
-            targets = json.load(f)
+    
+    with open("ground_truth/target_functions.json", "r") as f:
+        targets = json.load(f)
+    
+    run_all = len(sys.argv) > 1 and sys.argv[1] == "--all"
+    
+    if run_all:
         print(f"Injecting unused variables into {len(targets)} functions...")
         print("=" * 50)
         for i, target in enumerate(targets):
-            clean_file = Path("data/clean") / target["file"]
+            clean_file = Path("data/clean/algorithms/algorithms") / target["file"]
             func_name = target["function"]
             if not clean_file.exists():
                 print(f"File not found: {clean_file}")
@@ -101,9 +92,8 @@ if __name__ == "__main__":
         print("\n" + "=" * 50)
         print("Done! Check data/mutated/ and ground_truth/injection_log.jsonl")
     else:
-        # Default: test on first target
-        with open("ground_truth/target_functions.json", "r") as f:
-            targets = json.load(f)
         first = targets[0]
-        clean_file = Path("data/clean") / first["file"]
+        clean_file = Path("data/clean/algorithms/algorithms") / first["file"]
+        print(f"Test mode: injecting into first target only: {first['function']}")
         inject_unused_variable(clean_file, first["function"])
+        print("\nRun with --all to process all functions")

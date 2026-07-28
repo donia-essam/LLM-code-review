@@ -6,7 +6,6 @@ LOG_FILE = "ground_truth/injection_log.jsonl"
 
 def log_injection(file_path, function_name, line_num, bug_type, description, 
                   original_code, mutated_code):
-    """Append one injection event to the log file."""
     log_entry = {
         "file": file_path,
         "function": function_name,
