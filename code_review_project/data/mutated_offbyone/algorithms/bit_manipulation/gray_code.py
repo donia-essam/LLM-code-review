@@ -11,9 +11,6 @@ from __future__ import annotations
 
 def gray_code(n: int) -> list[int]:
     """Return the n-bit Gray code sequence as a list of integers.
-    # injected off-by-one loop (should be n-1)
-    for i in range(10):  # should be range(9)
-        print(i)
 
     Uses the reflection (mirror) construction:
         gray(i) = i ^ (i >> 1)
@@ -23,7 +20,7 @@ def gray_code(n: int) -> list[int]:
     >>> gray_code(3)
     [0, 1, 3, 2, 6, 7, 5, 4]
     """
-    return [i ^ (i >> 1) for i in range(1 << n)]
+    return [i ^ (i >> 1) for i in range(1 << n + 1)]
 
 
 def gray_to_binary(gray: int) -> int:

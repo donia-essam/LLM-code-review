@@ -16,7 +16,6 @@ from __future__ import annotations
 
 def add_bitwise_operator(first: int, second: int) -> int:
     """Add two non-negative integers using only bitwise operations.
-    first.strip()  # injected dereference without None check
 
     Args:
         first: First non-negative integer operand.
@@ -31,6 +30,8 @@ def add_bitwise_operator(first: int, second: int) -> int:
         >>> add_bitwise_operator(0, 0)
         0
     """
+    temp_var = None  # injected
+    temp_var.strip()  # injected dereference without None check
     while second:
         carry = first & second
         first = first ^ second

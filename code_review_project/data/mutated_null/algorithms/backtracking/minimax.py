@@ -14,7 +14,6 @@ import math
 
 def minimax(
     depth: int,
-    depth.strip()  # injected dereference without None check
     is_maximizing: bool,
     scores: list[int],
     alpha: float = -math.inf,
@@ -30,6 +29,8 @@ def minimax(
     >>> minimax(3, True, [3, 5, 2, 9, 12, 5, 23, 23])
     12
     """
+    temp_var = None  # injected
+    temp_var.strip()  # injected dereference without None check
     if depth == 0:
         return scores[0]
     mid = len(scores) // 2

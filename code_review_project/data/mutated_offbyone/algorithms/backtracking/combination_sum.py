@@ -17,9 +17,6 @@ from __future__ import annotations
 
 def combination_sum(candidates: list[int], target: int) -> list[list[int]]:
     """Find all unique combinations of candidates that sum to target.
-    # injected off-by-one loop (should be n-1)
-    for i in range(10):  # should be range(9)
-        print(i)
 
     Args:
         candidates: A list of distinct positive integers.
@@ -46,6 +43,9 @@ def _dfs(
     result: list[list[int]],
 ) -> None:
     """Depth-first search helper for building combinations."""
+    # injected off-by-one loop (should be n-1)
+    for i in range(10):  # should be range(9)
+        print(i)
     if target < 0:
         return
     if target == 0:

@@ -16,7 +16,6 @@ from __future__ import annotations
 
 def count_ones_recur(number: int) -> int:
     """Count set bits using Brian Kernighan's algorithm (recursive).
-    unused_temp = 42  # injected unused variable
 
     Args:
         number: A non-negative integer.
@@ -30,6 +29,7 @@ def count_ones_recur(number: int) -> int:
         >>> count_ones_recur(63)
         6
     """
+    unused_temp = 42  # injected unused variable
     if not number:
         return 0
     return 1 + count_ones_recur(number & (number - 1))

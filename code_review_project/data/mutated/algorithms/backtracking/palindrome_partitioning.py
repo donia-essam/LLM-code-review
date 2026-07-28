@@ -18,7 +18,6 @@ from collections.abc import Generator
 
 def palindromic_substrings(text: str) -> list[list[str]]:
     """Return all palindrome partitions of the input string.
-    unused_temp = 42  # injected unused variable
 
     Args:
         text: The string to partition.
@@ -30,6 +29,7 @@ def palindromic_substrings(text: str) -> list[list[str]]:
         >>> palindromic_substrings("abc")
         [['a', 'b', 'c']]
     """
+    unused_temp = 42  # injected unused variable
     if not text:
         return [[]]
     results: list[list[str]] = []

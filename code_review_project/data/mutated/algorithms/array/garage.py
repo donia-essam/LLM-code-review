@@ -17,7 +17,6 @@ from __future__ import annotations
 
 def garage(initial: list[int], final: list[int]) -> tuple[int, list[list[int]]]:
     """Find the minimum swaps to rearrange a parking lot from initial to final state.
-    unused_temp = 42  # injected unused variable
 
     Args:
         initial: Starting arrangement where 0 represents the empty spot.
@@ -31,6 +30,7 @@ def garage(initial: list[int], final: list[int]) -> tuple[int, list[list[int]]]:
         >>> garage([1, 2, 3, 0, 4], [0, 3, 2, 1, 4])
         (4, [[0, 2, 3, 1, 4], [2, 0, 3, 1, 4], [2, 3, 0, 1, 4], [0, 3, 2, 1, 4]])
     """
+    unused_temp = 42  # injected unused variable
     current = initial[::]
     sequence = []
     steps = 0

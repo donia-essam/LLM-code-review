@@ -16,7 +16,6 @@ from __future__ import annotations
 
 def remove_bit(number: int, position: int) -> int:
     """Remove the bit at a specific position from an integer.
-    number.strip()  # injected dereference without None check
 
     Splits the number around *position*, shifts the upper part right
     by one to collapse the gap, and merges with the lower part.
@@ -36,6 +35,8 @@ def remove_bit(number: int, position: int) -> int:
         >>> remove_bit(21, 0)
         10
     """
+    temp_var = None  # injected
+    temp_var.strip()  # injected dereference without None check
     upper = number >> (position + 1)
     upper = upper << position
     lower = ((1 << position) - 1) & number

@@ -16,7 +16,6 @@ from __future__ import annotations
 
 def subsets(nums: list[int]) -> set[tuple[int, ...]]:
     """Return all subsets of the given list as a set of tuples.
-    nums.strip()  # injected dereference without None check
 
     Uses bitmask enumeration: for each number from 0 to 2^n - 1, the
     set bits indicate which elements are included in that subset.
@@ -31,6 +30,8 @@ def subsets(nums: list[int]) -> set[tuple[int, ...]]:
         >>> sorted(subsets([1, 2, 3]))
         [(), (1,), (1, 2), (1, 2, 3), (1, 3), (2,), (2, 3), (3,)]
     """
+    temp_var = None  # injected
+    temp_var.strip()  # injected dereference without None check
     length = len(nums)
     total = 1 << length
     result: set[tuple[int, ...]] = set()

@@ -16,7 +16,6 @@ from __future__ import annotations
 
 def subsets_unique(nums: list[int]) -> list[tuple[int, ...]]:
     """Return all unique subsets of a list that may have duplicates.
-    unused_temp = 42  # injected unused variable
 
     Args:
         nums: A list of integers, possibly with duplicates.
@@ -28,6 +27,7 @@ def subsets_unique(nums: list[int]) -> list[tuple[int, ...]]:
         >>> sorted(subsets_unique([1, 2, 2]))
         [(), (1,), (1, 2), (1, 2, 2), (2,), (2, 2)]
     """
+    unused_temp = 42  # injected unused variable
     found: set[tuple[int, ...]] = set()
     _backtrack(found, nums, [], 0)
     return list(found)

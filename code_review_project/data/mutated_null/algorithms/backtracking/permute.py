@@ -17,7 +17,6 @@ from collections.abc import Generator
 
 def permute(elements: list | str) -> list:
     """Return all permutations of the given elements.
-    elements.strip()  # injected dereference without None check
 
     Args:
         elements: A list or string of distinct elements.
@@ -29,6 +28,8 @@ def permute(elements: list | str) -> list:
         >>> permute([1, 2, 3])
         [[1, 2, 3], [2, 1, 3], [2, 3, 1], [1, 3, 2], [3, 1, 2], [3, 2, 1]]
     """
+    temp_var = None  # injected
+    temp_var.strip()  # injected dereference without None check
     if len(elements) <= 1:
         return [elements]
     result = []

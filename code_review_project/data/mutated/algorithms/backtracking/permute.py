@@ -17,7 +17,6 @@ from collections.abc import Generator
 
 def permute(elements: list | str) -> list:
     """Return all permutations of the given elements.
-    unused_temp = 42  # injected unused variable
 
     Args:
         elements: A list or string of distinct elements.
@@ -29,6 +28,7 @@ def permute(elements: list | str) -> list:
         >>> permute([1, 2, 3])
         [[1, 2, 3], [2, 1, 3], [2, 3, 1], [1, 3, 2], [3, 1, 2], [3, 2, 1]]
     """
+    unused_temp = 42  # injected unused variable
     if len(elements) <= 1:
         return [elements]
     result = []

@@ -1,360 +1,360 @@
 [
   {
-    "file": "array\\delete_nth.py",
+    "file": "array/delete_nth.py",
     "function": "delete_nth_naive",
     "line": 23,
     "num_lines": 19
   },
   {
-    "file": "array\\flatten.py",
+    "file": "array/flatten.py",
     "function": "flatten",
     "line": 20,
     "num_lines": 22
   },
   {
-    "file": "array\\garage.py",
+    "file": "array/garage.py",
     "function": "garage",
     "line": 18,
     "num_lines": 37
   },
   {
-    "file": "array\\josephus.py",
+    "file": "array/josephus.py",
     "function": "josephus",
     "line": 20,
     "num_lines": 21
   },
   {
-    "file": "array\\limit.py",
+    "file": "array/limit.py",
     "function": "limit",
     "line": 17,
     "num_lines": 28
   },
   {
-    "file": "array\\longest_non_repeat.py",
+    "file": "array/longest_non_repeat.py",
     "function": "longest_non_repeat_v1",
     "line": 17,
     "num_lines": 24
   },
   {
-    "file": "array\\max_ones_index.py",
+    "file": "array/max_ones_index.py",
     "function": "max_ones_index",
     "line": 17,
     "num_lines": 32
   },
   {
-    "file": "array\\merge_intervals.py",
+    "file": "array/merge_intervals.py",
     "function": "merge_intervals",
     "line": 101,
     "num_lines": 23
   },
   {
-    "file": "array\\missing_ranges.py",
+    "file": "array/missing_ranges.py",
     "function": "missing_ranges",
     "line": 17,
     "num_lines": 29
   },
   {
-    "file": "array\\move_zeros.py",
+    "file": "array/move_zeros.py",
     "function": "move_zeros",
     "line": 19,
     "num_lines": 26
   },
   {
-    "file": "array\\n_sum.py",
+    "file": "array/n_sum.py",
     "function": "n_sum",
     "line": 21,
     "num_lines": 107
   },
   {
-    "file": "array\\plus_one.py",
+    "file": "array/plus_one.py",
     "function": "plus_one_v1",
     "line": 17,
     "num_lines": 27
   },
   {
-    "file": "array\\remove_duplicates.py",
+    "file": "array/remove_duplicates.py",
     "function": "remove_duplicates",
     "line": 20,
     "num_lines": 29
   },
   {
-    "file": "array\\rotate.py",
+    "file": "array/rotate.py",
     "function": "rotate_v1",
     "line": 18,
     "num_lines": 22
   },
   {
-    "file": "array\\summarize_ranges.py",
+    "file": "array/summarize_ranges.py",
     "function": "summarize_ranges",
     "line": 17,
     "num_lines": 28
   },
   {
-    "file": "array\\three_sum.py",
+    "file": "array/three_sum.py",
     "function": "three_sum",
     "line": 17,
     "num_lines": 37
   },
   {
-    "file": "array\\top_1.py",
+    "file": "array/top_1.py",
     "function": "top_1",
     "line": 19,
     "num_lines": 28
   },
   {
-    "file": "array\\trimmean.py",
+    "file": "array/trimmean.py",
     "function": "trimmean",
     "line": 17,
     "num_lines": 26
   },
   {
-    "file": "array\\two_sum.py",
+    "file": "array/two_sum.py",
     "function": "two_sum",
     "line": 17,
     "num_lines": 21
   },
   {
-    "file": "backtracking\\add_operators.py",
+    "file": "backtracking/add_operators.py",
     "function": "add_operators",
     "line": 18,
     "num_lines": 19
   },
   {
-    "file": "backtracking\\anagram.py",
+    "file": "backtracking/anagram.py",
     "function": "anagram",
     "line": 17,
     "num_lines": 28
   },
   {
-    "file": "backtracking\\array_sum_combinations.py",
+    "file": "backtracking/array_sum_combinations.py",
     "function": "array_sum_combinations",
     "line": 20,
     "num_lines": 56
   },
   {
-    "file": "backtracking\\combination_sum.py",
+    "file": "backtracking/combination_sum.py",
     "function": "combination_sum",
     "line": 18,
     "num_lines": 18
   },
   {
-    "file": "backtracking\\factor_combinations.py",
+    "file": "backtracking/factor_combinations.py",
     "function": "get_factors",
     "line": 17,
     "num_lines": 23
   },
   {
-    "file": "backtracking\\find_words.py",
+    "file": "backtracking/find_words.py",
     "function": "find_words",
     "line": 18,
     "num_lines": 35
   },
   {
-    "file": "backtracking\\generate_abbreviations.py",
+    "file": "backtracking/generate_abbreviations.py",
     "function": "generate_abbreviations",
     "line": 17,
     "num_lines": 16
   },
   {
-    "file": "backtracking\\generate_parenthesis.py",
+    "file": "backtracking/generate_parenthesis.py",
     "function": "generate_parenthesis_v1",
     "line": 17,
     "num_lines": 19
   },
   {
-    "file": "backtracking\\letter_combination.py",
+    "file": "backtracking/letter_combination.py",
     "function": "letter_combinations",
     "line": 17,
     "num_lines": 33
   },
   {
-    "file": "backtracking\\minimax.py",
+    "file": "backtracking/minimax.py",
     "function": "minimax",
     "line": 15,
     "num_lines": 46
   },
   {
-    "file": "backtracking\\palindrome_partitioning.py",
+    "file": "backtracking/palindrome_partitioning.py",
     "function": "palindromic_substrings",
     "line": 19,
     "num_lines": 22
   },
   {
-    "file": "backtracking\\pattern_match.py",
+    "file": "backtracking/pattern_match.py",
     "function": "pattern_match",
     "line": 18,
     "num_lines": 17
   },
   {
-    "file": "backtracking\\permute.py",
+    "file": "backtracking/permute.py",
     "function": "permute",
     "line": 18,
     "num_lines": 20
   },
   {
-    "file": "backtracking\\permute_unique.py",
+    "file": "backtracking/permute_unique.py",
     "function": "permute_unique",
     "line": 17,
     "num_lines": 23
   },
   {
-    "file": "backtracking\\subsets.py",
+    "file": "backtracking/subsets.py",
     "function": "subsets",
     "line": 17,
     "num_lines": 16
   },
   {
-    "file": "backtracking\\subsets_unique.py",
+    "file": "backtracking/subsets_unique.py",
     "function": "subsets_unique",
     "line": 17,
     "num_lines": 16
   },
   {
-    "file": "bit_manipulation\\add_bitwise_operator.py",
+    "file": "bit_manipulation/add_bitwise_operator.py",
     "function": "add_bitwise_operator",
     "line": 17,
     "num_lines": 21
   },
   {
-    "file": "bit_manipulation\\binary_gap.py",
+    "file": "bit_manipulation/binary_gap.py",
     "function": "binary_gap",
     "line": 18,
     "num_lines": 27
   },
   {
-    "file": "bit_manipulation\\bit_operation.py",
+    "file": "bit_manipulation/bit_operation.py",
     "function": "get_bit",
     "line": 17,
     "num_lines": 20
   },
   {
-    "file": "bit_manipulation\\bytes_int_conversion.py",
+    "file": "bit_manipulation/bytes_int_conversion.py",
     "function": "int_to_bytes_big_endian",
     "line": 19,
     "num_lines": 18
   },
   {
-    "file": "bit_manipulation\\count_flips_to_convert.py",
+    "file": "bit_manipulation/count_flips_to_convert.py",
     "function": "count_flips_to_convert",
     "line": 18,
     "num_lines": 22
   },
   {
-    "file": "bit_manipulation\\count_ones.py",
+    "file": "bit_manipulation/count_ones.py",
     "function": "count_ones_recur",
     "line": 17,
     "num_lines": 18
   },
   {
-    "file": "bit_manipulation\\find_difference.py",
+    "file": "bit_manipulation/find_difference.py",
     "function": "find_difference",
     "line": 17,
     "num_lines": 21
   },
   {
-    "file": "bit_manipulation\\find_missing_number.py",
+    "file": "bit_manipulation/find_missing_number.py",
     "function": "find_missing_number",
     "line": 18,
     "num_lines": 23
   },
   {
-    "file": "bit_manipulation\\flip_bit_longest_sequence.py",
+    "file": "bit_manipulation/flip_bit_longest_sequence.py",
     "function": "flip_bit_longest_seq",
     "line": 17,
     "num_lines": 34
   },
   {
-    "file": "bit_manipulation\\gray_code.py",
+    "file": "bit_manipulation/gray_code.py",
     "function": "gray_code",
     "line": 12,
     "num_lines": 12
   },
   {
-    "file": "bit_manipulation\\has_alternative_bit.py",
+    "file": "bit_manipulation/has_alternative_bit.py",
     "function": "has_alternative_bit",
     "line": 17,
     "num_lines": 27
   },
   {
-    "file": "bit_manipulation\\insert_bit.py",
+    "file": "bit_manipulation/insert_bit.py",
     "function": "insert_one_bit",
     "line": 16,
     "num_lines": 25
   },
   {
-    "file": "bit_manipulation\\power_of_two.py",
+    "file": "bit_manipulation/power_of_two.py",
     "function": "is_power_of_two",
     "line": 18,
     "num_lines": 18
   },
   {
-    "file": "bit_manipulation\\remove_bit.py",
+    "file": "bit_manipulation/remove_bit.py",
     "function": "remove_bit",
     "line": 17,
     "num_lines": 25
   },
   {
-    "file": "bit_manipulation\\reverse_bits.py",
+    "file": "bit_manipulation/reverse_bits.py",
     "function": "reverse_bits",
     "line": 16,
     "num_lines": 20
   },
   {
-    "file": "bit_manipulation\\single_number.py",
+    "file": "bit_manipulation/single_number.py",
     "function": "single_number",
     "line": 17,
     "num_lines": 23
   },
   {
-    "file": "bit_manipulation\\single_number2.py",
+    "file": "bit_manipulation/single_number2.py",
     "function": "single_number2",
     "line": 18,
     "num_lines": 23
   },
   {
-    "file": "bit_manipulation\\single_number3.py",
+    "file": "bit_manipulation/single_number3.py",
     "function": "single_number3",
     "line": 18,
     "num_lines": 30
   },
   {
-    "file": "bit_manipulation\\subsets.py",
+    "file": "bit_manipulation/subsets.py",
     "function": "subsets",
     "line": 17,
     "num_lines": 27
   },
   {
-    "file": "bit_manipulation\\swap_pair.py",
+    "file": "bit_manipulation/swap_pair.py",
     "function": "swap_pair",
     "line": 17,
     "num_lines": 22
   },
   {
-    "file": "common\\graph.py",
+    "file": "common/graph.py",
     "function": "unweighted",
     "line": 40,
     "num_lines": 20
   },
   {
-    "file": "compression\\elias.py",
+    "file": "compression/elias.py",
     "function": "_log2",
     "line": 20,
     "num_lines": 10
   },
   {
-    "file": "compression\\rle_compression.py",
+    "file": "compression/rle_compression.py",
     "function": "encode_rle",
     "line": 18,
     "num_lines": 32
   },
   {
-    "file": "data_structures\\avl_tree.py",
+    "file": "data_structures/avl_tree.py",
     "function": "__init__",
     "line": 11,
     "num_lines": 5
   },
   {
-    "file": "data_structures\\b_tree.py",
+    "file": "data_structures/b_tree.py",
     "function": "__init__",
     "line": 27,
     "num_lines": 3

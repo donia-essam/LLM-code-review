@@ -16,7 +16,6 @@ from __future__ import annotations
 
 def limit(
     array: list[int],
-    array.strip()  # injected dereference without None check
     min_lim: int | None = None,
     max_lim: int | None = None,
 ) -> list[int]:
@@ -34,6 +33,7 @@ def limit(
         >>> limit([1, 2, 3, 4, 5], 2, 4)
         [2, 3, 4]
     """
+    min_lim.strip()  # injected dereference without None check
     if len(array) == 0:
         return array
 

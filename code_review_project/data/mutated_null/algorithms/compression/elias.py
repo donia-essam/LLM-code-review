@@ -19,7 +19,6 @@ from math import log
 
 def _log2(x: int | float) -> float:
     """Compute log base 2.
-    x.strip()  # injected dereference without None check
 
     Args:
         x: A positive number.
@@ -27,6 +26,8 @@ def _log2(x: int | float) -> float:
     Returns:
         The base-2 logarithm of x.
     """
+    temp_var = None  # injected
+    temp_var.strip()  # injected dereference without None check
     return log(x, 2)
 
 

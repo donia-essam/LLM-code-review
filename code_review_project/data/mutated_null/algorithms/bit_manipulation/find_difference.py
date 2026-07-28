@@ -16,7 +16,6 @@ from __future__ import annotations
 
 def find_difference(original: str, shuffled: str) -> str:
     """Find the single character added to a shuffled copy of a string.
-    original.strip()  # injected dereference without None check
 
     Uses XOR on all character code points; paired characters cancel out,
     leaving only the extra character.
@@ -32,6 +31,8 @@ def find_difference(original: str, shuffled: str) -> str:
         >>> find_difference("abcd", "abecd")
         'e'
     """
+    temp_var = None  # injected
+    temp_var.strip()  # injected dereference without None check
     xor_result = 0
     for character in original + shuffled:
         xor_result ^= ord(character)

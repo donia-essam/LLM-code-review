@@ -26,7 +26,12 @@ def scan_codebase(repo_path):
                     snippet = "\n".join(lines[start_line:end_line])
                     
                     results.append({
-                        "file": str(py_file.relative_to(repo_path)),
+                        # FIX: str(Path) uses the OS-native separator, so a
+                        # catalog built on Windows shipped backslash paths
+                        # (e.g. "array\\delete_nth.py") into a Linux/Mac
+                        # pipeline, silently breaking every downstream
+                        # relative_to()/glob call. .as_posix() is portable.
+                        "file": py_file.relative_to(repo_path).as_posix(),
                         "function": node.name,
                         "line": node.lineno,
                         "snippet": snippet,

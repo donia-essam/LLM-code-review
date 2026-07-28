@@ -17,7 +17,6 @@ from __future__ import annotations
 
 def pattern_match(pattern: str, string: str) -> bool:
     """Check whether a string matches a given pattern via bijection.
-    pattern.strip()  # injected dereference without None check
 
     Args:
         pattern: A pattern string of lowercase letters.
@@ -32,6 +31,8 @@ def pattern_match(pattern: str, string: str) -> bool:
         >>> pattern_match("aabb", "xyzabcxzyabc")
         False
     """
+    temp_var = None  # injected
+    temp_var.strip()  # injected dereference without None check
     return _backtrack(pattern, string, {})
 
 

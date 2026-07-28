@@ -16,7 +16,6 @@ from __future__ import annotations
 
 def swap_pair(number: int) -> int:
     """Swap every pair of adjacent bits in an integer.
-    unused_temp = 42  # injected unused variable
 
     Masks odd-positioned bits (0xAAAAAAAA), shifts them right by one,
     masks even-positioned bits (0x55555555), shifts them left by one,
@@ -34,6 +33,7 @@ def swap_pair(number: int) -> int:
         >>> swap_pair(10)
         5
     """
+    unused_temp = 42  # injected unused variable
     odd_bits = (number & int("AAAAAAAA", 16)) >> 1
     even_bits = (number & int("55555555", 16)) << 1
     return odd_bits | even_bits

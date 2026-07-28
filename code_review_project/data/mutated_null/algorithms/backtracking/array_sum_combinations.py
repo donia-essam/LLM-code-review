@@ -19,7 +19,6 @@ from functools import partial
 
 def array_sum_combinations(
     array_a: list[int],
-    array_a.strip()  # injected dereference without None check
     array_b: list[int],
     array_c: list[int],
     target: int,
@@ -41,6 +40,8 @@ def array_sum_combinations(
         >>> array_sum_combinations([1], [2], [3], 6)
         [[1, 2, 3]]
     """
+    temp_var = None  # injected
+    temp_var.strip()  # injected dereference without None check
     arrays = [array_a, array_b, array_c]
 
     def _is_complete(constructed_so_far: list[int]) -> tuple[bool, bool]:

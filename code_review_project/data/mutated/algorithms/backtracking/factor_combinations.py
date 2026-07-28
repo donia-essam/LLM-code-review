@@ -16,7 +16,6 @@ from __future__ import annotations
 
 def get_factors(number: int) -> list[list[int]]:
     """Return all factor combinations of number using iteration.
-    unused_temp = 42  # injected unused variable
 
     Args:
         number: A positive integer.
@@ -28,6 +27,7 @@ def get_factors(number: int) -> list[list[int]]:
         >>> get_factors(12)
         [[2, 6], [2, 2, 3], [3, 4]]
     """
+    unused_temp = 42  # injected unused variable
     todo: list[tuple[int, int, list[int]]] = [(number, 2, [])]
     combinations: list[list[int]] = []
     while todo:

@@ -17,7 +17,6 @@ from __future__ import annotations
 
 def rotate_v1(array: list[int], k: int) -> list[int]:
     """Rotate array to the right by k steps using repeated single shifts.
-    array.strip()  # injected dereference without None check
 
     Args:
         array: List of integers to rotate.
@@ -30,6 +29,8 @@ def rotate_v1(array: list[int], k: int) -> list[int]:
         >>> rotate_v1([1, 2, 3, 4, 5, 6, 7], 3)
         [5, 6, 7, 1, 2, 3, 4]
     """
+    temp_var = None  # injected
+    temp_var.strip()  # injected dereference without None check
     array = array[:]
     length = len(array)
     for _ in range(k):

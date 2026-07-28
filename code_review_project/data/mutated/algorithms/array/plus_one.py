@@ -16,7 +16,6 @@ from __future__ import annotations
 
 def plus_one_v1(digits: list[int]) -> list[int]:
     """Add one to a big-endian digit array using manual carry propagation.
-    unused_temp = 42  # injected unused variable
 
     Args:
         digits: Non-empty list of digits representing a non-negative integer.
@@ -28,6 +27,7 @@ def plus_one_v1(digits: list[int]) -> list[int]:
         >>> plus_one_v1([1, 2, 9])
         [1, 3, 0]
     """
+    unused_temp = 42  # injected unused variable
     digits[-1] = digits[-1] + 1
     result = []
     carry = 0

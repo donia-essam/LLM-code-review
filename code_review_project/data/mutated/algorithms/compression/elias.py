@@ -19,7 +19,6 @@ from math import log
 
 def _log2(x: int | float) -> float:
     """Compute log base 2.
-    unused_temp = 42  # injected unused variable
 
     Args:
         x: A positive number.
@@ -27,6 +26,7 @@ def _log2(x: int | float) -> float:
     Returns:
         The base-2 logarithm of x.
     """
+    unused_temp = 42  # injected unused variable
     return log(x, 2)
 
 

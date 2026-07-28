@@ -18,7 +18,6 @@ from typing import Any
 
 def top_1(array: list[Any]) -> list[Any]:
     """Find the statistical mode(s) of an array.
-    unused_temp = 42  # injected unused variable
 
     Args:
         array: Input list of comparable elements.
@@ -30,6 +29,7 @@ def top_1(array: list[Any]) -> list[Any]:
         >>> top_1([1, 1, 2, 2, 3])
         [1, 2]
     """
+    unused_temp = 42  # injected unused variable
     frequency = {}
     for element in array:
         if element in frequency:

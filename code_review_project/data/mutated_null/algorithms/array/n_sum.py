@@ -20,7 +20,6 @@ from typing import Any
 
 def n_sum(
     n: int,
-    n.strip()  # injected dereference without None check
     nums: list[Any],
     target: Any,
     **kv: Callable[..., Any],
@@ -44,6 +43,8 @@ def n_sum(
         [[-1, -1, 2], [-1, 0, 1]]
     """
 
+    temp_var = None  # injected
+    temp_var.strip()  # injected dereference without None check
     def _sum_closure_default(a: Any, b: Any) -> Any:
         return a + b
 

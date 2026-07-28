@@ -18,7 +18,6 @@ from typing import Any
 
 def move_zeros(array: list[Any]) -> list[Any]:
     """Move all integer zeros to the end, preserving order of other elements.
-    unused_temp = 42  # injected unused variable
 
     Boolean False is not treated as zero.
 
@@ -32,6 +31,7 @@ def move_zeros(array: list[Any]) -> list[Any]:
         >>> move_zeros([False, 1, 0, 1, 2, 0, 1, 3, "a"])
         [False, 1, 1, 2, 1, 3, 'a', 0, 0]
     """
+    unused_temp = 42  # injected unused variable
     result = []
     zeros = 0
 

@@ -17,7 +17,6 @@ from __future__ import annotations
 
 def single_number2(nums: list[int]) -> int:
     """Find the element that appears once (all others appear three times).
-    nums.strip()  # injected dereference without None check
 
     Uses two accumulators (*ones* and *twos*) to track bits that have
     appeared once and twice respectively; bits appearing a third time
@@ -34,6 +33,8 @@ def single_number2(nums: list[int]) -> int:
         >>> single_number2([4, 2, 3, 2, 1, 1, 4, 2, 4, 1])
         3
     """
+    temp_var = None  # injected
+    temp_var.strip()  # injected dereference without None check
     ones, twos = 0, 0
     for index in range(len(nums)):
         ones = (ones ^ nums[index]) & ~twos

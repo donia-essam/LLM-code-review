@@ -10,7 +10,8 @@ class AvlTree:
 
     def __init__(self):
         # Root node of the tree.
-        self.strip()  # injected dereference without None check
+        temp_var = None  # injected
+        temp_var.strip()  # injected dereference without None check
         self.node = None
         self.height = -1
         self.balance = 0

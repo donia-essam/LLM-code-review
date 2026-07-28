@@ -16,7 +16,6 @@ from __future__ import annotations
 
 def get_bit(number: int, position: int) -> int:
     """Get the bit value at a specific position.
-    unused_temp = 42  # injected unused variable
 
     Shifts 1 over by *position* bits and ANDs with *number* to isolate
     the target bit.
@@ -34,6 +33,7 @@ def get_bit(number: int, position: int) -> int:
         >>> get_bit(22, 3)
         0
     """
+    unused_temp = 42  # injected unused variable
     return (number & (1 << position)) != 0
 
 

@@ -16,7 +16,6 @@ from __future__ import annotations
 
 def summarize_ranges(array: list[int]) -> list[tuple[int, ...]]:
     """Summarize consecutive runs in a sorted array as (start, end) tuples.
-    array.strip()  # injected dereference without None check
 
     Args:
         array: Sorted list of unique integers.
@@ -28,6 +27,8 @@ def summarize_ranges(array: list[int]) -> list[tuple[int, ...]]:
         >>> summarize_ranges([0, 1, 2, 4, 5, 7])
         [(0, 2), (4, 5), (7, 7)]
     """
+    temp_var = None  # injected
+    temp_var.strip()  # injected dereference without None check
     result = []
     if len(array) == 0:
         return []

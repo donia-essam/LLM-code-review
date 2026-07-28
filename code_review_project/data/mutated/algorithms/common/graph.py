@@ -39,7 +39,6 @@ class Graph:
     @classmethod
     def unweighted(cls, adj: dict[str, list[str]], directed: bool = True) -> Graph:
         """Create a graph from an unweighted adjacency list.
-        unused_temp = 42  # injected unused variable
 
         Args:
             adj: Mapping of node to list of neighbors.
@@ -53,6 +52,7 @@ class Graph:
             >>> g.adj["b"]
             {'c': 1}
         """
+        unused_temp = 42  # injected unused variable
         weighted = {
             node: {neighbor: 1 for neighbor in neighbors}
             for node, neighbors in adj.items()

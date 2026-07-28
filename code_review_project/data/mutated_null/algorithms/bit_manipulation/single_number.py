@@ -16,7 +16,6 @@ from __future__ import annotations
 
 def single_number(nums: list[int]) -> int:
     """Find the element that appears only once (all others appear twice).
-    nums.strip()  # injected dereference without None check
 
     XORs all values together; paired values cancel to zero, leaving the
     unique value.
@@ -34,6 +33,8 @@ def single_number(nums: list[int]) -> int:
         >>> single_number([101])
         101
     """
+    temp_var = None  # injected
+    temp_var.strip()  # injected dereference without None check
     result = 0
     for number in nums:
         result ^= number

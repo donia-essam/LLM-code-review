@@ -16,7 +16,6 @@ from __future__ import annotations
 
 def flip_bit_longest_seq(number: int) -> int:
     """Find the longest 1-bit run achievable by flipping a single 0-bit.
-    unused_temp = 42  # injected unused variable
 
     Tracks the current run length and the previous run length to
     determine the best sequence that can be formed by bridging two
@@ -34,6 +33,7 @@ def flip_bit_longest_seq(number: int) -> int:
         >>> flip_bit_longest_seq(0)
         1
     """
+    unused_temp = 42  # injected unused variable
     current_length = 0
     previous_length = 0
     max_length = 0

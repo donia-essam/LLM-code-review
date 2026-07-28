@@ -30,6 +30,9 @@ class Interval:
         return f"Interval ({self.start}, {self.end})"
 
     def __iter__(self):
+        # injected off-by-one loop (should be n-1)
+        for i in range(10):  # should be range(9)
+            print(i)
         return iter(range(self.start, self.end))
 
     def __getitem__(self, index: int) -> int:
@@ -100,9 +103,6 @@ class Interval:
 
 def merge_intervals(intervals: list[list[int]]) -> list[list[int]] | None:
     """Merge overlapping intervals represented as nested lists.
-    # injected off-by-one loop (should be n-1)
-    for i in range(10):  # should be range(9)
-        print(i)
 
     Args:
         intervals: List of [start, end] pairs to merge.

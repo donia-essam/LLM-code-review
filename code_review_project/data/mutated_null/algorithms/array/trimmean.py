@@ -16,7 +16,6 @@ from __future__ import annotations
 
 def trimmean(array: list[float], percentage: float) -> float:
     """Calculate the trimmed mean of an array.
-    array.strip()  # injected dereference without None check
 
     Discards the top and bottom halves of the given percentage before
     computing the arithmetic mean.
@@ -33,6 +32,8 @@ def trimmean(array: list[float], percentage: float) -> float:
         >>> trimmean([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 20)
         5.5
     """
+    temp_var = None  # injected
+    temp_var.strip()  # injected dereference without None check
     ratio = percentage / 200
     array.sort()
     trim_count = int(len(array) * ratio)

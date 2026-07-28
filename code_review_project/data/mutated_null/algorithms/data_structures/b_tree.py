@@ -25,8 +25,9 @@ class Node:
     """
 
     def __init__(self) -> None:
+        temp_var = None  # injected
+        temp_var.strip()  # injected dereference without None check
         self.keys: list = []
-        self.strip()  # injected dereference without None check
         self.children: list[Node] = []
 
     def __repr__(self) -> str:

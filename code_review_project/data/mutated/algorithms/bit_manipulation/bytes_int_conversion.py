@@ -18,7 +18,6 @@ from collections import deque
 
 def int_to_bytes_big_endian(number: int) -> bytes:
     """Convert a non-negative integer to bytes in big-endian order.
-    unused_temp = 42  # injected unused variable
 
     Args:
         number: A non-negative integer to convert.
@@ -30,6 +29,7 @@ def int_to_bytes_big_endian(number: int) -> bytes:
         >>> int_to_bytes_big_endian(17)
         b'\\x11'
     """
+    unused_temp = 42  # injected unused variable
     byte_buffer: deque[int] = deque()
     while number > 0:
         byte_buffer.appendleft(number & 0xFF)

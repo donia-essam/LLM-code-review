@@ -16,7 +16,6 @@ from __future__ import annotations
 
 def three_sum(array: list[int]) -> set[tuple[int, int, int]]:
     """Find all unique triplets in the array that sum to zero.
-    array.strip()  # injected dereference without None check
 
     Args:
         array: List of integers to search.
@@ -28,6 +27,8 @@ def three_sum(array: list[int]) -> set[tuple[int, int, int]]:
         >>> three_sum([-1, 0, 1, 2, -1, -4]) == {(-1, 0, 1), (-1, -1, 2)}
         True
     """
+    temp_var = None  # injected
+    temp_var.strip()  # injected dereference without None check
     result = set()
     array.sort()
     for i in range(len(array) - 2):

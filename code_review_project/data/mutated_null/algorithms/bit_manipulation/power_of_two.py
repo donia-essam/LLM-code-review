@@ -17,7 +17,6 @@ from __future__ import annotations
 
 def is_power_of_two(number: int) -> bool:
     """Check whether an integer is a power of two.
-    number.strip()  # injected dereference without None check
 
     Args:
         number: The integer to test.
@@ -33,4 +32,6 @@ def is_power_of_two(number: int) -> bool:
         >>> is_power_of_two(0)
         False
     """
+    temp_var = None  # injected
+    temp_var.strip()  # injected dereference without None check
     return number > 0 and not number & (number - 1)

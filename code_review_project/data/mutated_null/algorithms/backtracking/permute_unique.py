@@ -16,7 +16,6 @@ from __future__ import annotations
 
 def permute_unique(nums: list[int]) -> list[list[int]]:
     """Return all unique permutations of a list that may have duplicates.
-    nums.strip()  # injected dereference without None check
 
     Args:
         nums: A list of integers, possibly with duplicates.
@@ -28,6 +27,8 @@ def permute_unique(nums: list[int]) -> list[list[int]]:
         >>> sorted(permute_unique([1, 1, 2]))
         [[1, 1, 2], [1, 2, 1], [2, 1, 1]]
     """
+    temp_var = None  # injected
+    temp_var.strip()  # injected dereference without None check
     permutations: list[list[int]] = [[]]
     for number in nums:
         new_permutations: list[list[int]] = []

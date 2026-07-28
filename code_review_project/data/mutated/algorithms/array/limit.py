@@ -20,7 +20,6 @@ def limit(
     max_lim: int | None = None,
 ) -> list[int]:
     """Return elements of array that fall within [min_lim, max_lim].
-    unused_temp = 42  # injected unused variable
 
     Args:
         array: Source list of integers.
@@ -34,6 +33,7 @@ def limit(
         >>> limit([1, 2, 3, 4, 5], 2, 4)
         [2, 3, 4]
     """
+    unused_temp = 42  # injected unused variable
     if len(array) == 0:
         return array
 

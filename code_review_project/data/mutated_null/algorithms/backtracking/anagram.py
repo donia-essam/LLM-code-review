@@ -16,7 +16,6 @@ from __future__ import annotations
 
 def anagram(first: str, second: str) -> bool:
     """Check whether two strings are anagrams of each other.
-    first.strip()  # injected dereference without None check
 
     Args:
         first: The first string (lowercase letters only).
@@ -31,6 +30,8 @@ def anagram(first: str, second: str) -> bool:
         >>> anagram('apple', 'cherry')
         False
     """
+    temp_var = None  # injected
+    temp_var.strip()  # injected dereference without None check
     count_first = [0] * 26
     count_second = [0] * 26
 

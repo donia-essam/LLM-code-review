@@ -17,9 +17,6 @@ from __future__ import annotations
 
 def pattern_match(pattern: str, string: str) -> bool:
     """Check whether a string matches a given pattern via bijection.
-    # injected off-by-one loop (should be n-1)
-    for i in range(10):  # should be range(9)
-        print(i)
 
     Args:
         pattern: A pattern string of lowercase letters.
@@ -43,7 +40,7 @@ def _backtrack(
     mapping: dict[str, str],
 ) -> bool:
     """Recursively attempt to match pattern to string using a mapping."""
-    if len(pattern) == 0 and len(string) > 0:
+    if len(pattern) == 0 and len(string) >= 0:
         return False
 
     if len(pattern) == 0 and len(string) == 0:

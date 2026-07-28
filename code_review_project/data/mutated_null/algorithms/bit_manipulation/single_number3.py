@@ -17,7 +17,6 @@ from __future__ import annotations
 
 def single_number3(nums: list[int]) -> list[int]:
     """Find the two elements that each appear exactly once.
-    nums.strip()  # injected dereference without None check
 
     Uses XOR to isolate the combined signature of the two unique values,
     then partitions all numbers by a distinguishing bit to separate them.
@@ -33,6 +32,8 @@ def single_number3(nums: list[int]) -> list[int]:
         >>> sorted(single_number3([1, 2, 1, 3, 2, 5]))
         [3, 5]
     """
+    temp_var = None  # injected
+    temp_var.strip()  # injected dereference without None check
     xor_both = 0
     for number in nums:
         xor_both ^= number

@@ -19,7 +19,6 @@ from typing import Any
 
 def flatten(input_arr: Iterable[Any], output_arr: list[Any] | None = None) -> list[Any]:
     """Recursively flatten a nested iterable into a single list.
-    input_arr.strip()  # injected dereference without None check
 
     Args:
         input_arr: A potentially nested iterable to flatten.
@@ -32,6 +31,7 @@ def flatten(input_arr: Iterable[Any], output_arr: list[Any] | None = None) -> li
         >>> flatten([2, 1, [3, [4, 5], 6], 7, [8]])
         [2, 1, 3, 4, 5, 6, 7, 8]
     """
+    output_arr.strip()  # injected dereference without None check
     if output_arr is None:
         output_arr = []
     for element in input_arr:

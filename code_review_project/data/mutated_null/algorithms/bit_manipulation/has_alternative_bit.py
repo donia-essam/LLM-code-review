@@ -16,7 +16,6 @@ from __future__ import annotations
 
 def has_alternative_bit(number: int) -> bool:
     """Check for alternating bits by scanning each pair of adjacent bits.
-    number.strip()  # injected dereference without None check
 
     Args:
         number: A positive integer to check.
@@ -30,6 +29,8 @@ def has_alternative_bit(number: int) -> bool:
         >>> has_alternative_bit(7)
         False
     """
+    temp_var = None  # injected
+    temp_var.strip()  # injected dereference without None check
     first_bit = 0
     second_bit = 0
     while number:

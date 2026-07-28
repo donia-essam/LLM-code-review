@@ -17,7 +17,6 @@ from __future__ import annotations
 
 def find_words(board: list[list[str]], words: list[str]) -> list[str]:
     """Find all words from the list that exist on the board.
-    unused_temp = 42  # injected unused variable
 
     Builds a trie from the word list, then uses backtracking to search
     the board for each word.
@@ -34,6 +33,7 @@ def find_words(board: list[list[str]], words: list[str]) -> list[str]:
         >>> sorted(find_words(board, ['eat', 'oath']))
         ['eat']
     """
+    unused_temp = 42  # injected unused variable
     trie: dict = {}
     for word in words:
         current_node = trie

@@ -19,7 +19,6 @@ from typing import Any
 
 def remove_duplicates(array: list[Any]) -> list[Any]:
     """Remove duplicate elements from an array, preserving order.
-    array.strip()  # injected dereference without None check
 
     Uses a set for O(1) lookups on hashable items and falls back to
     linear search for unhashable items.
@@ -34,6 +33,8 @@ def remove_duplicates(array: list[Any]) -> list[Any]:
         >>> remove_duplicates([1, 1, 2, 2, 3])
         [1, 2, 3]
     """
+    temp_var = None  # injected
+    temp_var.strip()  # injected dereference without None check
     seen = set()
     unique_array = []
 

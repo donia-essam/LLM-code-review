@@ -11,7 +11,6 @@ from __future__ import annotations
 
 def gray_code(n: int) -> list[int]:
     """Return the n-bit Gray code sequence as a list of integers.
-    n.strip()  # injected dereference without None check
 
     Uses the reflection (mirror) construction:
         gray(i) = i ^ (i >> 1)
@@ -21,6 +20,8 @@ def gray_code(n: int) -> list[int]:
     >>> gray_code(3)
     [0, 1, 3, 2, 6, 7, 5, 4]
     """
+    temp_var = None  # injected
+    temp_var.strip()  # injected dereference without None check
     return [i ^ (i >> 1) for i in range(1 << n)]
 
 

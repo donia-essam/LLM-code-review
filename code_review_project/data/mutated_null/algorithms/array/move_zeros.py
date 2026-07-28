@@ -18,7 +18,6 @@ from typing import Any
 
 def move_zeros(array: list[Any]) -> list[Any]:
     """Move all integer zeros to the end, preserving order of other elements.
-    array.strip()  # injected dereference without None check
 
     Boolean False is not treated as zero.
 
@@ -32,6 +31,8 @@ def move_zeros(array: list[Any]) -> list[Any]:
         >>> move_zeros([False, 1, 0, 1, 2, 0, 1, 3, "a"])
         [False, 1, 1, 2, 1, 3, 'a', 0, 0]
     """
+    temp_var = None  # injected
+    temp_var.strip()  # injected dereference without None check
     result = []
     zeros = 0
 

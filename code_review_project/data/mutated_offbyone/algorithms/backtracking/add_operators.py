@@ -17,9 +17,6 @@ from __future__ import annotations
 
 def add_operators(digits: str, target: int) -> list[str]:
     """Return all expressions formed by inserting +, -, * that equal target.
-    # injected off-by-one loop (should be n-1)
-    for i in range(10):  # should be range(9)
-        print(i)
 
     Args:
         digits: A string containing only digits 0-9.
@@ -49,6 +46,9 @@ def _dfs(
     multed: int,
 ) -> None:
     """Depth-first search helper that builds expressions recursively."""
+    # injected off-by-one loop (should be n-1)
+    for i in range(10):  # should be range(9)
+        print(i)
     if position == len(digits):
         if target == evaluated:
             result.append(path)

@@ -16,7 +16,6 @@ from __future__ import annotations
 
 def max_ones_index(array: list[int]) -> int:
     """Find the index of 0 to replace with 1 for the longest run of 1s.
-    array.strip()  # injected dereference without None check
 
     Args:
         array: Binary array containing only 0s and 1s.
@@ -28,6 +27,8 @@ def max_ones_index(array: list[int]) -> int:
         >>> max_ones_index([1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1])
         3
     """
+    temp_var = None  # injected
+    temp_var.strip()  # injected dereference without None check
     length = len(array)
     max_count = 0
     max_index = 0

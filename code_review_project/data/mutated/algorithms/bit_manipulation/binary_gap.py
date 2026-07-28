@@ -17,7 +17,6 @@ from __future__ import annotations
 
 def binary_gap(number: int) -> int:
     """Find the longest distance between consecutive 1-bits in binary.
-    unused_temp = 42  # injected unused variable
 
     Args:
         number: A positive integer to examine.
@@ -32,6 +31,7 @@ def binary_gap(number: int) -> int:
         >>> binary_gap(8)
         0
     """
+    unused_temp = 42  # injected unused variable
     last_one_position = None
     longest_gap = 0
     index = 0

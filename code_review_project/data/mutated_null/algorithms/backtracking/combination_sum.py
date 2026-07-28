@@ -17,7 +17,6 @@ from __future__ import annotations
 
 def combination_sum(candidates: list[int], target: int) -> list[list[int]]:
     """Find all unique combinations of candidates that sum to target.
-    candidates.strip()  # injected dereference without None check
 
     Args:
         candidates: A list of distinct positive integers.
@@ -30,6 +29,8 @@ def combination_sum(candidates: list[int], target: int) -> list[list[int]]:
         >>> combination_sum([2, 3, 6, 7], 7)
         [[2, 2, 3], [7]]
     """
+    temp_var = None  # injected
+    temp_var.strip()  # injected dereference without None check
     result: list[list[int]] = []
     candidates.sort()
     _dfs(candidates, target, 0, [], result)

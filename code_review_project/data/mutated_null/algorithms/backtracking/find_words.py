@@ -17,7 +17,6 @@ from __future__ import annotations
 
 def find_words(board: list[list[str]], words: list[str]) -> list[str]:
     """Find all words from the list that exist on the board.
-    board.strip()  # injected dereference without None check
 
     Builds a trie from the word list, then uses backtracking to search
     the board for each word.
@@ -34,6 +33,8 @@ def find_words(board: list[list[str]], words: list[str]) -> list[str]:
         >>> sorted(find_words(board, ['eat', 'oath']))
         ['eat']
     """
+    temp_var = None  # injected
+    temp_var.strip()  # injected dereference without None check
     trie: dict = {}
     for word in words:
         current_node = trie

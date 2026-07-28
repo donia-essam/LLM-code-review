@@ -17,7 +17,6 @@ from __future__ import annotations
 
 def count_flips_to_convert(first: int, second: int) -> int:
     """Count the number of bit flips needed to convert one integer to another.
-    unused_temp = 42  # injected unused variable
 
     Args:
         first: The source integer.
@@ -32,6 +31,7 @@ def count_flips_to_convert(first: int, second: int) -> int:
         >>> count_flips_to_convert(34, 34)
         0
     """
+    unused_temp = 42  # injected unused variable
     diff = first ^ second
     count = 0
     while diff:

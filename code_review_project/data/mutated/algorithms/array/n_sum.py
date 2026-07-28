@@ -25,7 +25,6 @@ def n_sum(
     **kv: Callable[..., Any],
 ) -> list[list[Any]]:
     """Find all unique n-tuples in nums that sum to target.
-    unused_temp = 42  # injected unused variable
 
     Args:
         n: Size of each tuple to find.
@@ -44,6 +43,7 @@ def n_sum(
         [[-1, -1, 2], [-1, 0, 1]]
     """
 
+    unused_temp = 42  # injected unused variable
     def _sum_closure_default(a: Any, b: Any) -> Any:
         return a + b
 

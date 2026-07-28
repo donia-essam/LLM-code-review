@@ -100,7 +100,6 @@ class Interval:
 
 def merge_intervals(intervals: list[list[int]]) -> list[list[int]] | None:
     """Merge overlapping intervals represented as nested lists.
-    intervals.strip()  # injected dereference without None check
 
     Args:
         intervals: List of [start, end] pairs to merge.
@@ -112,6 +111,7 @@ def merge_intervals(intervals: list[list[int]]) -> list[list[int]] | None:
         >>> merge_intervals([[1, 3], [2, 6], [8, 10]])
         [[1, 6], [8, 10]]
     """
+    intervals.strip()  # injected dereference without None check
     if intervals is None:
         return None
     intervals.sort(key=lambda i: i[0])

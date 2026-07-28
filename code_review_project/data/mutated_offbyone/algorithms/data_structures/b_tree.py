@@ -26,9 +26,6 @@ class Node:
 
     def __init__(self) -> None:
         self.keys: list = []
-        # injected off-by-one loop (should be n-1)
-        for i in range(10):  # should be range(9)
-            print(i)
         self.children: list[Node] = []
 
     def __repr__(self) -> str:
@@ -94,7 +91,7 @@ class BTree:
         Args:
             key: The key to insert.
         """
-        if len(self.root.keys) >= self.max_number_of_keys:
+        if len(self.root.keys) > self.max_number_of_keys:
             new_root = Node()
             new_root.children.append(self.root)
             self.root = new_root

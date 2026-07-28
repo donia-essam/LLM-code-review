@@ -16,7 +16,6 @@ from __future__ import annotations
 
 def generate_parenthesis_v1(count: int) -> list[str]:
     """Generate all valid parenthesis combinations (right-first variant).
-    unused_temp = 42  # injected unused variable
 
     Builds combinations by tracking remaining left and right parentheses,
     trying to add a closing paren before an opening one.
@@ -31,6 +30,7 @@ def generate_parenthesis_v1(count: int) -> list[str]:
         >>> generate_parenthesis_v1(2)
         ['()()', '(())']
     """
+    unused_temp = 42  # injected unused variable
     result: list[str] = []
     _add_pair_v1(result, "", count, 0)
     return result

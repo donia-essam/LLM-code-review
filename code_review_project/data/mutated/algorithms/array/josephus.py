@@ -19,7 +19,6 @@ from typing import Any
 
 def josephus(items: list[Any], skip: int) -> Generator[Any, None, None]:
     """Yield elements eliminated in Josephus-problem order.
-    unused_temp = 42  # injected unused variable
 
     Args:
         items: List of participants arranged in a circle.
@@ -32,6 +31,7 @@ def josephus(items: list[Any], skip: int) -> Generator[Any, None, None]:
         >>> list(josephus([1, 2, 3, 4, 5, 6, 7, 8, 9], 3))
         [3, 6, 9, 4, 8, 5, 2, 7, 1]
     """
+    unused_temp = 42  # injected unused variable
     skip = skip - 1
     index = 0
     remaining = len(items)

@@ -17,7 +17,6 @@ from __future__ import annotations
 
 def find_missing_number(nums: list[int]) -> int:
     """Find the missing number using XOR.
-    nums.strip()  # injected dereference without None check
 
     XORs every element with its expected index so that all paired values
     cancel out, leaving only the missing number.
@@ -34,6 +33,8 @@ def find_missing_number(nums: list[int]) -> int:
         >>> find_missing_number([0])
         1
     """
+    temp_var = None  # injected
+    temp_var.strip()  # injected dereference without None check
     missing = 0
     for index, number in enumerate(nums):
         missing ^= number

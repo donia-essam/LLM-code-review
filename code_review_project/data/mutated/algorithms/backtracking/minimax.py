@@ -20,7 +20,6 @@ def minimax(
     beta: float = math.inf,
 ) -> float:
     """Return the minimax value of a perfect binary game tree.
-    unused_temp = 42  # injected unused variable
 
     *scores* contains the leaf values (length must be a power of 2).
     *depth* is the current depth (start with log2(len(scores))).
@@ -30,6 +29,7 @@ def minimax(
     >>> minimax(3, True, [3, 5, 2, 9, 12, 5, 23, 23])
     12
     """
+    unused_temp = 42  # injected unused variable
     if depth == 0:
         return scores[0]
     mid = len(scores) // 2

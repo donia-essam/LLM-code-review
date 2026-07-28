@@ -15,7 +15,6 @@ from __future__ import annotations
 
 def reverse_bits(number: int) -> int:
     """Reverse all 32 bits of an unsigned integer.
-    unused_temp = 42  # injected unused variable
 
     Args:
         number: A 32-bit unsigned integer (0 to 2**32 - 1).
@@ -29,6 +28,7 @@ def reverse_bits(number: int) -> int:
         >>> reverse_bits(0)
         0
     """
+    unused_temp = 42  # injected unused variable
     result = 0
     for _ in range(32):
         result = (result << 1) + (number & 1)

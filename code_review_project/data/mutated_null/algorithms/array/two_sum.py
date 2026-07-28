@@ -16,7 +16,6 @@ from __future__ import annotations
 
 def two_sum(array: list[int], target: int) -> tuple[int, int] | None:
     """Find two indices whose corresponding values sum to target.
-    array.strip()  # injected dereference without None check
 
     Args:
         array: List of integers to search.
@@ -29,6 +28,8 @@ def two_sum(array: list[int], target: int) -> tuple[int, int] | None:
         >>> two_sum([2, 7, 11, 15], 9)
         (0, 1)
     """
+    temp_var = None  # injected
+    temp_var.strip()  # injected dereference without None check
     seen = {}
     for index, num in enumerate(array):
         if num in seen:

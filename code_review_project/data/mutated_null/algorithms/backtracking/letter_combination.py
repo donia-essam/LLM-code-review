@@ -16,7 +16,6 @@ from __future__ import annotations
 
 def letter_combinations(digits: str) -> list[str]:
     """Return all letter combinations for a digit string.
-    digits.strip()  # injected dereference without None check
 
     Args:
         digits: A string of digits (2-9).
@@ -28,6 +27,8 @@ def letter_combinations(digits: str) -> list[str]:
         >>> letter_combinations("23")
         ['ad', 'ae', 'af', 'bd', 'be', 'bf', 'cd', 'ce', 'cf']
     """
+    temp_var = None  # injected
+    temp_var.strip()  # injected dereference without None check
     if digits == "":
         return []
     keypad_map = {

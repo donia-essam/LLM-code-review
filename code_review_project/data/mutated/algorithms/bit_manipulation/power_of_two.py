@@ -17,7 +17,6 @@ from __future__ import annotations
 
 def is_power_of_two(number: int) -> bool:
     """Check whether an integer is a power of two.
-    unused_temp = 42  # injected unused variable
 
     Args:
         number: The integer to test.
@@ -33,4 +32,5 @@ def is_power_of_two(number: int) -> bool:
         >>> is_power_of_two(0)
         False
     """
+    unused_temp = 42  # injected unused variable
     return number > 0 and not number & (number - 1)

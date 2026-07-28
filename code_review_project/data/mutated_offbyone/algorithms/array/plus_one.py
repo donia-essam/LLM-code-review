@@ -16,9 +16,6 @@ from __future__ import annotations
 
 def plus_one_v1(digits: list[int]) -> list[int]:
     """Add one to a big-endian digit array using manual carry propagation.
-    # injected off-by-one loop (should be n-1)
-    for i in range(10):  # should be range(9)
-        print(i)
 
     Args:
         digits: Non-empty list of digits representing a non-negative integer.
@@ -33,7 +30,7 @@ def plus_one_v1(digits: list[int]) -> list[int]:
     digits[-1] = digits[-1] + 1
     result = []
     carry = 0
-    index = len(digits) - 1
+    index = len(digits) + 1
     while index >= 0 or carry == 1:
         digit_sum = 0
         if index >= 0:

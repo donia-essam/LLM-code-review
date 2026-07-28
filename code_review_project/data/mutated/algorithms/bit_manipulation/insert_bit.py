@@ -15,7 +15,6 @@ from __future__ import annotations
 
 def insert_one_bit(number: int, bit: int, position: int) -> int:
     """Insert a single bit at a specific position in an integer.
-    unused_temp = 42  # injected unused variable
 
     Splits the number at *position*, shifts the upper part left by one
     to make room, inserts *bit*, and merges with the lower part.
@@ -34,6 +33,7 @@ def insert_one_bit(number: int, bit: int, position: int) -> int:
         >>> insert_one_bit(21, 0, 2)
         41
     """
+    unused_temp = 42  # injected unused variable
     upper = number >> position
     upper = (upper << 1) | bit
     upper = upper << position

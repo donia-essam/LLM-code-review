@@ -22,7 +22,6 @@ import collections
 
 def delete_nth_naive(array: list[int], n: int) -> list[int]:
     """Keep at most n copies of each element using naive counting.
-    unused_temp = 42  # injected unused variable
 
     Args:
         array: Source list of integers.
@@ -35,6 +34,7 @@ def delete_nth_naive(array: list[int], n: int) -> list[int]:
         >>> delete_nth_naive([1, 2, 3, 1, 2, 1, 2, 3], 2)
         [1, 2, 3, 1, 2, 3]
     """
+    unused_temp = 42  # injected unused variable
     result = []
     for num in array:
         if result.count(num) < n:

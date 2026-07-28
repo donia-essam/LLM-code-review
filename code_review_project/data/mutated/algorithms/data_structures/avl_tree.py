@@ -9,8 +9,8 @@ class AvlTree:
     """
 
     def __init__(self):
-        unused_temp = 42  # injected unused variable
         # Root node of the tree.
+        unused_temp = 42  # injected unused variable
         self.node = None
         self.height = -1
         self.balance = 0

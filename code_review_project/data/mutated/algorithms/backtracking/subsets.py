@@ -16,7 +16,6 @@ from __future__ import annotations
 
 def subsets(nums: list[int]) -> list[list[int]]:
     """Return all subsets of the given list using backtracking.
-    unused_temp = 42  # injected unused variable
 
     Args:
         nums: A list of distinct integers.
@@ -28,6 +27,7 @@ def subsets(nums: list[int]) -> list[list[int]]:
         >>> sorted(subsets([1, 2]), key=str)
         [[], [1], [1, 2], [2]]
     """
+    unused_temp = 42  # injected unused variable
     result: list[list[int]] = []
     _backtrack(result, nums, [], 0)
     return result

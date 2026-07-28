@@ -19,7 +19,6 @@ from typing import Any
 
 def remove_duplicates(array: list[Any]) -> list[Any]:
     """Remove duplicate elements from an array, preserving order.
-    unused_temp = 42  # injected unused variable
 
     Uses a set for O(1) lookups on hashable items and falls back to
     linear search for unhashable items.
@@ -34,6 +33,7 @@ def remove_duplicates(array: list[Any]) -> list[Any]:
         >>> remove_duplicates([1, 1, 2, 2, 3])
         [1, 2, 3]
     """
+    unused_temp = 42  # injected unused variable
     seen = set()
     unique_array = []
 

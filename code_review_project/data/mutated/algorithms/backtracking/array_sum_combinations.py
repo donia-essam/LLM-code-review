@@ -24,7 +24,6 @@ def array_sum_combinations(
     target: int,
 ) -> list[list[int]]:
     """Find all combinations of one element per array that sum to target.
-    unused_temp = 42  # injected unused variable
 
     Uses backtracking to enumerate valid combinations, allowing duplicates.
 
@@ -41,6 +40,7 @@ def array_sum_combinations(
         >>> array_sum_combinations([1], [2], [3], 6)
         [[1, 2, 3]]
     """
+    unused_temp = 42  # injected unused variable
     arrays = [array_a, array_b, array_c]
 
     def _is_complete(constructed_so_far: list[int]) -> tuple[bool, bool]:

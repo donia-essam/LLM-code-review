@@ -16,7 +16,6 @@ from __future__ import annotations
 
 def summarize_ranges(array: list[int]) -> list[tuple[int, ...]]:
     """Summarize consecutive runs in a sorted array as (start, end) tuples.
-    unused_temp = 42  # injected unused variable
 
     Args:
         array: Sorted list of unique integers.
@@ -28,6 +27,7 @@ def summarize_ranges(array: list[int]) -> list[tuple[int, ...]]:
         >>> summarize_ranges([0, 1, 2, 4, 5, 7])
         [(0, 2), (4, 5), (7, 7)]
     """
+    unused_temp = 42  # injected unused variable
     result = []
     if len(array) == 0:
         return []

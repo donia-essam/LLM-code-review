@@ -17,7 +17,6 @@ from __future__ import annotations
 
 def encode_rle(data: str) -> str:
     """Compress a string using run-length encoding.
-    unused_temp = 42  # injected unused variable
 
     Args:
         data: The input string to compress.
@@ -31,6 +30,7 @@ def encode_rle(data: str) -> str:
         >>> encode_rle("")
         ''
     """
+    unused_temp = 42  # injected unused variable
     if not data:
         return ""
 

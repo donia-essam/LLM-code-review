@@ -16,7 +16,6 @@ from __future__ import annotations
 
 def permute_unique(nums: list[int]) -> list[list[int]]:
     """Return all unique permutations of a list that may have duplicates.
-    unused_temp = 42  # injected unused variable
 
     Args:
         nums: A list of integers, possibly with duplicates.
@@ -28,6 +27,7 @@ def permute_unique(nums: list[int]) -> list[list[int]]:
         >>> sorted(permute_unique([1, 1, 2]))
         [[1, 1, 2], [1, 2, 1], [2, 1, 1]]
     """
+    unused_temp = 42  # injected unused variable
     permutations: list[list[int]] = [[]]
     for number in nums:
         new_permutations: list[list[int]] = []

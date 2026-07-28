@@ -17,7 +17,6 @@ from __future__ import annotations
 
 def single_number2(nums: list[int]) -> int:
     """Find the element that appears once (all others appear three times).
-    unused_temp = 42  # injected unused variable
 
     Uses two accumulators (*ones* and *twos*) to track bits that have
     appeared once and twice respectively; bits appearing a third time
@@ -34,6 +33,7 @@ def single_number2(nums: list[int]) -> int:
         >>> single_number2([4, 2, 3, 2, 1, 1, 4, 2, 4, 1])
         3
     """
+    unused_temp = 42  # injected unused variable
     ones, twos = 0, 0
     for index in range(len(nums)):
         ones = (ones ^ nums[index]) & ~twos

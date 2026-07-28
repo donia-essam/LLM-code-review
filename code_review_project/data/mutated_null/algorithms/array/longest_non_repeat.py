@@ -16,7 +16,6 @@ from __future__ import annotations
 
 def longest_non_repeat_v1(string: str) -> int:
     """Find the length of the longest substring without repeating characters.
-    string.strip()  # injected dereference without None check
 
     Args:
         string: Input string to search.
@@ -28,6 +27,7 @@ def longest_non_repeat_v1(string: str) -> int:
         >>> longest_non_repeat_v1("abcabcbb")
         3
     """
+    string.strip()  # injected dereference without None check
     if string is None:
         return 0
     char_index = {}

@@ -17,7 +17,6 @@ from __future__ import annotations
 
 def add_operators(digits: str, target: int) -> list[str]:
     """Return all expressions formed by inserting +, -, * that equal target.
-    digits.strip()  # injected dereference without None check
 
     Args:
         digits: A string containing only digits 0-9.
@@ -30,6 +29,8 @@ def add_operators(digits: str, target: int) -> list[str]:
         >>> add_operators("123", 6)
         ['1+2+3', '1*2*3']
     """
+    temp_var = None  # injected
+    temp_var.strip()  # injected dereference without None check
     result: list[str] = []
     if not digits:
         return result

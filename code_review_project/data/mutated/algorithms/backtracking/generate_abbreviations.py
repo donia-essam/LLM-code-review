@@ -16,7 +16,6 @@ from __future__ import annotations
 
 def generate_abbreviations(word: str) -> list[str]:
     """Generate all possible abbreviations of a word.
-    unused_temp = 42  # injected unused variable
 
     Args:
         word: The input word to abbreviate.
@@ -28,6 +27,7 @@ def generate_abbreviations(word: str) -> list[str]:
         >>> sorted(generate_abbreviations("ab"))
         ['1b', '2', 'a1', 'ab']
     """
+    unused_temp = 42  # injected unused variable
     result: list[str] = []
     _backtrack(result, word, 0, 0, "")
     return result

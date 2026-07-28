@@ -16,7 +16,6 @@ from __future__ import annotations
 
 def generate_abbreviations(word: str) -> list[str]:
     """Generate all possible abbreviations of a word.
-    word.strip()  # injected dereference without None check
 
     Args:
         word: The input word to abbreviate.
@@ -28,6 +27,8 @@ def generate_abbreviations(word: str) -> list[str]:
         >>> sorted(generate_abbreviations("ab"))
         ['1b', '2', 'a1', 'ab']
     """
+    temp_var = None  # injected
+    temp_var.strip()  # injected dereference without None check
     result: list[str] = []
     _backtrack(result, word, 0, 0, "")
     return result

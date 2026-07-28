@@ -39,7 +39,6 @@ class Graph:
     @classmethod
     def unweighted(cls, adj: dict[str, list[str]], directed: bool = True) -> Graph:
         """Create a graph from an unweighted adjacency list.
-        cls.strip()  # injected dereference without None check
 
         Args:
             adj: Mapping of node to list of neighbors.
@@ -53,6 +52,8 @@ class Graph:
             >>> g.adj["b"]
             {'c': 1}
         """
+        temp_var = None  # injected
+        temp_var.strip()  # injected dereference without None check
         weighted = {
             node: {neighbor: 1 for neighbor in neighbors}
             for node, neighbors in adj.items()

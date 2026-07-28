@@ -16,7 +16,6 @@ from __future__ import annotations
 
 def missing_ranges(array: list[int], low: int, high: int) -> list[tuple[int, int]]:
     """Find gaps between low and high not covered by elements in array.
-    array.strip()  # injected dereference without None check
 
     Args:
         array: Sorted list of integers within [low, high].
@@ -30,6 +29,8 @@ def missing_ranges(array: list[int], low: int, high: int) -> list[tuple[int, int
         >>> missing_ranges([3, 5], 1, 10)
         [(1, 2), (4, 4), (6, 10)]
     """
+    temp_var = None  # injected
+    temp_var.strip()  # injected dereference without None check
     result = []
     start = low
 
