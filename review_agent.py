@@ -46,7 +46,7 @@ def review_python_code_with_gemini(file_name: str, code_content: str) -> str:
         }
         return json.dumps(mock_data, indent=2)
 
-    # Standard Live API Call (Triggers when a standard personal Gemini key starting with AIzaSy is used)
+    
     from google import genai
     from google.genai import types
     client = genai.Client(api_key=api_key)
