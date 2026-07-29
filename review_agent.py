@@ -8,7 +8,7 @@ from pydantic import BaseModel, Field
 load_dotenv()
 api_key = os.getenv("GEMINI_API_KEY", "")
 
-# 2. Define the strict JSON Schema (to be parsed by Member 3's verifier)
+# 2. Define the strict JSON Schema 
 class CodeReviewComment(BaseModel):
     file: str = Field(description="The name of the file being reviewed.")
     line: int = Field(description="The exact line number where the issue is found.")
@@ -18,7 +18,7 @@ class CodeReviewComment(BaseModel):
 class CodeReviewResponse(BaseModel):
     comments: List[CodeReviewComment]
 
-# 3. Code review function handling live API calls or university account key constraints
+# 3. Code review function
 def review_python_code_with_gemini(file_name: str, code_content: str) -> str:
     # Safe Fallback: If using the university key format, bypass the live API call to avoid 400 errors
     if not api_key.startswith("AIzaSy"):
@@ -90,7 +90,7 @@ if __name__ == "__main__":
         with open(output_json_file, "w", encoding="utf-8") as json_file:
             json_file.write(result)
             
-        print(f"\n✨ Success! Output saved to '{output_json_file}' for Member 3 verification.")
+        print(f"\n Success! Output saved to '{output_json_file}' for Member 3 verification.")
         print(result)
     except Exception as e:
         print(f"Execution Error: {e}")
