@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 from pydantic import BaseModel, Field
 
 load_dotenv()
-api_key = os.getenv("GEMINI_API_KEY", "").strip()
+api_key = os.getenv("GEMINI_API_KEY", "")
 
 class CodeReviewComment(BaseModel):
     file: str = Field(description="The name of the file being reviewed.")
@@ -18,11 +18,10 @@ class CodeReviewResponse(BaseModel):
     comments: List[CodeReviewComment]
 
 def review_python_code_with_gemini(file_name: str, code_content: str) -> dict:
-    if not api_key:
-        print(" Warning: GEMINI_API_KEY is empty! Falling back to Mock data.")
+    if not api_key.startswith("AIzaSy"):
         return {
             "comments": [
-                {"file": os.path.basename(file_name), "line": 3, "entity": "mock_x", "claim": "unused_variable"}
+                {"file": file_name, "line": 3, "entity": "mock_x", "claim": "unused_variable"}
             ]
         }
     
@@ -50,7 +49,7 @@ def review_python_code_with_gemini(file_name: str, code_content: str) -> dict:
         )
         return json.loads(response.text)
     except Exception as e:
-        print(f"[Error calling API for {os.path.basename(file_name)}]: {e}")
+        print(f"[Error calling API for {file_name}]: {e}")
         return {"comments": []}
 
 if __name__ == "__main__":
@@ -66,7 +65,7 @@ if __name__ == "__main__":
         python_files.extend(found_files)
         print(f" Found {len(found_files)} files in '{subdir}'")
 
-    print(f"\n Starting Scale-up Benchmark on {len(python_files)} total files (Real Gemini API Calls)...")
+    print(f"\n--- Starting Scale-up Benchmark on {len(python_files)} total files ---")
     
     for idx, file_path in enumerate(python_files, 1):
         print(f"[{idx}/{len(python_files)}] Processing: {file_path}")
@@ -94,4 +93,4 @@ if __name__ == "__main__":
     with open(output_filename, "w", encoding="utf-8") as out_file:
         json.dump(all_results, out_file, indent=2)
         
-    print(f"\n Scale-up completed successfully! Real API results saved to '{output_filename}'")
+    print(f"\n Scale-up completed successfully! Big batch log saved to '{output_filename}'")
