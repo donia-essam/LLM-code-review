@@ -1,4 +1,3 @@
-
 # Baseline B LLM-Judge Design
 
 ## 1. Repository findings
