@@ -1,0 +1,14 @@
+{
+  "comments": [
+    {
+      "file": "code_review_project\\data\\mutated\\algorithms\\bit_manipulation\\find_difference.py",
+      "line": 3,
+      "entity": "mock_x",
+      "claim": "unused_variable",
+      "grounded": true,
+      "baseline_b_plausible": true,
+      "baseline_b_confidence": 0.65,
+      "baseline_b_reasoning": "Fallback deterministic judgment used because no standard Gemini API key was configured."
+    }
+  ]
+}
