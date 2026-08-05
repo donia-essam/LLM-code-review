@@ -4,6 +4,7 @@ import json
 import logging
 import os
 import re
+import time
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Any, Dict, List, Optional
@@ -137,34 +138,38 @@ def judge_comment(comment: Dict[str, Any], source_text: str, source_path: str | 
             reasoning="Fallback deterministic judgment used because no standard Gemini API key was configured.",
         )
 
-    try:
-        from google import genai
-        from google.genai import types
+    last_error: Optional[Exception] = None
+    for attempt in range(3):
+        try:
+            from google import genai
+            from google.genai import types
 
-        client = genai.Client(api_key=API_KEY)
-        response = client.models.generate_content(
-            model="gemini-2.5-flash",
-            contents=prompt,
-            config=types.GenerateContentConfig(
-                system_instruction=SYSTEM_PROMPT,
-                response_mime_type="application/json",
-            ),
-        )
-        return _parse_judge_response(response.text)
-    except BaselineBError as exc:
-        logger.warning("Judge response could not be parsed for %s: %s", comment.get("file"), exc)
-        return BaselineBJudgment(
-            plausible=False,
-            confidence=0.0,
-            reasoning=f"Judge returned malformed JSON: {exc}",
-        )
-    except Exception as exc:  # pragma: no cover - defensive path for live API issues
-        logger.warning("Judge request failed for %s: %s", comment.get("file"), exc)
-        return BaselineBJudgment(
-            plausible=False,
-            confidence=0.0,
-            reasoning=f"Judge request failed: {exc}",
-        )
+            client = genai.Client(api_key=API_KEY)
+            response = client.models.generate_content(
+                model="gemini-2.5-flash",
+                contents=prompt,
+                config=types.GenerateContentConfig(
+                    system_instruction=SYSTEM_PROMPT,
+                    response_mime_type="application/json",
+                ),
+            )
+            return _parse_judge_response(response.text)
+        except BaselineBError as exc:
+            logger.warning("Judge response could not be parsed for %s (attempt %s/%s): %s", comment.get("file"), attempt + 1, 3, exc)
+            last_error = exc
+            if attempt < 2:
+                time.sleep(0.5 * (attempt + 1))
+        except Exception as exc:  # pragma: no cover - defensive path for live API issues
+            logger.warning("Judge request failed for %s (attempt %s/%s): %s", comment.get("file"), attempt + 1, 3, exc)
+            last_error = exc
+            if attempt < 2:
+                time.sleep(0.5 * (attempt + 1))
+
+    return BaselineBJudgment(
+        plausible=False,
+        confidence=0.0,
+        reasoning=f"Judge request failed after retries: {last_error}",
+    )
 
 
 def process_comment_file(comment_file: str | Path, source_root: str | Path | None = None, output_path: str | Path | None = None) -> Path:
@@ -205,7 +210,9 @@ def process_directory(comment_dir: str | Path, source_root: str | Path | None = 
     output_dir_path.mkdir(parents=True, exist_ok=True)
 
     written_files: List[Path] = []
-    for comment_file in sorted(input_dir.glob("*.json")):
+    comment_files = sorted(input_dir.glob("*.json"))
+    for index, comment_file in enumerate(comment_files, start=1):
         output_path = output_dir_path / f"{comment_file.stem}.baseline_b.json"
         written_files.append(process_comment_file(comment_file, source_root=source_root, output_path=output_path))
+        logger.info("Processed %s/%s -> %s", index, len(comment_files), output_path)
     return written_files

@@ -1,0 +1,5 @@
+| system | precision | recall | f1 | hallucination_rate | grounding_accuracy |
+| --- | --- | --- | --- | --- | --- |
+| Baseline B | 0.000 ± 0.000 | 0.000 ± 0.000 | 0.000 ± 0.000 | 1.000 ± 0.000 | N/A |
+| Baseline A | N/A | N/A | N/A | N/A | N/A |
+| Proposed | N/A | N/A | N/A | N/A | N/A |

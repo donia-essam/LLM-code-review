@@ -1,0 +1,10 @@
+{
+  "comments": [
+    {
+      "file": "code_review_project\\data\\mutated\\algorithms\\compression\\elias.py",
+      "line": 3,
+      "entity": "mock_x",
+      "claim": "unused_variable"
+    }
+  ]
+}
