@@ -29,24 +29,29 @@ def review_python_code_with_llm(file_name: str, code_content: str) -> dict:
     )
     
     system_prompt = """
-    You are an expert static analysis assistant. 
-    Analyze the provided Python code and list ALL potential bugs or issues related to:
-    1. 'unused_variable'
-    2. 'null_safety_violation'
-    3. 'off_by_one_bound'
-    
+    You are a strictly accurate Python static analysis security agent. 
+    Your ONLY task is to report REAL bugs that exist in the provided Python code for these 3 specific categories:
+    1. 'unused_variable': Variables defined or assigned but NEVER referenced/used anywhere later in the scope.
+    2. 'null_safety_violation': Calling methods, accessing attributes, or performing operations on variables that can be None/null without prior None checks.
+    3. 'off_by_one_bound': Incorrect loop boundaries, index access errors like array[len(array)], or incorrect range limits.
+
+    CRITICAL RULES:
+    - IF THE CODE IS CLEAN OR HAS NO BUGS, RETURN AN EMPTY ARRAY: {"comments": []}.
+    - Do NOT fabricate, guess, or invent bugs. If you are not 100% sure a bug exists, do NOT report it.
+    - ENTITY FORMAT RULE: The 'entity' field MUST strictly be a single identifier ONLY (e.g., variable name, function name, or loop variable like 'i', 'temp_var', 'current'). NEVER include code expressions, mathematical operators, or function calls in the 'entity' field (e.g., write 'current' instead of 'range(len(current + 1))').
+
     Return strictly JSON matching this structure:
     {
       "comments": [
         {
           "file": "filename",
           "line": 10,
-          "entity": "variable_or_function_name",
+          "entity": "single_identifier_name",
           "claim": "unused_variable"
         }
       ]
     }
-    Do not include any Markdown blocks, backticks, or conversational text. Return ONLY valid JSON.
+    Return ONLY valid JSON. No markdown backticks, no explanations.
     """
     
     try:
@@ -54,7 +59,7 @@ def review_python_code_with_llm(file_name: str, code_content: str) -> dict:
             model="deepseek-v4-flash",
             messages=[
                 {"role": "system", "content": system_prompt},
-                {"role": "user", "content": f"Review this Python code from file '{os.path.basename(file_name)}':\n\n{code_content}"}
+                {"role": "user", "content": f"Analyze this Python code from file '{os.path.basename(file_name)}':\n\n{code_content}"}
             ]
         )
         
@@ -70,7 +75,14 @@ def review_python_code_with_llm(file_name: str, code_content: str) -> dict:
 
 if __name__ == "__main__":
     base_data_dir = os.path.join("code_review_project", "data")
-    target_subdirs = ["clean_negative_controls", "mutated", "mutated_null", "mutated_offbyone"]
+    
+    target_subdirs = [
+        "clean", 
+        "clean_negative_controls", 
+        "mutated", 
+        "mutated_null", 
+        "mutated_offbyone"
+    ]
     
     all_results = []
     python_files = []
@@ -78,13 +90,12 @@ if __name__ == "__main__":
     for subdir in target_subdirs:
         search_path = os.path.join(base_data_dir, subdir, "**", "*.py")
         found_files = glob.glob(search_path, recursive=True)
-        python_files.extend(found_files)
-        print(f" Found {len(found_files)} files in '{subdir}'")
+        
+        selected_files = found_files[:36]
+        python_files.extend(selected_files)
+        print(f" Found {len(found_files)} total files in '{subdir}' -> Selected {len(selected_files)} for benchmark.")
 
-
-    python_files = python_files[:122]
-
-    print(f"\n Starting Test Benchmark on {len(python_files)} files using OpenCode...")
+    print(f"\n Starting Benchmark on {len(python_files)} files (35 per group) using OpenCode...")
     
     for idx, file_path in enumerate(python_files, 1):
         print(f"[{idx}/{len(python_files)}] Processing: {file_path}")
@@ -97,7 +108,6 @@ if __name__ == "__main__":
             continue
             
         for run_number in range(1, 2):
-            print(f"   -> Run {run_number}...")
             review_json = review_python_code_with_llm(file_path, code_content)
             
             run_entry = {
@@ -112,4 +122,4 @@ if __name__ == "__main__":
     with open(output_filename, "w", encoding="utf-8") as out_file:
         json.dump(all_results, out_file, indent=2)
         
-    print(f"\n Test completed successfully! Results saved to '{output_filename}'")
+    print(f"\n Benchmark completed successfully! Results saved to '{output_filename}'")

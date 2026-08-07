@@ -1,5 +1,307 @@
 [
   {
+    "file_path": "code_review_project\\data\\clean\\algorithms\\algorithms\\__init__.py",
+    "subdir": "algorithms",
+    "run_id": 1,
+    "output": {
+      "comments": []
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\clean\\algorithms\\algorithms\\array\\delete_nth.py",
+    "subdir": "array",
+    "run_id": 1,
+    "output": {
+      "comments": []
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\clean\\algorithms\\algorithms\\array\\flatten.py",
+    "subdir": "array",
+    "run_id": 1,
+    "output": {
+      "comments": []
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\clean\\algorithms\\algorithms\\array\\garage.py",
+    "subdir": "array",
+    "run_id": 1,
+    "output": {
+      "comments": []
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\clean\\algorithms\\algorithms\\array\\josephus.py",
+    "subdir": "array",
+    "run_id": 1,
+    "output": {
+      "comments": []
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\clean\\algorithms\\algorithms\\array\\limit.py",
+    "subdir": "array",
+    "run_id": 1,
+    "output": {
+      "comments": []
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\clean\\algorithms\\algorithms\\array\\longest_non_repeat.py",
+    "subdir": "array",
+    "run_id": 1,
+    "output": {
+      "comments": [
+        {
+          "file": "longest_non_repeat.py",
+          "line": 143,
+          "entity": "string",
+          "claim": "null_safety_violation"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\clean\\algorithms\\algorithms\\array\\max_ones_index.py",
+    "subdir": "array",
+    "run_id": 1,
+    "output": {
+      "comments": []
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\clean\\algorithms\\algorithms\\array\\merge_intervals.py",
+    "subdir": "array",
+    "run_id": 1,
+    "output": {
+      "comments": [
+        {
+          "file": "merge_intervals.py",
+          "line": 44,
+          "entity": "item",
+          "claim": "off_by_one_bound"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\clean\\algorithms\\algorithms\\array\\missing_ranges.py",
+    "subdir": "array",
+    "run_id": 1,
+    "output": {
+      "comments": []
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\clean\\algorithms\\algorithms\\array\\move_zeros.py",
+    "subdir": "array",
+    "run_id": 1,
+    "output": {
+      "comments": []
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\clean\\algorithms\\algorithms\\array\\n_sum.py",
+    "subdir": "array",
+    "run_id": 1,
+    "output": {
+      "comments": []
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\clean\\algorithms\\algorithms\\array\\plus_one.py",
+    "subdir": "array",
+    "run_id": 1,
+    "output": {
+      "comments": []
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\clean\\algorithms\\algorithms\\array\\remove_duplicates.py",
+    "subdir": "array",
+    "run_id": 1,
+    "output": {
+      "comments": []
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\clean\\algorithms\\algorithms\\array\\rotate.py",
+    "subdir": "array",
+    "run_id": 1,
+    "output": {
+      "comments": []
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\clean\\algorithms\\algorithms\\array\\summarize_ranges.py",
+    "subdir": "array",
+    "run_id": 1,
+    "output": {
+      "comments": []
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\clean\\algorithms\\algorithms\\array\\three_sum.py",
+    "subdir": "array",
+    "run_id": 1,
+    "output": {
+      "comments": []
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\clean\\algorithms\\algorithms\\array\\top_1.py",
+    "subdir": "array",
+    "run_id": 1,
+    "output": {
+      "comments": []
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\clean\\algorithms\\algorithms\\array\\trimmean.py",
+    "subdir": "array",
+    "run_id": 1,
+    "output": {
+      "comments": []
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\clean\\algorithms\\algorithms\\array\\two_sum.py",
+    "subdir": "array",
+    "run_id": 1,
+    "output": {
+      "comments": []
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\clean\\algorithms\\algorithms\\array\\__init__.py",
+    "subdir": "array",
+    "run_id": 1,
+    "output": {
+      "comments": []
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\clean\\algorithms\\algorithms\\backtracking\\add_operators.py",
+    "subdir": "backtracking",
+    "run_id": 1,
+    "output": {
+      "comments": []
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\clean\\algorithms\\algorithms\\backtracking\\anagram.py",
+    "subdir": "backtracking",
+    "run_id": 1,
+    "output": {
+      "comments": []
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\clean\\algorithms\\algorithms\\backtracking\\array_sum_combinations.py",
+    "subdir": "backtracking",
+    "run_id": 1,
+    "output": {
+      "comments": []
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\clean\\algorithms\\algorithms\\backtracking\\combination_sum.py",
+    "subdir": "backtracking",
+    "run_id": 1,
+    "output": {
+      "comments": []
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\clean\\algorithms\\algorithms\\backtracking\\factor_combinations.py",
+    "subdir": "backtracking",
+    "run_id": 1,
+    "output": {
+      "comments": []
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\clean\\algorithms\\algorithms\\backtracking\\find_words.py",
+    "subdir": "backtracking",
+    "run_id": 1,
+    "output": {
+      "comments": []
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\clean\\algorithms\\algorithms\\backtracking\\generate_abbreviations.py",
+    "subdir": "backtracking",
+    "run_id": 1,
+    "output": {
+      "comments": []
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\clean\\algorithms\\algorithms\\backtracking\\generate_parenthesis.py",
+    "subdir": "backtracking",
+    "run_id": 1,
+    "output": {
+      "comments": []
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\clean\\algorithms\\algorithms\\backtracking\\letter_combination.py",
+    "subdir": "backtracking",
+    "run_id": 1,
+    "output": {
+      "comments": []
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\clean\\algorithms\\algorithms\\backtracking\\minimax.py",
+    "subdir": "backtracking",
+    "run_id": 1,
+    "output": {
+      "comments": []
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\clean\\algorithms\\algorithms\\backtracking\\palindrome_partitioning.py",
+    "subdir": "backtracking",
+    "run_id": 1,
+    "output": {
+      "comments": []
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\clean\\algorithms\\algorithms\\backtracking\\pattern_match.py",
+    "subdir": "backtracking",
+    "run_id": 1,
+    "output": {
+      "comments": []
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\clean\\algorithms\\algorithms\\backtracking\\permute.py",
+    "subdir": "backtracking",
+    "run_id": 1,
+    "output": {
+      "comments": []
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\clean\\algorithms\\algorithms\\backtracking\\permute_unique.py",
+    "subdir": "backtracking",
+    "run_id": 1,
+    "output": {
+      "comments": []
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\clean\\algorithms\\algorithms\\backtracking\\subsets.py",
+    "subdir": "backtracking",
+    "run_id": 1,
+    "output": {
+      "comments": []
+    }
+  },
+  {
     "file_path": "code_review_project\\data\\clean_negative_controls\\algorithms\\data_structures\\bst.py",
     "subdir": "data_structures",
     "run_id": 1,
@@ -12,14 +314,7 @@
     "subdir": "data_structures",
     "run_id": 1,
     "output": {
-      "comments": [
-        {
-          "file": "graph.py",
-          "line": 31,
-          "entity": "Node.get_name",
-          "claim": "null_safety_violation"
-        }
-      ]
+      "comments": []
     }
   },
   {
@@ -27,20 +322,7 @@
     "subdir": "data_structures",
     "run_id": 1,
     "output": {
-      "comments": [
-        {
-          "file": "hash_table.py",
-          "line": 84,
-          "entity": "get",
-          "claim": "null_safety_violation"
-        },
-        {
-          "file": "hash_table.py",
-          "line": 161,
-          "entity": "put",
-          "claim": "off_by_one_bound"
-        }
-      ]
+      "comments": []
     }
   },
   {
@@ -48,14 +330,7 @@
     "subdir": "data_structures",
     "run_id": 1,
     "output": {
-      "comments": [
-        {
-          "file": "heap.py",
-          "line": 148,
-          "entity": "remove_min",
-          "claim": "null_safety_violation"
-        }
-      ]
+      "comments": []
     }
   },
   {
@@ -63,26 +338,7 @@
     "subdir": "data_structures",
     "run_id": 1,
     "output": {
-      "comments": [
-        {
-          "file": "kd_tree.py",
-          "line": 47,
-          "entity": "axis",
-          "claim": "off_by_one_bound"
-        },
-        {
-          "file": "kd_tree.py",
-          "line": 61,
-          "entity": "nearest",
-          "claim": "null_safety_violation"
-        },
-        {
-          "file": "kd_tree.py",
-          "line": 75,
-          "entity": "target",
-          "claim": "off_by_one_bound"
-        }
-      ]
+      "comments": []
     }
   },
   {
@@ -98,14 +354,7 @@
     "subdir": "data_structures",
     "run_id": 1,
     "output": {
-      "comments": [
-        {
-          "file": "priority_queue.py",
-          "line": 98,
-          "entity": "push",
-          "claim": "null_safety_violation"
-        }
-      ]
+      "comments": []
     }
   },
   {
@@ -116,33 +365,9 @@
       "comments": [
         {
           "file": "queue.py",
-          "line": 127,
-          "entity": "_expand",
-          "claim": "off_by_one_bound"
-        },
-        {
-          "file": "queue.py",
-          "line": 172,
+          "line": 91,
           "entity": "_rear",
-          "claim": "null_safety_violation"
-        },
-        {
-          "file": "queue.py",
-          "line": 187,
-          "entity": "_front",
-          "claim": "null_safety_violation"
-        },
-        {
-          "file": "queue.py",
-          "line": 192,
-          "entity": "_front",
-          "claim": "null_safety_violation"
-        },
-        {
-          "file": "queue.py",
-          "line": 207,
-          "entity": "_front",
-          "claim": "null_safety_violation"
+          "claim": "off_by_one_bound"
         }
       ]
     }
@@ -155,25 +380,13 @@
       "comments": [
         {
           "file": "red_black_tree.py",
-          "line": 210,
-          "entity": "delete_fixup",
+          "line": 208,
+          "entity": "node",
           "claim": "null_safety_violation"
         },
         {
           "file": "red_black_tree.py",
-          "line": 252,
-          "entity": "node_brother",
-          "claim": "null_safety_violation"
-        },
-        {
-          "file": "red_black_tree.py",
-          "line": 253,
-          "entity": "node_brother",
-          "claim": "null_safety_violation"
-        },
-        {
-          "file": "red_black_tree.py",
-          "line": 269,
+          "line": 267,
           "entity": "node",
           "claim": "null_safety_violation"
         }
@@ -189,13 +402,7 @@
         {
           "file": "separate_chaining_hash_table.py",
           "line": 76,
-          "entity": "put",
-          "claim": "off_by_one_bound"
-        },
-        {
-          "file": "separate_chaining_hash_table.py",
-          "line": 117,
-          "entity": "del_",
+          "entity": "node_",
           "claim": "off_by_one_bound"
         }
       ]
@@ -210,26 +417,8 @@
         {
           "file": "stack.py",
           "line": 94,
-          "entity": "ArrayStack.push",
+          "entity": "_top",
           "claim": "off_by_one_bound"
-        },
-        {
-          "file": "stack.py",
-          "line": 181,
-          "entity": "self.head",
-          "claim": "null_safety_violation"
-        },
-        {
-          "file": "stack.py",
-          "line": 182,
-          "entity": "self.head",
-          "claim": "null_safety_violation"
-        },
-        {
-          "file": "stack.py",
-          "line": 197,
-          "entity": "self.head",
-          "claim": "null_safety_violation"
         }
       ]
     }
@@ -247,20 +436,7 @@
     "subdir": "data_structures",
     "run_id": 1,
     "output": {
-      "comments": [
-        {
-          "file": "union_find.py",
-          "line": 36,
-          "entity": "count",
-          "claim": "unused_variable"
-        },
-        {
-          "file": "union_find.py",
-          "line": 46,
-          "entity": "count",
-          "claim": "off_by_one_bound"
-        }
-      ]
+      "comments": []
     }
   },
   {
@@ -287,7 +463,7 @@
       "comments": [
         {
           "file": "a_star.py",
-          "line": 46,
+          "line": 47,
           "entity": "f_score",
           "claim": "unused_variable"
         }
@@ -299,20 +475,7 @@
     "subdir": "graph",
     "run_id": 1,
     "output": {
-      "comments": [
-        {
-          "file": "check_digraph_strongly_connected.py",
-          "line": 44,
-          "entity": "dfs",
-          "claim": "off_by_one_bound"
-        },
-        {
-          "file": "check_digraph_strongly_connected.py",
-          "line": 39,
-          "entity": "add_edge",
-          "claim": "off_by_one_bound"
-        }
-      ]
+      "comments": []
     }
   },
   {
@@ -336,14 +499,7 @@
     "subdir": "graph",
     "run_id": 1,
     "output": {
-      "comments": [
-        {
-          "file": "cycle_detection.py",
-          "line": 42,
-          "entity": "traversal_states",
-          "claim": "null_safety_violation"
-        }
-      ]
+      "comments": []
     }
   },
   {
@@ -370,8 +526,8 @@
       "comments": [
         {
           "file": "markov_chain.py",
-          "line": 55,
-          "entity": "next_state",
+          "line": 54,
+          "entity": "next_state_map",
           "claim": "null_safety_violation"
         }
       ]
@@ -390,26 +546,7 @@
     "subdir": "graph",
     "run_id": 1,
     "output": {
-      "comments": [
-        {
-          "file": "maximum_flow_dfs.py",
-          "line": 33,
-          "entity": "visited",
-          "claim": "off_by_one_bound"
-        },
-        {
-          "file": "maximum_flow_dfs.py",
-          "line": 44,
-          "entity": "visited",
-          "claim": "off_by_one_bound"
-        },
-        {
-          "file": "maximum_flow_dfs.py",
-          "line": 50,
-          "entity": "path",
-          "claim": "null_safety_violation"
-        }
-      ]
+      "comments": []
     }
   },
   {
@@ -417,14 +554,7 @@
     "subdir": "graph",
     "run_id": 1,
     "output": {
-      "comments": [
-        {
-          "file": "maze_search_bfs.py",
-          "line": 38,
-          "entity": "maze",
-          "claim": "null_safety_violation"
-        }
-      ]
+      "comments": []
     }
   },
   {
@@ -432,14 +562,7 @@
     "subdir": "graph",
     "run_id": 1,
     "output": {
-      "comments": [
-        {
-          "file": "maze_search_dfs.py",
-          "line": 55,
-          "entity": "maze",
-          "claim": "null_safety_violation"
-        }
-      ]
+      "comments": []
     }
   },
   {
@@ -476,26 +599,7 @@
     "subdir": "graph",
     "run_id": 1,
     "output": {
-      "comments": [
-        {
-          "file": "path_between_two_vertices_in_digraph.py",
-          "line": 57,
-          "entity": "source",
-          "claim": "null_safety_violation"
-        },
-        {
-          "file": "path_between_two_vertices_in_digraph.py",
-          "line": 62,
-          "entity": "visited",
-          "claim": "off_by_one_bound"
-        },
-        {
-          "file": "path_between_two_vertices_in_digraph.py",
-          "line": 63,
-          "entity": "i",
-          "claim": "unused_variable"
-        }
-      ]
+      "comments": []
     }
   },
   {
@@ -518,20 +622,7 @@
     "subdir": "graph",
     "run_id": 1,
     "output": {
-      "comments": [
-        {
-          "file": "satisfiability.py",
-          "line": 36,
-          "entity": "visited",
-          "claim": "null_safety_violation"
-        },
-        {
-          "file": "satisfiability.py",
-          "line": 60,
-          "entity": "visited",
-          "claim": "null_safety_violation"
-        }
-      ]
+      "comments": []
     }
   },
   {
@@ -539,20 +630,7 @@
     "subdir": "graph",
     "run_id": 1,
     "output": {
-      "comments": [
-        {
-          "file": "strongly_connected_components_kosaraju.py",
-          "line": 60,
-          "entity": "visited",
-          "claim": "off_by_one_bound"
-        },
-        {
-          "file": "strongly_connected_components_kosaraju.py",
-          "line": 70,
-          "entity": "visited1",
-          "claim": "off_by_one_bound"
-        }
-      ]
+      "comments": []
     }
   },
   {
@@ -560,20 +638,7 @@
     "subdir": "graph",
     "run_id": 1,
     "output": {
-      "comments": [
-        {
-          "file": "sudoku_solver.py",
-          "line": 58,
-          "entity": "_possible_values",
-          "claim": "off_by_one_bound"
-        },
-        {
-          "file": "sudoku_solver.py",
-          "line": 103,
-          "entity": "_valid_one",
-          "claim": "off_by_one_bound"
-        }
-      ]
+      "comments": []
     }
   },
   {
@@ -593,243 +658,18 @@
     }
   },
   {
-    "file_path": "code_review_project\\data\\clean_negative_controls\\algorithms\\graph\\topological_sort_dfs.py",
-    "subdir": "graph",
-    "run_id": 1,
-    "output": {
-      "comments": [
-        {
-          "file": "topological_sort_dfs.py",
-          "line": 98,
-          "entity": "neighbour_state",
-          "claim": "null_safety_violation"
-        },
-        {
-          "file": "topological_sort_dfs.py",
-          "line": 104,
-          "entity": "stack",
-          "claim": "off_by_one_bound"
-        }
-      ]
-    }
-  },
-  {
-    "file_path": "code_review_project\\data\\clean_negative_controls\\algorithms\\graph\\transitive_closure_dfs.py",
-    "subdir": "graph",
-    "run_id": 1,
-    "output": {
-      "comments": [
-        {
-          "file": "transitive_closure_dfs.py",
-          "line": 51,
-          "entity": "_dfs_util",
-          "claim": "null_safety_violation"
-        }
-      ]
-    }
-  },
-  {
-    "file_path": "code_review_project\\data\\clean_negative_controls\\algorithms\\graph\\traversal.py",
-    "subdir": "graph",
-    "run_id": 1,
-    "output": {
-      "comments": []
-    }
-  },
-  {
-    "file_path": "code_review_project\\data\\clean_negative_controls\\algorithms\\graph\\walls_and_gates.py",
-    "subdir": "graph",
-    "run_id": 1,
-    "output": {
-      "comments": []
-    }
-  },
-  {
-    "file_path": "code_review_project\\data\\clean_negative_controls\\algorithms\\graph\\word_ladder.py",
-    "subdir": "graph",
-    "run_id": 1,
-    "output": {
-      "comments": [
-        {
-          "file": "word_ladder.py",
-          "line": 39,
-          "entity": "ladder_length",
-          "claim": "off_by_one_bound"
-        },
-        {
-          "file": "word_ladder.py",
-          "line": 42,
-          "entity": "ladder_length",
-          "claim": "off_by_one_bound"
-        }
-      ]
-    }
-  },
-  {
-    "file_path": "code_review_project\\data\\clean_negative_controls\\algorithms\\greedy\\gale_shapley.py",
-    "subdir": "greedy",
-    "run_id": 1,
-    "output": {
-      "comments": [
-        {
-          "file": "gale_shapley.py",
-          "line": 45,
-          "entity": "proposal_counts[man]",
-          "claim": "off_by_one_bound"
-        }
-      ]
-    }
-  },
-  {
-    "file_path": "code_review_project\\data\\clean_negative_controls\\algorithms\\greedy\\max_contiguous_subsequence_sum.py",
-    "subdir": "greedy",
-    "run_id": 1,
-    "output": {
-      "comments": []
-    }
-  },
-  {
-    "file_path": "code_review_project\\data\\clean_negative_controls\\algorithms\\heap\\k_closest_points.py",
-    "subdir": "heap",
-    "run_id": 1,
-    "output": {
-      "comments": []
-    }
-  },
-  {
-    "file_path": "code_review_project\\data\\clean_negative_controls\\algorithms\\heap\\merge_sorted_k_lists.py",
-    "subdir": "heap",
-    "run_id": 1,
-    "output": {
-      "comments": []
-    }
-  },
-  {
-    "file_path": "code_review_project\\data\\clean_negative_controls\\algorithms\\heap\\skyline.py",
-    "subdir": "heap",
-    "run_id": 1,
-    "output": {
-      "comments": []
-    }
-  },
-  {
-    "file_path": "code_review_project\\data\\clean_negative_controls\\algorithms\\heap\\sliding_window_max.py",
-    "subdir": "heap",
-    "run_id": 1,
-    "output": {
-      "comments": []
-    }
-  },
-  {
-    "file_path": "code_review_project\\data\\clean_negative_controls\\algorithms\\linked_list\\add_two_numbers.py",
-    "subdir": "linked_list",
-    "run_id": 1,
-    "output": {
-      "comments": []
-    }
-  },
-  {
-    "file_path": "code_review_project\\data\\clean_negative_controls\\algorithms\\linked_list\\copy_random_pointer.py",
-    "subdir": "linked_list",
-    "run_id": 1,
-    "output": {
-      "comments": []
-    }
-  },
-  {
-    "file_path": "code_review_project\\data\\clean_negative_controls\\algorithms\\linked_list\\delete_node.py",
-    "subdir": "linked_list",
-    "run_id": 1,
-    "output": {
-      "comments": []
-    }
-  },
-  {
-    "file_path": "code_review_project\\data\\clean_negative_controls\\algorithms\\linked_list\\first_cyclic_node.py",
-    "subdir": "linked_list",
-    "run_id": 1,
-    "output": {
-      "comments": []
-    }
-  },
-  {
-    "file_path": "code_review_project\\data\\clean_negative_controls\\algorithms\\linked_list\\intersection.py",
-    "subdir": "linked_list",
-    "run_id": 1,
-    "output": {
-      "comments": []
-    }
-  },
-  {
-    "file_path": "code_review_project\\data\\clean_negative_controls\\algorithms\\linked_list\\is_cyclic.py",
-    "subdir": "linked_list",
-    "run_id": 1,
-    "output": {
-      "comments": []
-    }
-  },
-  {
-    "file_path": "code_review_project\\data\\clean_negative_controls\\algorithms\\linked_list\\is_palindrome.py",
-    "subdir": "linked_list",
-    "run_id": 1,
-    "output": {
-      "comments": []
-    }
-  },
-  {
-    "file_path": "code_review_project\\data\\clean_negative_controls\\algorithms\\linked_list\\is_sorted.py",
-    "subdir": "linked_list",
-    "run_id": 1,
-    "output": {
-      "comments": []
-    }
-  },
-  {
-    "file_path": "code_review_project\\data\\clean_negative_controls\\algorithms\\linked_list\\kth_to_last.py",
-    "subdir": "linked_list",
-    "run_id": 1,
-    "output": {
-      "comments": []
-    }
-  },
-  {
-    "file_path": "code_review_project\\data\\clean_negative_controls\\algorithms\\linked_list\\merge_two_list.py",
-    "subdir": "linked_list",
-    "run_id": 1,
-    "output": {
-      "comments": []
-    }
-  },
-  {
-    "file_path": "code_review_project\\data\\clean_negative_controls\\algorithms\\linked_list\\partition.py",
-    "subdir": "linked_list",
-    "run_id": 1,
-    "output": {
-      "comments": []
-    }
-  },
-  {
-    "file_path": "code_review_project\\data\\clean_negative_controls\\algorithms\\linked_list\\remove_duplicates.py",
-    "subdir": "linked_list",
-    "run_id": 1,
-    "output": {
-      "comments": []
-    }
-  },
-  {
-    "file_path": "code_review_project\\data\\clean_negative_controls\\algorithms\\linked_list\\remove_range.py",
-    "subdir": "linked_list",
-    "run_id": 1,
-    "output": {
-      "comments": []
-    }
-  },
-  {
     "file_path": "code_review_project\\data\\mutated\\algorithms\\array\\delete_nth.py",
     "subdir": "array",
     "run_id": 1,
     "output": {
-      "comments": []
+      "comments": [
+        {
+          "file": "delete_nth.py",
+          "line": 37,
+          "entity": "unused_temp",
+          "claim": "unused_variable"
+        }
+      ]
     }
   },
   {
@@ -837,7 +677,14 @@
     "subdir": "array",
     "run_id": 1,
     "output": {
-      "comments": []
+      "comments": [
+        {
+          "file": "flatten.py",
+          "line": 34,
+          "entity": "unused_temp",
+          "claim": "unused_variable"
+        }
+      ]
     }
   },
   {
@@ -845,7 +692,14 @@
     "subdir": "array",
     "run_id": 1,
     "output": {
-      "comments": []
+      "comments": [
+        {
+          "file": "garage.py",
+          "line": 33,
+          "entity": "unused_temp",
+          "claim": "unused_variable"
+        }
+      ]
     }
   },
   {
@@ -853,7 +707,14 @@
     "subdir": "array",
     "run_id": 1,
     "output": {
-      "comments": []
+      "comments": [
+        {
+          "file": "josephus.py",
+          "line": 34,
+          "entity": "unused_temp",
+          "claim": "unused_variable"
+        }
+      ]
     }
   },
   {
@@ -861,7 +722,14 @@
     "subdir": "array",
     "run_id": 1,
     "output": {
-      "comments": []
+      "comments": [
+        {
+          "file": "limit.py",
+          "line": 36,
+          "entity": "unused_temp",
+          "claim": "unused_variable"
+        }
+      ]
     }
   },
   {
@@ -869,7 +737,14 @@
     "subdir": "array",
     "run_id": 1,
     "output": {
-      "comments": []
+      "comments": [
+        {
+          "file": "longest_non_repeat.py",
+          "line": 30,
+          "entity": "unused_temp",
+          "claim": "unused_variable"
+        }
+      ]
     }
   },
   {
@@ -877,7 +752,14 @@
     "subdir": "array",
     "run_id": 1,
     "output": {
-      "comments": []
+      "comments": [
+        {
+          "file": "max_ones_index.py",
+          "line": 30,
+          "entity": "unused_temp",
+          "claim": "unused_variable"
+        }
+      ]
     }
   },
   {
@@ -885,7 +767,26 @@
     "subdir": "array",
     "run_id": 1,
     "output": {
-      "comments": []
+      "comments": [
+        {
+          "file": "merge_intervals.py",
+          "line": 44,
+          "entity": "__contains__",
+          "claim": "off_by_one_bound"
+        },
+        {
+          "file": "merge_intervals.py",
+          "line": 114,
+          "entity": "unused_temp",
+          "claim": "unused_variable"
+        },
+        {
+          "file": "merge_intervals.py",
+          "line": 118,
+          "entity": "intervals",
+          "claim": "off_by_one_bound"
+        }
+      ]
     }
   },
   {
@@ -893,7 +794,14 @@
     "subdir": "array",
     "run_id": 1,
     "output": {
-      "comments": []
+      "comments": [
+        {
+          "file": "missing_ranges.py",
+          "line": 32,
+          "entity": "unused_temp",
+          "claim": "unused_variable"
+        }
+      ]
     }
   },
   {
@@ -901,7 +809,14 @@
     "subdir": "array",
     "run_id": 1,
     "output": {
-      "comments": []
+      "comments": [
+        {
+          "file": "move_zeros.py",
+          "line": 34,
+          "entity": "unused_temp",
+          "claim": "unused_variable"
+        }
+      ]
     }
   },
   {
@@ -909,7 +824,14 @@
     "subdir": "array",
     "run_id": 1,
     "output": {
-      "comments": []
+      "comments": [
+        {
+          "file": "n_sum.py",
+          "line": 46,
+          "entity": "unused_temp",
+          "claim": "unused_variable"
+        }
+      ]
     }
   },
   {
@@ -917,7 +839,14 @@
     "subdir": "array",
     "run_id": 1,
     "output": {
-      "comments": []
+      "comments": [
+        {
+          "file": "plus_one.py",
+          "line": 30,
+          "entity": "unused_temp",
+          "claim": "unused_variable"
+        }
+      ]
     }
   },
   {
@@ -925,7 +854,14 @@
     "subdir": "array",
     "run_id": 1,
     "output": {
-      "comments": []
+      "comments": [
+        {
+          "file": "remove_duplicates.py",
+          "line": 36,
+          "entity": "unused_temp",
+          "claim": "unused_variable"
+        }
+      ]
     }
   },
   {
@@ -933,7 +869,14 @@
     "subdir": "array",
     "run_id": 1,
     "output": {
-      "comments": []
+      "comments": [
+        {
+          "file": "rotate.py",
+          "line": 32,
+          "entity": "unused_temp",
+          "claim": "unused_variable"
+        }
+      ]
     }
   },
   {
@@ -941,7 +884,14 @@
     "subdir": "array",
     "run_id": 1,
     "output": {
-      "comments": []
+      "comments": [
+        {
+          "file": "summarize_ranges.py",
+          "line": 30,
+          "entity": "unused_temp",
+          "claim": "unused_variable"
+        }
+      ]
     }
   },
   {
@@ -949,7 +899,14 @@
     "subdir": "array",
     "run_id": 1,
     "output": {
-      "comments": []
+      "comments": [
+        {
+          "file": "three_sum.py",
+          "line": 30,
+          "entity": "unused_temp",
+          "claim": "unused_variable"
+        }
+      ]
     }
   },
   {
@@ -957,7 +914,14 @@
     "subdir": "array",
     "run_id": 1,
     "output": {
-      "comments": []
+      "comments": [
+        {
+          "file": "top_1.py",
+          "line": 32,
+          "entity": "unused_temp",
+          "claim": "unused_variable"
+        }
+      ]
     }
   },
   {
@@ -965,7 +929,14 @@
     "subdir": "array",
     "run_id": 1,
     "output": {
-      "comments": []
+      "comments": [
+        {
+          "file": "trimmean.py",
+          "line": 35,
+          "entity": "unused_temp",
+          "claim": "unused_variable"
+        }
+      ]
     }
   },
   {
@@ -973,7 +944,14 @@
     "subdir": "array",
     "run_id": 1,
     "output": {
-      "comments": []
+      "comments": [
+        {
+          "file": "two_sum.py",
+          "line": 31,
+          "entity": "unused_temp",
+          "claim": "unused_variable"
+        }
+      ]
     }
   },
   {
@@ -981,7 +959,14 @@
     "subdir": "backtracking",
     "run_id": 1,
     "output": {
-      "comments": []
+      "comments": [
+        {
+          "file": "add_operators.py",
+          "line": 32,
+          "entity": "unused_temp",
+          "claim": "unused_variable"
+        }
+      ]
     }
   },
   {
@@ -989,7 +974,14 @@
     "subdir": "backtracking",
     "run_id": 1,
     "output": {
-      "comments": []
+      "comments": [
+        {
+          "file": "anagram.py",
+          "line": 33,
+          "entity": "unused_temp",
+          "claim": "unused_variable"
+        }
+      ]
     }
   },
   {
@@ -997,7 +989,14 @@
     "subdir": "backtracking",
     "run_id": 1,
     "output": {
-      "comments": []
+      "comments": [
+        {
+          "file": "array_sum_combinations.py",
+          "line": 43,
+          "entity": "unused_temp",
+          "claim": "unused_variable"
+        }
+      ]
     }
   },
   {
@@ -1005,7 +1004,14 @@
     "subdir": "backtracking",
     "run_id": 1,
     "output": {
-      "comments": []
+      "comments": [
+        {
+          "file": "combination_sum.py",
+          "line": 32,
+          "entity": "unused_temp",
+          "claim": "unused_variable"
+        }
+      ]
     }
   },
   {
@@ -1013,7 +1019,14 @@
     "subdir": "backtracking",
     "run_id": 1,
     "output": {
-      "comments": []
+      "comments": [
+        {
+          "file": "factor_combinations.py",
+          "line": 30,
+          "entity": "unused_temp",
+          "claim": "unused_variable"
+        }
+      ]
     }
   },
   {
@@ -1021,7 +1034,14 @@
     "subdir": "backtracking",
     "run_id": 1,
     "output": {
-      "comments": []
+      "comments": [
+        {
+          "file": "find_words.py",
+          "line": 36,
+          "entity": "unused_temp",
+          "claim": "unused_variable"
+        }
+      ]
     }
   },
   {
@@ -1029,7 +1049,14 @@
     "subdir": "backtracking",
     "run_id": 1,
     "output": {
-      "comments": []
+      "comments": [
+        {
+          "file": "generate_abbreviations.py",
+          "line": 30,
+          "entity": "unused_temp",
+          "claim": "unused_variable"
+        }
+      ]
     }
   },
   {
@@ -1037,7 +1064,14 @@
     "subdir": "backtracking",
     "run_id": 1,
     "output": {
-      "comments": []
+      "comments": [
+        {
+          "file": "generate_parenthesis.py",
+          "line": 33,
+          "entity": "unused_temp",
+          "claim": "unused_variable"
+        }
+      ]
     }
   },
   {
@@ -1045,7 +1079,14 @@
     "subdir": "backtracking",
     "run_id": 1,
     "output": {
-      "comments": []
+      "comments": [
+        {
+          "file": "letter_combination.py",
+          "line": 30,
+          "entity": "unused_temp",
+          "claim": "unused_variable"
+        }
+      ]
     }
   },
   {
@@ -1053,7 +1094,14 @@
     "subdir": "backtracking",
     "run_id": 1,
     "output": {
-      "comments": []
+      "comments": [
+        {
+          "file": "minimax.py",
+          "line": 32,
+          "entity": "unused_temp",
+          "claim": "unused_variable"
+        }
+      ]
     }
   },
   {
@@ -1061,7 +1109,14 @@
     "subdir": "backtracking",
     "run_id": 1,
     "output": {
-      "comments": []
+      "comments": [
+        {
+          "file": "palindrome_partitioning.py",
+          "line": 32,
+          "entity": "unused_temp",
+          "claim": "unused_variable"
+        }
+      ]
     }
   },
   {
@@ -1069,7 +1124,14 @@
     "subdir": "backtracking",
     "run_id": 1,
     "output": {
-      "comments": []
+      "comments": [
+        {
+          "file": "pattern_match.py",
+          "line": 34,
+          "entity": "unused_temp",
+          "claim": "unused_variable"
+        }
+      ]
     }
   },
   {
@@ -1077,7 +1139,14 @@
     "subdir": "backtracking",
     "run_id": 1,
     "output": {
-      "comments": []
+      "comments": [
+        {
+          "file": "permute.py",
+          "line": 31,
+          "entity": "unused_temp",
+          "claim": "unused_variable"
+        }
+      ]
     }
   },
   {
@@ -1085,7 +1154,14 @@
     "subdir": "backtracking",
     "run_id": 1,
     "output": {
-      "comments": []
+      "comments": [
+        {
+          "file": "permute_unique.py",
+          "line": 30,
+          "entity": "unused_temp",
+          "claim": "unused_variable"
+        }
+      ]
     }
   },
   {
@@ -1093,7 +1169,14 @@
     "subdir": "backtracking",
     "run_id": 1,
     "output": {
-      "comments": []
+      "comments": [
+        {
+          "file": "subsets.py",
+          "line": 30,
+          "entity": "unused_temp",
+          "claim": "unused_variable"
+        }
+      ]
     }
   },
   {
@@ -1101,7 +1184,14 @@
     "subdir": "backtracking",
     "run_id": 1,
     "output": {
-      "comments": []
+      "comments": [
+        {
+          "file": "subsets_unique.py",
+          "line": 31,
+          "entity": "unused_temp",
+          "claim": "unused_variable"
+        }
+      ]
     }
   },
   {
@@ -1109,199 +1199,14 @@
     "subdir": "bit_manipulation",
     "run_id": 1,
     "output": {
-      "comments": []
-    }
-  },
-  {
-    "file_path": "code_review_project\\data\\mutated\\algorithms\\bit_manipulation\\binary_gap.py",
-    "subdir": "bit_manipulation",
-    "run_id": 1,
-    "output": {
-      "comments": []
-    }
-  },
-  {
-    "file_path": "code_review_project\\data\\mutated\\algorithms\\bit_manipulation\\bit_operation.py",
-    "subdir": "bit_manipulation",
-    "run_id": 1,
-    "output": {
-      "comments": []
-    }
-  },
-  {
-    "file_path": "code_review_project\\data\\mutated\\algorithms\\bit_manipulation\\bytes_int_conversion.py",
-    "subdir": "bit_manipulation",
-    "run_id": 1,
-    "output": {
-      "comments": []
-    }
-  },
-  {
-    "file_path": "code_review_project\\data\\mutated\\algorithms\\bit_manipulation\\count_flips_to_convert.py",
-    "subdir": "bit_manipulation",
-    "run_id": 1,
-    "output": {
-      "comments": []
-    }
-  },
-  {
-    "file_path": "code_review_project\\data\\mutated\\algorithms\\bit_manipulation\\count_ones.py",
-    "subdir": "bit_manipulation",
-    "run_id": 1,
-    "output": {
-      "comments": []
-    }
-  },
-  {
-    "file_path": "code_review_project\\data\\mutated\\algorithms\\bit_manipulation\\find_difference.py",
-    "subdir": "bit_manipulation",
-    "run_id": 1,
-    "output": {
-      "comments": []
-    }
-  },
-  {
-    "file_path": "code_review_project\\data\\mutated\\algorithms\\bit_manipulation\\find_missing_number.py",
-    "subdir": "bit_manipulation",
-    "run_id": 1,
-    "output": {
-      "comments": []
-    }
-  },
-  {
-    "file_path": "code_review_project\\data\\mutated\\algorithms\\bit_manipulation\\flip_bit_longest_sequence.py",
-    "subdir": "bit_manipulation",
-    "run_id": 1,
-    "output": {
-      "comments": []
-    }
-  },
-  {
-    "file_path": "code_review_project\\data\\mutated\\algorithms\\bit_manipulation\\gray_code.py",
-    "subdir": "bit_manipulation",
-    "run_id": 1,
-    "output": {
-      "comments": []
-    }
-  },
-  {
-    "file_path": "code_review_project\\data\\mutated\\algorithms\\bit_manipulation\\has_alternative_bit.py",
-    "subdir": "bit_manipulation",
-    "run_id": 1,
-    "output": {
-      "comments": []
-    }
-  },
-  {
-    "file_path": "code_review_project\\data\\mutated\\algorithms\\bit_manipulation\\insert_bit.py",
-    "subdir": "bit_manipulation",
-    "run_id": 1,
-    "output": {
-      "comments": []
-    }
-  },
-  {
-    "file_path": "code_review_project\\data\\mutated\\algorithms\\bit_manipulation\\power_of_two.py",
-    "subdir": "bit_manipulation",
-    "run_id": 1,
-    "output": {
-      "comments": []
-    }
-  },
-  {
-    "file_path": "code_review_project\\data\\mutated\\algorithms\\bit_manipulation\\remove_bit.py",
-    "subdir": "bit_manipulation",
-    "run_id": 1,
-    "output": {
-      "comments": []
-    }
-  },
-  {
-    "file_path": "code_review_project\\data\\mutated\\algorithms\\bit_manipulation\\reverse_bits.py",
-    "subdir": "bit_manipulation",
-    "run_id": 1,
-    "output": {
-      "comments": []
-    }
-  },
-  {
-    "file_path": "code_review_project\\data\\mutated\\algorithms\\bit_manipulation\\single_number.py",
-    "subdir": "bit_manipulation",
-    "run_id": 1,
-    "output": {
-      "comments": []
-    }
-  },
-  {
-    "file_path": "code_review_project\\data\\mutated\\algorithms\\bit_manipulation\\single_number2.py",
-    "subdir": "bit_manipulation",
-    "run_id": 1,
-    "output": {
-      "comments": []
-    }
-  },
-  {
-    "file_path": "code_review_project\\data\\mutated\\algorithms\\bit_manipulation\\single_number3.py",
-    "subdir": "bit_manipulation",
-    "run_id": 1,
-    "output": {
-      "comments": []
-    }
-  },
-  {
-    "file_path": "code_review_project\\data\\mutated\\algorithms\\bit_manipulation\\subsets.py",
-    "subdir": "bit_manipulation",
-    "run_id": 1,
-    "output": {
-      "comments": []
-    }
-  },
-  {
-    "file_path": "code_review_project\\data\\mutated\\algorithms\\bit_manipulation\\swap_pair.py",
-    "subdir": "bit_manipulation",
-    "run_id": 1,
-    "output": {
-      "comments": []
-    }
-  },
-  {
-    "file_path": "code_review_project\\data\\mutated\\algorithms\\common\\graph.py",
-    "subdir": "common",
-    "run_id": 1,
-    "output": {
-      "comments": []
-    }
-  },
-  {
-    "file_path": "code_review_project\\data\\mutated\\algorithms\\compression\\elias.py",
-    "subdir": "compression",
-    "run_id": 1,
-    "output": {
-      "comments": []
-    }
-  },
-  {
-    "file_path": "code_review_project\\data\\mutated\\algorithms\\compression\\rle_compression.py",
-    "subdir": "compression",
-    "run_id": 1,
-    "output": {
-      "comments": []
-    }
-  },
-  {
-    "file_path": "code_review_project\\data\\mutated\\algorithms\\data_structures\\avl_tree.py",
-    "subdir": "data_structures",
-    "run_id": 1,
-    "output": {
-      "comments": []
-    }
-  },
-  {
-    "file_path": "code_review_project\\data\\mutated\\algorithms\\data_structures\\b_tree.py",
-    "subdir": "data_structures",
-    "run_id": 1,
-    "output": {
-      "comments": []
+      "comments": [
+        {
+          "file": "add_bitwise_operator.py",
+          "line": 33,
+          "entity": "unused_temp",
+          "claim": "unused_variable"
+        }
+      ]
     }
   },
   {
@@ -1309,7 +1214,14 @@
     "subdir": "array",
     "run_id": 1,
     "output": {
-      "comments": []
+      "comments": [
+        {
+          "file": "delete_nth.py",
+          "line": 38,
+          "entity": "temp_var",
+          "claim": "null_safety_violation"
+        }
+      ]
     }
   },
   {
@@ -1317,7 +1229,1081 @@
     "subdir": "array",
     "run_id": 1,
     "output": {
+      "comments": [
+        {
+          "file": "flatten.py",
+          "line": 34,
+          "entity": "output_arr",
+          "claim": "null_safety_violation"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_null\\algorithms\\array\\garage.py",
+    "subdir": "array",
+    "run_id": 1,
+    "output": {
+      "comments": [
+        {
+          "file": "garage.py",
+          "line": 34,
+          "entity": "temp_var",
+          "claim": "null_safety_violation"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_null\\algorithms\\array\\josephus.py",
+    "subdir": "array",
+    "run_id": 1,
+    "output": {
+      "comments": [
+        {
+          "file": "josephus.py",
+          "line": 35,
+          "entity": "temp_var",
+          "claim": "null_safety_violation"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_null\\algorithms\\array\\limit.py",
+    "subdir": "array",
+    "run_id": 1,
+    "output": {
+      "comments": [
+        {
+          "file": "limit.py",
+          "line": 36,
+          "entity": "min_lim",
+          "claim": "null_safety_violation"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_null\\algorithms\\array\\longest_non_repeat.py",
+    "subdir": "array",
+    "run_id": 1,
+    "output": {
+      "comments": [
+        {
+          "file": "longest_non_repeat.py",
+          "line": 29,
+          "entity": "string",
+          "claim": "null_safety_violation"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_null\\algorithms\\array\\max_ones_index.py",
+    "subdir": "array",
+    "run_id": 1,
+    "output": {
+      "comments": [
+        {
+          "file": "max_ones_index.py",
+          "line": 31,
+          "entity": "temp_var",
+          "claim": "null_safety_violation"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_null\\algorithms\\array\\merge_intervals.py",
+    "subdir": "array",
+    "run_id": 1,
+    "output": {
+      "comments": [
+        {
+          "file": "merge_intervals.py",
+          "line": 114,
+          "entity": "intervals",
+          "claim": "null_safety_violation"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_null\\algorithms\\array\\missing_ranges.py",
+    "subdir": "array",
+    "run_id": 1,
+    "output": {
+      "comments": [
+        {
+          "file": "missing_ranges.py",
+          "line": 33,
+          "entity": "temp_var",
+          "claim": "null_safety_violation"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_null\\algorithms\\array\\move_zeros.py",
+    "subdir": "array",
+    "run_id": 1,
+    "output": {
+      "comments": [
+        {
+          "file": "move_zeros.py",
+          "line": 35,
+          "entity": "temp_var",
+          "claim": "null_safety_violation"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_null\\algorithms\\array\\n_sum.py",
+    "subdir": "array",
+    "run_id": 1,
+    "output": {
+      "comments": [
+        {
+          "file": "n_sum.py",
+          "line": 47,
+          "entity": "temp_var",
+          "claim": "null_safety_violation"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_null\\algorithms\\array\\plus_one.py",
+    "subdir": "array",
+    "run_id": 1,
+    "output": {
+      "comments": [
+        {
+          "file": "plus_one.py",
+          "line": 31,
+          "entity": "temp_var",
+          "claim": "null_safety_violation"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_null\\algorithms\\array\\remove_duplicates.py",
+    "subdir": "array",
+    "run_id": 1,
+    "output": {
+      "comments": [
+        {
+          "file": "remove_duplicates.py",
+          "line": 37,
+          "entity": "temp_var",
+          "claim": "null_safety_violation"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_null\\algorithms\\array\\rotate.py",
+    "subdir": "array",
+    "run_id": 1,
+    "output": {
+      "comments": [
+        {
+          "file": "rotate.py",
+          "line": 33,
+          "entity": "temp_var",
+          "claim": "null_safety_violation"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_null\\algorithms\\array\\summarize_ranges.py",
+    "subdir": "array",
+    "run_id": 1,
+    "output": {
+      "comments": [
+        {
+          "file": "summarize_ranges.py",
+          "line": 31,
+          "entity": "temp_var",
+          "claim": "null_safety_violation"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_null\\algorithms\\array\\three_sum.py",
+    "subdir": "array",
+    "run_id": 1,
+    "output": {
+      "comments": [
+        {
+          "file": "three_sum.py",
+          "line": 31,
+          "entity": "temp_var",
+          "claim": "null_safety_violation"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_null\\algorithms\\array\\top_1.py",
+    "subdir": "array",
+    "run_id": 1,
+    "output": {
+      "comments": [
+        {
+          "file": "top_1.py",
+          "line": 33,
+          "entity": "temp_var",
+          "claim": "null_safety_violation"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_null\\algorithms\\array\\trimmean.py",
+    "subdir": "array",
+    "run_id": 1,
+    "output": {
+      "comments": [
+        {
+          "file": "trimmean.py",
+          "line": 36,
+          "entity": "temp_var",
+          "claim": "null_safety_violation"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_null\\algorithms\\array\\two_sum.py",
+    "subdir": "array",
+    "run_id": 1,
+    "output": {
+      "comments": [
+        {
+          "file": "two_sum.py",
+          "line": 29,
+          "entity": "temp_var",
+          "claim": "null_safety_violation"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_null\\algorithms\\backtracking\\add_operators.py",
+    "subdir": "backtracking",
+    "run_id": 1,
+    "output": {
+      "comments": [
+        {
+          "file": "add_operators.py",
+          "line": 33,
+          "entity": "temp_var",
+          "claim": "null_safety_violation"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_null\\algorithms\\backtracking\\anagram.py",
+    "subdir": "backtracking",
+    "run_id": 1,
+    "output": {
+      "comments": [
+        {
+          "file": "anagram.py",
+          "line": 34,
+          "entity": "temp_var",
+          "claim": "null_safety_violation"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_null\\algorithms\\backtracking\\array_sum_combinations.py",
+    "subdir": "backtracking",
+    "run_id": 1,
+    "output": {
+      "comments": [
+        {
+          "file": "array_sum_combinations.py",
+          "line": 44,
+          "entity": "temp_var",
+          "claim": "null_safety_violation"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_null\\algorithms\\backtracking\\combination_sum.py",
+    "subdir": "backtracking",
+    "run_id": 1,
+    "output": {
+      "comments": [
+        {
+          "file": "combination_sum.py",
+          "line": 33,
+          "entity": "temp_var",
+          "claim": "null_safety_violation"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_null\\algorithms\\backtracking\\factor_combinations.py",
+    "subdir": "backtracking",
+    "run_id": 1,
+    "output": {
+      "comments": [
+        {
+          "file": "factor_combinations.py",
+          "line": 31,
+          "entity": "temp_var",
+          "claim": "null_safety_violation"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_null\\algorithms\\backtracking\\find_words.py",
+    "subdir": "backtracking",
+    "run_id": 1,
+    "output": {
+      "comments": [
+        {
+          "file": "find_words.py",
+          "line": 37,
+          "entity": "temp_var",
+          "claim": "null_safety_violation"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_null\\algorithms\\backtracking\\generate_abbreviations.py",
+    "subdir": "backtracking",
+    "run_id": 1,
+    "output": {
+      "comments": [
+        {
+          "file": "generate_abbreviations.py",
+          "line": 31,
+          "entity": "temp_var",
+          "claim": "null_safety_violation"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_null\\algorithms\\backtracking\\generate_parenthesis.py",
+    "subdir": "backtracking",
+    "run_id": 1,
+    "output": {
+      "comments": [
+        {
+          "file": "generate_parenthesis.py",
+          "line": 34,
+          "entity": "temp_var",
+          "claim": "null_safety_violation"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_null\\algorithms\\backtracking\\letter_combination.py",
+    "subdir": "backtracking",
+    "run_id": 1,
+    "output": {
+      "comments": [
+        {
+          "file": "letter_combination.py",
+          "line": 31,
+          "entity": "temp_var",
+          "claim": "null_safety_violation"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_null\\algorithms\\backtracking\\minimax.py",
+    "subdir": "backtracking",
+    "run_id": 1,
+    "output": {
+      "comments": [
+        {
+          "file": "minimax.py",
+          "line": 33,
+          "entity": "temp_var",
+          "claim": "null_safety_violation"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_null\\algorithms\\backtracking\\palindrome_partitioning.py",
+    "subdir": "backtracking",
+    "run_id": 1,
+    "output": {
+      "comments": [
+        {
+          "file": "palindrome_partitioning.py",
+          "line": 20,
+          "entity": "temp_var",
+          "claim": "null_safety_violation"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_null\\algorithms\\backtracking\\pattern_match.py",
+    "subdir": "backtracking",
+    "run_id": 1,
+    "output": {
+      "comments": [
+        {
+          "file": "pattern_match.py",
+          "line": 35,
+          "entity": "temp_var",
+          "claim": "null_safety_violation"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_null\\algorithms\\backtracking\\permute.py",
+    "subdir": "backtracking",
+    "run_id": 1,
+    "output": {
+      "comments": [
+        {
+          "file": "permute.py",
+          "line": 32,
+          "entity": "temp_var",
+          "claim": "null_safety_violation"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_null\\algorithms\\backtracking\\permute_unique.py",
+    "subdir": "backtracking",
+    "run_id": 1,
+    "output": {
+      "comments": [
+        {
+          "file": "permute_unique.py",
+          "line": 31,
+          "entity": "temp_var",
+          "claim": "null_safety_violation"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_null\\algorithms\\backtracking\\subsets.py",
+    "subdir": "backtracking",
+    "run_id": 1,
+    "output": {
+      "comments": [
+        {
+          "file": "subsets.py",
+          "line": 31,
+          "entity": "temp_var",
+          "claim": "null_safety_violation"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_null\\algorithms\\backtracking\\subsets_unique.py",
+    "subdir": "backtracking",
+    "run_id": 1,
+    "output": {
+      "comments": [
+        {
+          "file": "subsets_unique.py",
+          "line": 31,
+          "entity": "temp_var",
+          "claim": "null_safety_violation"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_null\\algorithms\\bit_manipulation\\add_bitwise_operator.py",
+    "subdir": "bit_manipulation",
+    "run_id": 1,
+    "output": {
+      "comments": [
+        {
+          "file": "add_bitwise_operator.py",
+          "line": 34,
+          "entity": "temp_var",
+          "claim": "null_safety_violation"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_offbyone\\algorithms\\array\\garage.py",
+    "subdir": "array",
+    "run_id": 1,
+    "output": {
+      "comments": [
+        {
+          "file": "garage.py",
+          "line": 47,
+          "entity": "current",
+          "claim": "off_by_one_bound"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_offbyone\\algorithms\\array\\longest_non_repeat.py",
+    "subdir": "array",
+    "run_id": 1,
+    "output": {
+      "comments": [
+        {
+          "file": "longest_non_repeat.py",
+          "line": 35,
+          "entity": "string",
+          "claim": "off_by_one_bound"
+        },
+        {
+          "file": "longest_non_repeat.py",
+          "line": 143,
+          "entity": "string",
+          "claim": "null_safety_violation"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_offbyone\\algorithms\\array\\max_ones_index.py",
+    "subdir": "array",
+    "run_id": 1,
+    "output": {
+      "comments": [
+        {
+          "file": "max_ones_index.py",
+          "line": 37,
+          "entity": "current",
+          "claim": "off_by_one_bound"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_offbyone\\algorithms\\array\\merge_intervals.py",
+    "subdir": "array",
+    "run_id": 1,
+    "output": {
+      "comments": [
+        {
+          "file": "merge_intervals.py",
+          "line": 34,
+          "entity": "i",
+          "claim": "off_by_one_bound"
+        },
+        {
+          "file": "merge_intervals.py",
+          "line": 120,
+          "entity": "intervals",
+          "claim": "off_by_one_bound"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_offbyone\\algorithms\\array\\n_sum.py",
+    "subdir": "array",
+    "run_id": 1,
+    "output": {
+      "comments": [
+        {
+          "file": "n_sum.py",
+          "line": 96,
+          "entity": "left",
+          "claim": "off_by_one_bound"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_offbyone\\algorithms\\array\\plus_one.py",
+    "subdir": "array",
+    "run_id": 1,
+    "output": {
+      "comments": [
+        {
+          "file": "plus_one.py",
+          "line": 33,
+          "entity": "index",
+          "claim": "off_by_one_bound"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_offbyone\\algorithms\\array\\rotate.py",
+    "subdir": "array",
+    "run_id": 1,
+    "output": {
+      "comments": [
+        {
+          "file": "rotate.py",
+          "line": 34,
+          "entity": "k",
+          "claim": "off_by_one_bound"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_offbyone\\algorithms\\array\\three_sum.py",
+    "subdir": "array",
+    "run_id": 1,
+    "output": {
+      "comments": [
+        {
+          "file": "three_sum.py",
+          "line": 32,
+          "entity": "array",
+          "claim": "off_by_one_bound"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_offbyone\\algorithms\\backtracking\\add_operators.py",
+    "subdir": "backtracking",
+    "run_id": 1,
+    "output": {
+      "comments": [
+        {
+          "file": "add_operators.py",
+          "line": 50,
+          "entity": "i",
+          "claim": "off_by_one_bound"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_offbyone\\algorithms\\backtracking\\combination_sum.py",
+    "subdir": "backtracking",
+    "run_id": 1,
+    "output": {
+      "comments": [
+        {
+          "file": "combination_sum.py",
+          "line": 47,
+          "entity": "i",
+          "claim": "off_by_one_bound"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_offbyone\\algorithms\\backtracking\\find_words.py",
+    "subdir": "backtracking",
+    "run_id": 1,
+    "output": {
+      "comments": [
+        {
+          "file": "find_words.py",
+          "line": 48,
+          "entity": "board",
+          "claim": "off_by_one_bound"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_offbyone\\algorithms\\backtracking\\palindrome_partitioning.py",
+    "subdir": "backtracking",
+    "run_id": 1,
+    "output": {
+      "comments": [
+        {
+          "file": "palindrome_partitioning.py",
+          "line": 35,
+          "entity": "text",
+          "claim": "off_by_one_bound"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_offbyone\\algorithms\\backtracking\\pattern_match.py",
+    "subdir": "backtracking",
+    "run_id": 1,
+    "output": {
+      "comments": [
+        {
+          "file": "pattern_match.py",
+          "line": 43,
+          "entity": "string",
+          "claim": "off_by_one_bound"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_offbyone\\algorithms\\backtracking\\permute.py",
+    "subdir": "backtracking",
+    "run_id": 1,
+    "output": {
+      "comments": [
+        {
+          "file": "permute.py",
+          "line": 35,
+          "entity": "elements",
+          "claim": "off_by_one_bound"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_offbyone\\algorithms\\backtracking\\permute_unique.py",
+    "subdir": "backtracking",
+    "run_id": 1,
+    "output": {
+      "comments": [
+        {
+          "file": "permute_unique.py",
+          "line": 34,
+          "entity": "existing",
+          "claim": "off_by_one_bound"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_offbyone\\algorithms\\bit_manipulation\\gray_code.py",
+    "subdir": "bit_manipulation",
+    "run_id": 1,
+    "output": {
+      "comments": [
+        {
+          "file": "gray_code.py",
+          "line": 26,
+          "entity": "n",
+          "claim": "off_by_one_bound"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_offbyone\\algorithms\\bit_manipulation\\reverse_bits.py",
+    "subdir": "bit_manipulation",
+    "run_id": 1,
+    "output": {
+      "comments": [
+        {
+          "file": "reverse_bits.py",
+          "line": 32,
+          "entity": "_",
+          "claim": "off_by_one_bound"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_offbyone\\algorithms\\bit_manipulation\\single_number2.py",
+    "subdir": "bit_manipulation",
+    "run_id": 1,
+    "output": {
+      "comments": [
+        {
+          "file": "single_number2.py",
+          "line": 38,
+          "entity": "index",
+          "claim": "off_by_one_bound"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_offbyone\\algorithms\\bit_manipulation\\subsets.py",
+    "subdir": "bit_manipulation",
+    "run_id": 1,
+    "output": {
+      "comments": [
+        {
+          "file": "subsets.py",
+          "line": 37,
+          "entity": "mask",
+          "claim": "off_by_one_bound"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_offbyone\\algorithms\\data_structures\\b_tree.py",
+    "subdir": "data_structures",
+    "run_id": 1,
+    "output": {
+      "comments": [
+        {
+          "file": "b_tree.py",
+          "line": 94,
+          "entity": "insert_key",
+          "claim": "off_by_one_bound"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_offbyone\\algorithms\\data_structures\\fenwick_tree.py",
+    "subdir": "data_structures",
+    "run_id": 1,
+    "output": {
+      "comments": [
+        {
+          "file": "fenwick_tree.py",
+          "line": 84,
+          "entity": "i",
+          "claim": "off_by_one_bound"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_offbyone\\algorithms\\data_structures\\iterative_segment_tree.py",
+    "subdir": "data_structures",
+    "run_id": 1,
+    "output": {
+      "comments": [
+        {
+          "file": "iterative_segment_tree.py",
+          "line": 28,
+          "entity": "tree",
+          "claim": "off_by_one_bound"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_offbyone\\algorithms\\data_structures\\segment_tree.py",
+    "subdir": "data_structures",
+    "run_id": 1,
+    "output": {
+      "comments": [
+        {
+          "file": "segment_tree.py",
+          "line": 10,
+          "entity": "arr",
+          "claim": "off_by_one_bound"
+        },
+        {
+          "file": "segment_tree.py",
+          "line": 10,
+          "entity": "x",
+          "claim": "unused_variable"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_offbyone\\algorithms\\data_structures\\sqrt_decomposition.py",
+    "subdir": "data_structures",
+    "run_id": 1,
+    "output": {
+      "comments": [
+        {
+          "file": "sqrt_decomposition.py",
+          "line": 76,
+          "entity": "index",
+          "claim": "off_by_one_bound"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_offbyone\\algorithms\\data_structures\\veb_tree.py",
+    "subdir": "data_structures",
+    "run_id": 1,
+    "output": {
+      "comments": [
+        {
+          "file": "veb_tree.py",
+          "line": 62,
+          "entity": "upper_sqrt",
+          "claim": "off_by_one_bound"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_offbyone\\algorithms\\dynamic_programming\\bitmask.py",
+    "subdir": "dynamic_programming",
+    "run_id": 1,
+    "output": {
+      "comments": [
+        {
+          "file": "bitmask.py",
+          "line": 39,
+          "entity": "city",
+          "claim": "off_by_one_bound"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_offbyone\\algorithms\\dynamic_programming\\buy_sell_stock.py",
+    "subdir": "dynamic_programming",
+    "run_id": 1,
+    "output": {
+      "comments": [
+        {
+          "file": "buy_sell_stock.py",
+          "line": 37,
+          "entity": "i",
+          "claim": "off_by_one_bound"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_offbyone\\algorithms\\dynamic_programming\\climbing_stairs.py",
+    "subdir": "dynamic_programming",
+    "run_id": 1,
+    "output": {
+      "comments": [
+        {
+          "file": "climbing_stairs.py",
+          "line": 37,
+          "entity": "i",
+          "claim": "off_by_one_bound"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_offbyone\\algorithms\\dynamic_programming\\coin_change.py",
+    "subdir": "dynamic_programming",
+    "run_id": 1,
+    "output": {
+      "comments": [
+        {
+          "file": "coin_change.py",
+          "line": 34,
+          "entity": "i",
+          "claim": "off_by_one_bound"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_offbyone\\algorithms\\dynamic_programming\\combination_sum.py",
+    "subdir": "dynamic_programming",
+    "run_id": 1,
+    "output": {
+      "comments": [
+        {
+          "file": "combination_sum.py",
+          "line": 76,
+          "entity": "i",
+          "claim": "off_by_one_bound"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_offbyone\\algorithms\\dynamic_programming\\count_paths_dp.py",
+    "subdir": "dynamic_programming",
+    "run_id": 1,
+    "output": {
+      "comments": [
+        {
+          "file": "count_paths_dp.py",
+          "line": 42,
+          "entity": "i",
+          "claim": "off_by_one_bound"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_offbyone\\algorithms\\dynamic_programming\\edit_distance.py",
+    "subdir": "dynamic_programming",
+    "run_id": 1,
+    "output": {
+      "comments": [
+        {
+          "file": "edit_distance.py",
+          "line": 35,
+          "entity": "length_b",
+          "claim": "off_by_one_bound"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_offbyone\\algorithms\\dynamic_programming\\egg_drop.py",
+    "subdir": "dynamic_programming",
+    "run_id": 1,
+    "output": {
       "comments": []
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_offbyone\\algorithms\\dynamic_programming\\fib.py",
+    "subdir": "dynamic_programming",
+    "run_id": 1,
+    "output": {
+      "comments": [
+        {
+          "file": "fib.py",
+          "line": 58,
+          "entity": "i",
+          "claim": "off_by_one_bound"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_offbyone\\algorithms\\dynamic_programming\\hosoya_triangle.py",
+    "subdir": "dynamic_programming",
+    "run_id": 1,
+    "output": {
+      "comments": [
+        {
+          "file": "hosoya_triangle.py",
+          "line": 55,
+          "entity": "i",
+          "claim": "off_by_one_bound"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_offbyone\\algorithms\\dynamic_programming\\int_divide.py",
+    "subdir": "dynamic_programming",
+    "run_id": 1,
+    "output": {
+      "comments": [
+        {
+          "file": "int_divide.py",
+          "line": 32,
+          "entity": "i",
+          "claim": "unused_variable"
+        },
+        {
+          "file": "int_divide.py",
+          "line": 32,
+          "entity": "j",
+          "claim": "unused_variable"
+        }
+      ]
     }
   }
 ]
