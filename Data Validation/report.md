@@ -1,4 +1,4 @@
-# Dataset Validation - Member 1
+# Dataset Validation 
 
 I checked the results from the review agent + verifier (mohamed-branch) against my injection log to see if the "grounded" claims actually match the bugs I injected.
 
