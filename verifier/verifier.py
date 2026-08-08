@@ -3,12 +3,19 @@ from pathlib import Path
 from typing import Optional
 
 try:
-    from .ast_checker import verify_entity
+    from .ast_checker import (
+        verify_entity,
+        verify_entity_nearby_line,
+    )
     from .static_checker import verify_claim
+    from .offbyone_reference_checker import reference_check
 except ImportError:
-    from ast_checker import verify_entity
+    from ast_checker import (
+        verify_entity,
+        verify_entity_nearby_line,
+    )
     from static_checker import verify_claim
-
+    from offbyone_reference_checker import reference_check
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 REVIEW_RESULTS = PROJECT_ROOT / "review_results.json"
@@ -36,42 +43,43 @@ def load_review_results() -> list[dict]:
     return comments
 
 
-def find_source_file(file_name: str, claim: str) -> Optional[Path]:
+def find_source_file(file_path: str, claim: str) -> Optional[Path]:
     """
-    Locate the source file inside the dataset corresponding
-    to the reported bug class.
+    Locate the exact source file inside the dataset.
 
-    The verifier does not fall back to clean or unrelated datasets,
-    because that could verify the claim against the wrong file version.
+    Uses the full relative file path instead of only the basename,
+    so duplicate filenames such as combination_sum.py are handled
+    correctly.
     """
 
-    claim_directories = {
-        "unused_variable": DATA_ROOT / "mutated",
-        "null_safety_violation": DATA_ROOT / "mutated_null",
-        "off_by_one_bound": DATA_ROOT / "mutated_offbyone",
+    claim_datasets = {
+        "unused_variable": "mutated",
+        "null_safety_violation": "mutated_null",
+        "off_by_one_bound": "mutated_offbyone",
     }
 
-    search_root = claim_directories.get(claim)
+    dataset = claim_datasets.get(claim)
 
-    if search_root is None:
+    if dataset is None:
         return None
 
-    if not search_root.exists():
+    normalized = file_path.replace("\\", "/")
+    parts = normalized.split("/")
+
+    if dataset not in parts:
         return None
 
-    matches = list(search_root.rglob(file_name))
+    dataset_index = parts.index(dataset)
 
-    if len(matches) == 1:
-        return matches[0]
+    relative_parts = parts[dataset_index + 1:]
 
-    if len(matches) == 0:
+    if not relative_parts:
         return None
 
-    # Ambiguous: more than one file with the same name.
-    print(
-        f"[Warning] Ambiguous file '{file_name}': "
-        f"{len(matches)} matches found inside '{search_root.name}'."
-    )
+    candidate = DATA_ROOT / dataset / Path(*relative_parts)
+
+    if candidate.exists() and candidate.is_file():
+        return candidate
 
     return None
 
@@ -81,10 +89,13 @@ def read_source_code(path: Path) -> str:
     return path.read_text(encoding="utf-8")
 
 
-def verify_comment(comment: dict) -> dict:
-    """Verify one LLM-generated code review comment."""
+def verify_comment(
+        comment: dict,
+        source_path: Optional[Path] = None,
+    ) -> dict:
 
-    file_name = comment.get("file", "")
+    file_path = comment.get("file", "")
+    file_name = Path(file_path).name
     entity = comment.get("entity", "")
     claim = comment.get("claim", "")
     line = comment.get("line", 0)
@@ -114,9 +125,10 @@ def verify_comment(comment: dict) -> dict:
         })
         return result
 
-    source_path = find_source_file(file_name, claim)
-
     if source_path is None:
+        source_path = find_source_file(file_path, claim)
+
+    if source_path is None or not source_path.exists():
         result.update({
             "status": "file_not_found",
             "ast_entity_exists": False,
@@ -134,21 +146,52 @@ def verify_comment(comment: dict) -> dict:
         line=line,
     )
 
+    if (
+        claim == "off_by_one_bound"
+        and not ast_result["entity_at_line"]
+    ):
+        ast_result["entity_at_line"] = verify_entity_nearby_line(
+            code=code,
+            entity=entity,
+            line=line,
+            max_distance=3,
+ )
     # Stage 2: Static-analysis cross-check
-    static_result = verify_claim(
-        code=code,
-        entity=entity,
-        claim=claim,
-    )
-
+    if claim == "off_by_one_bound":
+        static_result = reference_check(
+            file_path,
+            entity,
+            line,
+        )
+    else:
+        static_result = verify_claim(
+            code=code,
+            entity=entity,
+            claim=claim,
+            line=line,
+        )
     entity_exists = ast_result["entity_exists"]
     line_match = ast_result["entity_at_line"]
 
-    # Final classification
-    if entity_exists and line_match and static_result:
-        status = "grounded"
+        # Final classification
+    if claim == "off_by_one_bound":
+        # For off-by-one claims, the reported entity may be
+        # a contextual variable/function rather than the exact
+        # AST expression containing the boundary mutation.
+        #
+        # The static checker is responsible for confirming
+        # the actual boundary mutation.
+        if static_result:
+            status = "grounded"
+        else:
+            status = "hallucinated"
     else:
-        status = "hallucinated"
+        # For other claim types, keep the strict AST + static
+        # grounding requirements.
+        if entity_exists and line_match and static_result:
+            status = "grounded"
+        else:
+            status = "hallucinated"
 
     result.update({
         "resolved_file": str(
