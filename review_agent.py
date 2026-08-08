@@ -4,9 +4,10 @@ import glob
 from typing import List
 from dotenv import load_dotenv
 from pydantic import BaseModel, Field
+from openai import OpenAI
 
 load_dotenv()
-api_key = os.getenv("GEMINI_API_KEY", "")
+api_key = os.getenv("OPENCODE_API_KEY", "").strip()
 
 class CodeReviewComment(BaseModel):
     file: str = Field(description="The name of the file being reviewed.")
@@ -17,44 +18,71 @@ class CodeReviewComment(BaseModel):
 class CodeReviewResponse(BaseModel):
     comments: List[CodeReviewComment]
 
-def review_python_code_with_gemini(file_name: str, code_content: str) -> dict:
-    if not api_key.startswith("AIzaSy"):
-        return {
-            "comments": [
-                {"file": file_name, "line": 3, "entity": "mock_x", "claim": "unused_variable"}
-            ]
-        }
+def review_python_code_with_llm(file_name: str, code_content: str) -> dict:
+    if not api_key:
+        print("  Warning: OPENCODE_API_KEY is empty! Check your .env file.")
+        return {"comments": []}
     
-    from google import genai
-    from google.genai import types
+    client = OpenAI(
+        base_url="https://opencode.ai/zen/go/v1",
+        api_key=api_key
+    )
     
-    client = genai.Client(api_key=api_key)
     system_prompt = """
-    You are an expert static analysis assistant. Detect exactly three classes of bugs:
-    1. 'unused_variable'
-    2. 'null_safety_violation'
-    3. 'off_by_one_bound'
-    Return strictly JSON matching the schema. Do not include any conversational prose.
+    You are a strictly accurate Python static analysis security agent. 
+    Your ONLY task is to report REAL bugs that exist in the provided Python code for these 3 specific categories:
+    1. 'unused_variable': Variables defined or assigned but NEVER referenced/used anywhere later in the scope.
+    2. 'null_safety_violation': Calling methods, accessing attributes, or performing operations on variables that can be None/null without prior None checks.
+    3. 'off_by_one_bound': Incorrect loop boundaries, index access errors like array[len(array)], or incorrect range limits.
+
+    CRITICAL RULES:
+    - IF THE CODE IS CLEAN OR HAS NO BUGS, RETURN AN EMPTY ARRAY: {"comments": []}.
+    - Do NOT fabricate, guess, or invent bugs. If you are not 100% sure a bug exists, do NOT report it.
+    - ENTITY FORMAT RULE: The 'entity' field MUST strictly be a single identifier ONLY (e.g., variable name, function name, or loop variable like 'i', 'temp_var', 'current'). NEVER include code expressions, mathematical operators, or function calls in the 'entity' field (e.g., write 'current' instead of 'range(len(current + 1))').
+
+    Return strictly JSON matching this structure:
+    {
+      "comments": [
+        {
+          "file": "filename",
+          "line": 10,
+          "entity": "single_identifier_name",
+          "claim": "unused_variable"
+        }
+      ]
+    }
+    Return ONLY valid JSON. No markdown backticks, no explanations.
     """
     
     try:
-        response = client.models.generate_content(
-            model='gemini-2.5-flash',
-            contents=f"Review this Python code:\n\n{code_content}",
-            config=types.GenerateContentConfig(
-                system_instruction=system_prompt,
-                response_mime_type="application/json",
-                response_schema=CodeReviewResponse,
-            ),
+        response = client.chat.completions.create(
+            model="deepseek-v4-flash",
+            messages=[
+                {"role": "system", "content": system_prompt},
+                {"role": "user", "content": f"Analyze this Python code from file '{os.path.basename(file_name)}':\n\n{code_content}"}
+            ]
         )
-        return json.loads(response.text)
+        
+        raw_text = response.choices[0].message.content.strip()
+        
+        if raw_text.startswith("```"):
+            raw_text = raw_text.strip("`").replace("json", "", 1).strip()
+            
+        return json.loads(raw_text)
     except Exception as e:
-        print(f"[Error calling API for {file_name}]: {e}")
+        print(f"[Error calling OpenCode API for {os.path.basename(file_name)}]: {e}")
         return {"comments": []}
 
 if __name__ == "__main__":
     base_data_dir = os.path.join("code_review_project", "data")
-    target_subdirs = ["clean_negative_controls", "mutated", "mutated_null", "mutated_offbyone"]
+    
+    target_subdirs = [
+        "clean", 
+        "clean_negative_controls", 
+        "mutated", 
+        "mutated_null", 
+        "mutated_offbyone"
+    ]
     
     all_results = []
     python_files = []
@@ -62,10 +90,12 @@ if __name__ == "__main__":
     for subdir in target_subdirs:
         search_path = os.path.join(base_data_dir, subdir, "**", "*.py")
         found_files = glob.glob(search_path, recursive=True)
-        python_files.extend(found_files)
-        print(f" Found {len(found_files)} files in '{subdir}'")
+        
+        selected_files = found_files[:36]
+        python_files.extend(selected_files)
+        print(f" Found {len(found_files)} total files in '{subdir}' -> Selected {len(selected_files)} for benchmark.")
 
-    print(f"\n--- Starting Scale-up Benchmark on {len(python_files)} total files ---")
+    print(f"\n Starting Benchmark on {len(python_files)} files (35 per group) using OpenCode...")
     
     for idx, file_path in enumerate(python_files, 1):
         print(f"[{idx}/{len(python_files)}] Processing: {file_path}")
@@ -77,9 +107,8 @@ if __name__ == "__main__":
             print(f"Skipping file (Read Error): {file_path}. Details: {e}")
             continue
             
-        for run_number in range(1, 4):
-            print(f"  -> Run {run_number}/3...")
-            review_json = review_python_code_with_gemini(file_path, code_content)
+        for run_number in range(1, 2):
+            review_json = review_python_code_with_llm(file_path, code_content)
             
             run_entry = {
                 "file_path": file_path,
@@ -93,4 +122,4 @@ if __name__ == "__main__":
     with open(output_filename, "w", encoding="utf-8") as out_file:
         json.dump(all_results, out_file, indent=2)
         
-    print(f"\n Scale-up completed successfully! Big batch log saved to '{output_filename}'")
+    print(f"\n Benchmark completed successfully! Results saved to '{output_filename}'")
