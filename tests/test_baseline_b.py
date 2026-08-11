@@ -8,7 +8,7 @@ REPO_ROOT = Path(__file__).resolve().parents[1]
 if str(REPO_ROOT) not in sys.path:
     sys.path.insert(0, str(REPO_ROOT))
 
-from baseline_b_judge import BaselineBJudgment, judge_comment, process_comment_file
+from baseline_b_judge import BaselineBJudgment, judge_comment, process_comment_file, resolve_api_key
 
 
 def test_judge_comment_returns_structured_payload() -> None:
@@ -21,6 +21,13 @@ def test_judge_comment_returns_structured_payload() -> None:
     assert isinstance(decision.plausible, bool)
     assert 0.0 <= decision.confidence <= 1.0
     assert isinstance(decision.reasoning, str)
+
+
+def test_resolve_api_key_uses_non_empty_env_var(monkeypatch) -> None:
+    monkeypatch.delenv("GEMINI_API_KEY", raising=False)
+    monkeypatch.setenv("GOOGLE_API_KEY", "test-key")
+
+    assert resolve_api_key() == "test-key"
 
 
 def test_process_comment_file_writes_compatible_json(tmp_path: Path) -> None:

@@ -13,8 +13,20 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-API_KEY = os.getenv("GEMINI_API_KEY", "")
 logger = logging.getLogger(__name__)
+
+
+def resolve_api_key() -> str:
+    """Resolve a Gemini API key from the common environment variable names."""
+
+    for key_name in ("GEMINI_API_KEY", "GOOGLE_API_KEY"):
+        value = os.getenv(key_name, "")
+        if value and value.strip():
+            return value.strip()
+    return ""
+
+
+API_KEY = resolve_api_key()
 
 
 @dataclass(slots=True)
@@ -131,11 +143,11 @@ def judge_comment(comment: Dict[str, Any], source_text: str, source_path: str | 
     file_snippet = _extract_function_snippet(source_text, int(comment.get("line", 1)))
     prompt = build_prompt(comment, file_snippet)
 
-    if not API_KEY.startswith("AIzaSy"):
+    if not API_KEY:
         return BaselineBJudgment(
             plausible=True,
             confidence=0.65,
-            reasoning="Fallback deterministic judgment used because no standard Gemini API key was configured.",
+            reasoning="Fallback deterministic judgment used because no Gemini API key was configured.",
         )
 
     last_error: Optional[Exception] = None
