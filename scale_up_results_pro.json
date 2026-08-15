@@ -1,0 +1,2526 @@
+[
+  {
+    "file_path": "code_review_project\\data\\clean\\algorithms\\algorithms\\__init__.py",
+    "subdir": "clean",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": []
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\clean\\algorithms\\algorithms\\array\\delete_nth.py",
+    "subdir": "clean",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": []
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\clean\\algorithms\\algorithms\\array\\flatten.py",
+    "subdir": "clean",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": []
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\clean\\algorithms\\algorithms\\array\\garage.py",
+    "subdir": "clean",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": []
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\clean\\algorithms\\algorithms\\array\\josephus.py",
+    "subdir": "clean",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": []
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\clean\\algorithms\\algorithms\\array\\limit.py",
+    "subdir": "clean",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": []
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\clean\\algorithms\\algorithms\\array\\longest_non_repeat.py",
+    "subdir": "clean",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": []
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\clean\\algorithms\\algorithms\\array\\max_ones_index.py",
+    "subdir": "clean",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": []
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\clean\\algorithms\\algorithms\\array\\merge_intervals.py",
+    "subdir": "clean",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": [
+        {
+          "file": "merge_intervals.py",
+          "line": 117,
+          "entity": "intervals",
+          "claim": "off_by_one_bound"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\clean\\algorithms\\algorithms\\array\\missing_ranges.py",
+    "subdir": "clean",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": []
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\clean\\algorithms\\algorithms\\array\\move_zeros.py",
+    "subdir": "clean",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": []
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\clean\\algorithms\\algorithms\\array\\n_sum.py",
+    "subdir": "clean",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": []
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\clean\\algorithms\\algorithms\\array\\plus_one.py",
+    "subdir": "clean",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": []
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\clean\\algorithms\\algorithms\\array\\remove_duplicates.py",
+    "subdir": "clean",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": []
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\clean\\algorithms\\algorithms\\array\\rotate.py",
+    "subdir": "clean",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": [
+        {
+          "file": "rotate.py",
+          "line": 34,
+          "entity": "_",
+          "claim": "unused_variable"
+        },
+        {
+          "file": "rotate.py",
+          "line": 35,
+          "entity": "array",
+          "claim": "off_by_one_bound"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\clean\\algorithms\\algorithms\\array\\summarize_ranges.py",
+    "subdir": "clean",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": []
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\clean\\algorithms\\algorithms\\array\\three_sum.py",
+    "subdir": "clean",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": []
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\clean\\algorithms\\algorithms\\array\\top_1.py",
+    "subdir": "clean",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": []
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\clean\\algorithms\\algorithms\\array\\trimmean.py",
+    "subdir": "clean",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": []
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\clean\\algorithms\\algorithms\\array\\two_sum.py",
+    "subdir": "clean",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": []
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\clean\\algorithms\\algorithms\\array\\__init__.py",
+    "subdir": "clean",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": []
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\clean\\algorithms\\algorithms\\backtracking\\add_operators.py",
+    "subdir": "clean",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": []
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\clean\\algorithms\\algorithms\\backtracking\\anagram.py",
+    "subdir": "clean",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": []
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\clean\\algorithms\\algorithms\\backtracking\\array_sum_combinations.py",
+    "subdir": "clean",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": []
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\clean\\algorithms\\algorithms\\backtracking\\combination_sum.py",
+    "subdir": "clean",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": []
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\clean\\algorithms\\algorithms\\backtracking\\factor_combinations.py",
+    "subdir": "clean",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": []
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\clean\\algorithms\\algorithms\\backtracking\\find_words.py",
+    "subdir": "clean",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": []
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\clean\\algorithms\\algorithms\\backtracking\\generate_abbreviations.py",
+    "subdir": "clean",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": []
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\clean\\algorithms\\algorithms\\backtracking\\generate_parenthesis.py",
+    "subdir": "clean",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": []
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\clean\\algorithms\\algorithms\\backtracking\\letter_combination.py",
+    "subdir": "clean",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": []
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\clean\\algorithms\\algorithms\\backtracking\\minimax.py",
+    "subdir": "clean",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": []
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\clean\\algorithms\\algorithms\\backtracking\\palindrome_partitioning.py",
+    "subdir": "clean",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": []
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\clean\\algorithms\\algorithms\\backtracking\\pattern_match.py",
+    "subdir": "clean",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": []
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\clean\\algorithms\\algorithms\\backtracking\\permute.py",
+    "subdir": "clean",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": []
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\clean\\algorithms\\algorithms\\backtracking\\permute_unique.py",
+    "subdir": "clean",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": []
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\clean\\algorithms\\algorithms\\backtracking\\subsets.py",
+    "subdir": "clean",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": []
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\clean_negative_controls\\algorithms\\data_structures\\bst.py",
+    "subdir": "clean_negative_controls",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": []
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\clean_negative_controls\\algorithms\\data_structures\\graph.py",
+    "subdir": "clean_negative_controls",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": []
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\clean_negative_controls\\algorithms\\data_structures\\hash_table.py",
+    "subdir": "clean_negative_controls",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": []
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\clean_negative_controls\\algorithms\\data_structures\\heap.py",
+    "subdir": "clean_negative_controls",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": []
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\clean_negative_controls\\algorithms\\data_structures\\kd_tree.py",
+    "subdir": "clean_negative_controls",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": []
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\clean_negative_controls\\algorithms\\data_structures\\linked_list.py",
+    "subdir": "clean_negative_controls",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": []
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\clean_negative_controls\\algorithms\\data_structures\\priority_queue.py",
+    "subdir": "clean_negative_controls",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": [
+        {
+          "file": "priority_queue.py",
+          "line": 98,
+          "entity": "priority",
+          "claim": "null_safety_violation"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\clean_negative_controls\\algorithms\\data_structures\\queue.py",
+    "subdir": "clean_negative_controls",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": [
+        {
+          "file": "queue.py",
+          "line": 91,
+          "entity": "_rear",
+          "claim": "off_by_one_bound"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\clean_negative_controls\\algorithms\\data_structures\\red_black_tree.py",
+    "subdir": "clean_negative_controls",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": [
+        {
+          "file": "red_black_tree.py",
+          "line": 210,
+          "entity": "node",
+          "claim": "null_safety_violation"
+        },
+        {
+          "file": "red_black_tree.py",
+          "line": 269,
+          "entity": "node",
+          "claim": "null_safety_violation"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\clean_negative_controls\\algorithms\\data_structures\\separate_chaining_hash_table.py",
+    "subdir": "clean_negative_controls",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": []
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\clean_negative_controls\\algorithms\\data_structures\\stack.py",
+    "subdir": "clean_negative_controls",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": [
+        {
+          "file": "stack.py",
+          "line": 126,
+          "entity": "_array",
+          "claim": "off_by_one_bound"
+        },
+        {
+          "file": "stack.py",
+          "line": 181,
+          "entity": "head",
+          "claim": "null_safety_violation"
+        },
+        {
+          "file": "stack.py",
+          "line": 197,
+          "entity": "head",
+          "claim": "null_safety_violation"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\clean_negative_controls\\algorithms\\data_structures\\trie.py",
+    "subdir": "clean_negative_controls",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": []
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\clean_negative_controls\\algorithms\\data_structures\\union_find.py",
+    "subdir": "clean_negative_controls",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": []
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\clean_negative_controls\\algorithms\\dynamic_programming\\house_robber.py",
+    "subdir": "clean_negative_controls",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": []
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\clean_negative_controls\\algorithms\\graph\\all_factors.py",
+    "subdir": "clean_negative_controls",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": []
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\clean_negative_controls\\algorithms\\graph\\a_star.py",
+    "subdir": "clean_negative_controls",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": [
+        {
+          "file": "a_star.py",
+          "line": 47,
+          "entity": "f_score",
+          "claim": "unused_variable"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\clean_negative_controls\\algorithms\\graph\\check_digraph_strongly_connected.py",
+    "subdir": "clean_negative_controls",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": []
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\clean_negative_controls\\algorithms\\graph\\clone_graph.py",
+    "subdir": "clean_negative_controls",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": []
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\clean_negative_controls\\algorithms\\graph\\count_islands_unionfind.py",
+    "subdir": "clean_negative_controls",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": []
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\clean_negative_controls\\algorithms\\graph\\cycle_detection.py",
+    "subdir": "clean_negative_controls",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": []
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\clean_negative_controls\\algorithms\\graph\\dijkstra_heapq.py",
+    "subdir": "clean_negative_controls",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": []
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\clean_negative_controls\\algorithms\\graph\\find_all_cliques.py",
+    "subdir": "clean_negative_controls",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": []
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\clean_negative_controls\\algorithms\\graph\\markov_chain.py",
+    "subdir": "clean_negative_controls",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": [
+        {
+          "file": "markov_chain.py",
+          "line": 55,
+          "entity": "next_state_map",
+          "claim": "null_safety_violation"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\clean_negative_controls\\algorithms\\graph\\maximum_flow_bfs.py",
+    "subdir": "clean_negative_controls",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": []
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\clean_negative_controls\\algorithms\\graph\\maximum_flow_dfs.py",
+    "subdir": "clean_negative_controls",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": []
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\clean_negative_controls\\algorithms\\graph\\maze_search_bfs.py",
+    "subdir": "clean_negative_controls",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": [
+        {
+          "file": "maze_search_bfs.py",
+          "line": 37,
+          "entity": "maze",
+          "claim": "off_by_one_bound"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\clean_negative_controls\\algorithms\\graph\\maze_search_dfs.py",
+    "subdir": "clean_negative_controls",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": []
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\clean_negative_controls\\algorithms\\graph\\minimum_spanning_tree.py",
+    "subdir": "clean_negative_controls",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": []
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\clean_negative_controls\\algorithms\\graph\\pacific_atlantic.py",
+    "subdir": "clean_negative_controls",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": [
+        {
+          "file": "pacific_atlantic.py",
+          "line": 38,
+          "entity": "atlantic",
+          "claim": "off_by_one_bound"
+        },
+        {
+          "file": "pacific_atlantic.py",
+          "line": 39,
+          "entity": "pacific",
+          "claim": "off_by_one_bound"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\clean_negative_controls\\algorithms\\graph\\path_between_two_vertices_in_digraph.py",
+    "subdir": "clean_negative_controls",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": []
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\clean_negative_controls\\algorithms\\graph\\prims_minimum_spanning.py",
+    "subdir": "clean_negative_controls",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": []
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\clean_negative_controls\\algorithms\\graph\\satisfiability.py",
+    "subdir": "clean_negative_controls",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": []
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\clean_negative_controls\\algorithms\\graph\\strongly_connected_components_kosaraju.py",
+    "subdir": "clean_negative_controls",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": [
+        {
+          "file": "strongly_connected_components_kosaraju.py",
+          "line": 72,
+          "entity": "_",
+          "claim": "unused_variable"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\clean_negative_controls\\algorithms\\graph\\sudoku_solver.py",
+    "subdir": "clean_negative_controls",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": []
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\clean_negative_controls\\algorithms\\graph\\tarjan.py",
+    "subdir": "clean_negative_controls",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": []
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\clean_negative_controls\\algorithms\\graph\\topological_sort_bfs.py",
+    "subdir": "clean_negative_controls",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": []
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated\\algorithms\\array\\delete_nth.py",
+    "subdir": "mutated",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": [
+        {
+          "file": "delete_nth.py",
+          "line": 32,
+          "entity": "unused_temp",
+          "claim": "unused_variable"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated\\algorithms\\array\\flatten.py",
+    "subdir": "mutated",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": [
+        {
+          "file": "flatten.py",
+          "line": 34,
+          "entity": "unused_temp",
+          "claim": "unused_variable"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated\\algorithms\\array\\garage.py",
+    "subdir": "mutated",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": [
+        {
+          "file": "garage.py",
+          "line": 33,
+          "entity": "unused_temp",
+          "claim": "unused_variable"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated\\algorithms\\array\\josephus.py",
+    "subdir": "mutated",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": [
+        {
+          "file": "josephus.py",
+          "line": 34,
+          "entity": "unused_temp",
+          "claim": "unused_variable"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated\\algorithms\\array\\limit.py",
+    "subdir": "mutated",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": [
+        {
+          "file": "limit.py",
+          "line": 36,
+          "entity": "unused_temp",
+          "claim": "unused_variable"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated\\algorithms\\array\\longest_non_repeat.py",
+    "subdir": "mutated",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": [
+        {
+          "file": "longest_non_repeat.py",
+          "line": 30,
+          "entity": "unused_temp",
+          "claim": "unused_variable"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated\\algorithms\\array\\max_ones_index.py",
+    "subdir": "mutated",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": [
+        {
+          "file": "max_ones_index.py",
+          "line": 30,
+          "entity": "unused_temp",
+          "claim": "unused_variable"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated\\algorithms\\array\\merge_intervals.py",
+    "subdir": "mutated",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": [
+        {
+          "file": "merge_intervals.py",
+          "line": 44,
+          "entity": "item",
+          "claim": "off_by_one_bound"
+        },
+        {
+          "file": "merge_intervals.py",
+          "line": 114,
+          "entity": "unused_temp",
+          "claim": "unused_variable"
+        },
+        {
+          "file": "merge_intervals.py",
+          "line": 118,
+          "entity": "intervals",
+          "claim": "off_by_one_bound"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated\\algorithms\\array\\missing_ranges.py",
+    "subdir": "mutated",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": [
+        {
+          "file": "missing_ranges.py",
+          "line": 32,
+          "entity": "unused_temp",
+          "claim": "unused_variable"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated\\algorithms\\array\\move_zeros.py",
+    "subdir": "mutated",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": [
+        {
+          "file": "move_zeros.py",
+          "line": 31,
+          "entity": "unused_temp",
+          "claim": "unused_variable"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated\\algorithms\\array\\n_sum.py",
+    "subdir": "mutated",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": [
+        {
+          "file": "n_sum.py",
+          "line": 46,
+          "entity": "unused_temp",
+          "claim": "unused_variable"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated\\algorithms\\array\\plus_one.py",
+    "subdir": "mutated",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": [
+        {
+          "file": "plus_one.py",
+          "line": 30,
+          "entity": "unused_temp",
+          "claim": "unused_variable"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated\\algorithms\\array\\remove_duplicates.py",
+    "subdir": "mutated",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": [
+        {
+          "file": "remove_duplicates.py",
+          "line": 35,
+          "entity": "unused_temp",
+          "claim": "unused_variable"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated\\algorithms\\array\\rotate.py",
+    "subdir": "mutated",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": [
+        {
+          "file": "rotate.py",
+          "line": 32,
+          "entity": "unused_temp",
+          "claim": "unused_variable"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated\\algorithms\\array\\summarize_ranges.py",
+    "subdir": "mutated",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": [
+        {
+          "file": "summarize_ranges.py",
+          "line": 30,
+          "entity": "unused_temp",
+          "claim": "unused_variable"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated\\algorithms\\array\\three_sum.py",
+    "subdir": "mutated",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": [
+        {
+          "file": "three_sum.py",
+          "line": 30,
+          "entity": "unused_temp",
+          "claim": "unused_variable"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated\\algorithms\\array\\top_1.py",
+    "subdir": "mutated",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": [
+        {
+          "file": "top_1.py",
+          "line": 33,
+          "entity": "unused_temp",
+          "claim": "unused_variable"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated\\algorithms\\array\\trimmean.py",
+    "subdir": "mutated",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": [
+        {
+          "file": "trimmean.py",
+          "line": 35,
+          "entity": "unused_temp",
+          "claim": "unused_variable"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated\\algorithms\\array\\two_sum.py",
+    "subdir": "mutated",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": [
+        {
+          "file": "two_sum.py",
+          "line": 31,
+          "entity": "unused_temp",
+          "claim": "unused_variable"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated\\algorithms\\backtracking\\add_operators.py",
+    "subdir": "mutated",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": [
+        {
+          "file": "add_operators.py",
+          "line": 32,
+          "entity": "unused_temp",
+          "claim": "unused_variable"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated\\algorithms\\backtracking\\anagram.py",
+    "subdir": "mutated",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": [
+        {
+          "file": "anagram.py",
+          "line": 33,
+          "entity": "unused_temp",
+          "claim": "unused_variable"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated\\algorithms\\backtracking\\array_sum_combinations.py",
+    "subdir": "mutated",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": [
+        {
+          "file": "array_sum_combinations.py",
+          "line": 43,
+          "entity": "unused_temp",
+          "claim": "unused_variable"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated\\algorithms\\backtracking\\combination_sum.py",
+    "subdir": "mutated",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": [
+        {
+          "file": "combination_sum.py",
+          "line": 32,
+          "entity": "unused_temp",
+          "claim": "unused_variable"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated\\algorithms\\backtracking\\factor_combinations.py",
+    "subdir": "mutated",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": [
+        {
+          "file": "factor_combinations.py",
+          "line": 30,
+          "entity": "unused_temp",
+          "claim": "unused_variable"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated\\algorithms\\backtracking\\find_words.py",
+    "subdir": "mutated",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": [
+        {
+          "file": "find_words.py",
+          "line": 36,
+          "entity": "unused_temp",
+          "claim": "unused_variable"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated\\algorithms\\backtracking\\generate_abbreviations.py",
+    "subdir": "mutated",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": [
+        {
+          "file": "generate_abbreviations.py",
+          "line": 30,
+          "entity": "unused_temp",
+          "claim": "unused_variable"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated\\algorithms\\backtracking\\generate_parenthesis.py",
+    "subdir": "mutated",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": [
+        {
+          "file": "generate_parenthesis.py",
+          "line": 33,
+          "entity": "unused_temp",
+          "claim": "unused_variable"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated\\algorithms\\backtracking\\letter_combination.py",
+    "subdir": "mutated",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": [
+        {
+          "file": "letter_combination.py",
+          "line": 29,
+          "entity": "unused_temp",
+          "claim": "unused_variable"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated\\algorithms\\backtracking\\minimax.py",
+    "subdir": "mutated",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": [
+        {
+          "file": "minimax.py",
+          "line": 32,
+          "entity": "unused_temp",
+          "claim": "unused_variable"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated\\algorithms\\backtracking\\palindrome_partitioning.py",
+    "subdir": "mutated",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": [
+        {
+          "file": "palindrome_partitioning.py",
+          "line": 32,
+          "entity": "unused_temp",
+          "claim": "unused_variable"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated\\algorithms\\backtracking\\pattern_match.py",
+    "subdir": "mutated",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": [
+        {
+          "file": "pattern_match.py",
+          "line": 34,
+          "entity": "unused_temp",
+          "claim": "unused_variable"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated\\algorithms\\backtracking\\permute.py",
+    "subdir": "mutated",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": [
+        {
+          "file": "permute.py",
+          "line": 31,
+          "entity": "unused_temp",
+          "claim": "unused_variable"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated\\algorithms\\backtracking\\permute_unique.py",
+    "subdir": "mutated",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": [
+        {
+          "file": "permute_unique.py",
+          "line": 30,
+          "entity": "unused_temp",
+          "claim": "unused_variable"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated\\algorithms\\backtracking\\subsets.py",
+    "subdir": "mutated",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": [
+        {
+          "file": "subsets.py",
+          "line": 30,
+          "entity": "unused_temp",
+          "claim": "unused_variable"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated\\algorithms\\backtracking\\subsets_unique.py",
+    "subdir": "mutated",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": [
+        {
+          "file": "subsets_unique.py",
+          "line": 30,
+          "entity": "unused_temp",
+          "claim": "unused_variable"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated\\algorithms\\bit_manipulation\\add_bitwise_operator.py",
+    "subdir": "mutated",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": [
+        {
+          "file": "add_bitwise_operator.py",
+          "line": 33,
+          "entity": "unused_temp",
+          "claim": "unused_variable"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_null\\algorithms\\array\\delete_nth.py",
+    "subdir": "mutated_null",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": [
+        {
+          "file": "delete_nth.py",
+          "line": 38,
+          "entity": "temp_var",
+          "claim": "null_safety_violation"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_null\\algorithms\\array\\flatten.py",
+    "subdir": "mutated_null",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": [
+        {
+          "file": "flatten.py",
+          "line": 34,
+          "entity": "output_arr",
+          "claim": "null_safety_violation"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_null\\algorithms\\array\\garage.py",
+    "subdir": "mutated_null",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": [
+        {
+          "file": "garage.py",
+          "line": 32,
+          "entity": "temp_var",
+          "claim": "null_safety_violation"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_null\\algorithms\\array\\josephus.py",
+    "subdir": "mutated_null",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": [
+        {
+          "file": "josephus.py",
+          "line": 35,
+          "entity": "temp_var",
+          "claim": "null_safety_violation"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_null\\algorithms\\array\\limit.py",
+    "subdir": "mutated_null",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": [
+        {
+          "file": "limit.py",
+          "line": 36,
+          "entity": "min_lim",
+          "claim": "null_safety_violation"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_null\\algorithms\\array\\longest_non_repeat.py",
+    "subdir": "mutated_null",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": [
+        {
+          "file": "longest_non_repeat.py",
+          "line": 30,
+          "entity": "string",
+          "claim": "null_safety_violation"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_null\\algorithms\\array\\max_ones_index.py",
+    "subdir": "mutated_null",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": [
+        {
+          "file": "max_ones_index.py",
+          "line": 31,
+          "entity": "temp_var",
+          "claim": "null_safety_violation"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_null\\algorithms\\array\\merge_intervals.py",
+    "subdir": "mutated_null",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": [
+        {
+          "file": "merge_intervals.py",
+          "line": 114,
+          "entity": "intervals",
+          "claim": "null_safety_violation"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_null\\algorithms\\array\\missing_ranges.py",
+    "subdir": "mutated_null",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": [
+        {
+          "file": "missing_ranges.py",
+          "line": 33,
+          "entity": "temp_var",
+          "claim": "null_safety_violation"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_null\\algorithms\\array\\move_zeros.py",
+    "subdir": "mutated_null",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": [
+        {
+          "file": "move_zeros.py",
+          "line": 35,
+          "entity": "temp_var",
+          "claim": "null_safety_violation"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_null\\algorithms\\array\\n_sum.py",
+    "subdir": "mutated_null",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": [
+        {
+          "file": "n_sum.py",
+          "line": 47,
+          "entity": "temp_var",
+          "claim": "null_safety_violation"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_null\\algorithms\\array\\plus_one.py",
+    "subdir": "mutated_null",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": [
+        {
+          "file": "plus_one.py",
+          "line": 31,
+          "entity": "temp_var",
+          "claim": "null_safety_violation"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_null\\algorithms\\array\\remove_duplicates.py",
+    "subdir": "mutated_null",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": [
+        {
+          "file": "remove_duplicates.py",
+          "line": 37,
+          "entity": "temp_var",
+          "claim": "null_safety_violation"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_null\\algorithms\\array\\rotate.py",
+    "subdir": "mutated_null",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": [
+        {
+          "file": "rotate.py",
+          "line": 33,
+          "entity": "temp_var",
+          "claim": "null_safety_violation"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_null\\algorithms\\array\\summarize_ranges.py",
+    "subdir": "mutated_null",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": [
+        {
+          "file": "summarize_ranges.py",
+          "line": 31,
+          "entity": "temp_var",
+          "claim": "null_safety_violation"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_null\\algorithms\\array\\three_sum.py",
+    "subdir": "mutated_null",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": [
+        {
+          "file": "three_sum.py",
+          "line": 31,
+          "entity": "temp_var",
+          "claim": "null_safety_violation"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_null\\algorithms\\array\\top_1.py",
+    "subdir": "mutated_null",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": [
+        {
+          "file": "top_1.py",
+          "line": 33,
+          "entity": "temp_var",
+          "claim": "null_safety_violation"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_null\\algorithms\\array\\trimmean.py",
+    "subdir": "mutated_null",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": [
+        {
+          "file": "trimmean.py",
+          "line": 38,
+          "entity": "temp_var",
+          "claim": "null_safety_violation"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_null\\algorithms\\array\\two_sum.py",
+    "subdir": "mutated_null",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": [
+        {
+          "file": "two_sum.py",
+          "line": 32,
+          "entity": "temp_var",
+          "claim": "null_safety_violation"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_null\\algorithms\\backtracking\\add_operators.py",
+    "subdir": "mutated_null",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": [
+        {
+          "file": "add_operators.py",
+          "line": 33,
+          "entity": "temp_var",
+          "claim": "null_safety_violation"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_null\\algorithms\\backtracking\\anagram.py",
+    "subdir": "mutated_null",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": [
+        {
+          "file": "anagram.py",
+          "line": 34,
+          "entity": "temp_var",
+          "claim": "null_safety_violation"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_null\\algorithms\\backtracking\\array_sum_combinations.py",
+    "subdir": "mutated_null",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": [
+        {
+          "file": "array_sum_combinations.py",
+          "line": 44,
+          "entity": "temp_var",
+          "claim": "null_safety_violation"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_null\\algorithms\\backtracking\\combination_sum.py",
+    "subdir": "mutated_null",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": [
+        {
+          "file": "combination_sum.py",
+          "line": 33,
+          "entity": "temp_var",
+          "claim": "null_safety_violation"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_null\\algorithms\\backtracking\\factor_combinations.py",
+    "subdir": "mutated_null",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": [
+        {
+          "file": "factor_combinations.py",
+          "line": 31,
+          "entity": "temp_var",
+          "claim": "null_safety_violation"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_null\\algorithms\\backtracking\\find_words.py",
+    "subdir": "mutated_null",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": [
+        {
+          "file": "find_words.py",
+          "line": 36,
+          "entity": "temp_var",
+          "claim": "null_safety_violation"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_null\\algorithms\\backtracking\\generate_abbreviations.py",
+    "subdir": "mutated_null",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": [
+        {
+          "file": "generate_abbreviations.py",
+          "line": 31,
+          "entity": "temp_var",
+          "claim": "null_safety_violation"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_null\\algorithms\\backtracking\\generate_parenthesis.py",
+    "subdir": "mutated_null",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": [
+        {
+          "file": "generate_parenthesis.py",
+          "line": 34,
+          "entity": "temp_var",
+          "claim": "null_safety_violation"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_null\\algorithms\\backtracking\\letter_combination.py",
+    "subdir": "mutated_null",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": [
+        {
+          "file": "letter_combination.py",
+          "line": 31,
+          "entity": "temp_var",
+          "claim": "null_safety_violation"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_null\\algorithms\\backtracking\\minimax.py",
+    "subdir": "mutated_null",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": [
+        {
+          "file": "minimax.py",
+          "line": 27,
+          "entity": "temp_var",
+          "claim": "null_safety_violation"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_null\\algorithms\\backtracking\\palindrome_partitioning.py",
+    "subdir": "mutated_null",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": [
+        {
+          "file": "palindrome_partitioning.py",
+          "line": 33,
+          "entity": "temp_var",
+          "claim": "null_safety_violation"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_null\\algorithms\\backtracking\\pattern_match.py",
+    "subdir": "mutated_null",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": [
+        {
+          "file": "pattern_match.py",
+          "line": 35,
+          "entity": "temp_var",
+          "claim": "null_safety_violation"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_null\\algorithms\\backtracking\\permute.py",
+    "subdir": "mutated_null",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": [
+        {
+          "file": "permute.py",
+          "line": 32,
+          "entity": "temp_var",
+          "claim": "null_safety_violation"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_null\\algorithms\\backtracking\\permute_unique.py",
+    "subdir": "mutated_null",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": [
+        {
+          "file": "permute_unique.py",
+          "line": 31,
+          "entity": "temp_var",
+          "claim": "null_safety_violation"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_null\\algorithms\\backtracking\\subsets.py",
+    "subdir": "mutated_null",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": [
+        {
+          "file": "subsets.py",
+          "line": 32,
+          "entity": "temp_var",
+          "claim": "null_safety_violation"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_null\\algorithms\\backtracking\\subsets_unique.py",
+    "subdir": "mutated_null",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": [
+        {
+          "file": "subsets_unique.py",
+          "line": 31,
+          "entity": "temp_var",
+          "claim": "null_safety_violation"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_null\\algorithms\\bit_manipulation\\add_bitwise_operator.py",
+    "subdir": "mutated_null",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": [
+        {
+          "file": "add_bitwise_operator.py",
+          "line": 34,
+          "entity": "temp_var",
+          "claim": "null_safety_violation"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_offbyone\\algorithms\\array\\garage.py",
+    "subdir": "mutated_offbyone",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": [
+        {
+          "file": "garage.py",
+          "line": 46,
+          "entity": "current",
+          "claim": "off_by_one_bound"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_offbyone\\algorithms\\array\\longest_non_repeat.py",
+    "subdir": "mutated_offbyone",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": [
+        {
+          "file": "longest_non_repeat.py",
+          "line": 35,
+          "entity": "index",
+          "claim": "off_by_one_bound"
+        },
+        {
+          "file": "longest_non_repeat.py",
+          "line": 143,
+          "entity": "string",
+          "claim": "null_safety_violation"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_offbyone\\algorithms\\array\\max_ones_index.py",
+    "subdir": "mutated_offbyone",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": [
+        {
+          "file": "max_ones_index.py",
+          "line": 37,
+          "entity": "current",
+          "claim": "off_by_one_bound"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_offbyone\\algorithms\\array\\merge_intervals.py",
+    "subdir": "mutated_offbyone",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": [
+        {
+          "file": "merge_intervals.py",
+          "line": 33,
+          "entity": "i",
+          "claim": "off_by_one_bound"
+        },
+        {
+          "file": "merge_intervals.py",
+          "line": 119,
+          "entity": "intervals",
+          "claim": "off_by_one_bound"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_offbyone\\algorithms\\array\\n_sum.py",
+    "subdir": "mutated_offbyone",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": [
+        {
+          "file": "n_sum.py",
+          "line": 96,
+          "entity": "left",
+          "claim": "off_by_one_bound"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_offbyone\\algorithms\\array\\plus_one.py",
+    "subdir": "mutated_offbyone",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": [
+        {
+          "file": "plus_one.py",
+          "line": 37,
+          "entity": "index",
+          "claim": "off_by_one_bound"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_offbyone\\algorithms\\array\\rotate.py",
+    "subdir": "mutated_offbyone",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": [
+        {
+          "file": "rotate.py",
+          "line": 34,
+          "entity": "k",
+          "claim": "off_by_one_bound"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_offbyone\\algorithms\\array\\three_sum.py",
+    "subdir": "mutated_offbyone",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": [
+        {
+          "file": "three_sum.py",
+          "line": 32,
+          "entity": "array",
+          "claim": "off_by_one_bound"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_offbyone\\algorithms\\backtracking\\add_operators.py",
+    "subdir": "mutated_offbyone",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": [
+        {
+          "file": "add_operators.py",
+          "line": 50,
+          "entity": "i",
+          "claim": "off_by_one_bound"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_offbyone\\algorithms\\backtracking\\combination_sum.py",
+    "subdir": "mutated_offbyone",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": [
+        {
+          "file": "combination_sum.py",
+          "line": 47,
+          "entity": "i",
+          "claim": "off_by_one_bound"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_offbyone\\algorithms\\backtracking\\find_words.py",
+    "subdir": "mutated_offbyone",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": [
+        {
+          "file": "find_words.py",
+          "line": 48,
+          "entity": "row",
+          "claim": "off_by_one_bound"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_offbyone\\algorithms\\backtracking\\palindrome_partitioning.py",
+    "subdir": "mutated_offbyone",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": [
+        {
+          "file": "palindrome_partitioning.py",
+          "line": 35,
+          "entity": "text",
+          "claim": "off_by_one_bound"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_offbyone\\algorithms\\backtracking\\pattern_match.py",
+    "subdir": "mutated_offbyone",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": [
+        {
+          "file": "pattern_match.py",
+          "line": 43,
+          "entity": "string",
+          "claim": "off_by_one_bound"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_offbyone\\algorithms\\backtracking\\permute.py",
+    "subdir": "mutated_offbyone",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": [
+        {
+          "file": "permute.py",
+          "line": 35,
+          "entity": "elements",
+          "claim": "off_by_one_bound"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_offbyone\\algorithms\\backtracking\\permute_unique.py",
+    "subdir": "mutated_offbyone",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": [
+        {
+          "file": "permute_unique.py",
+          "line": 34,
+          "entity": "existing",
+          "claim": "off_by_one_bound"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_offbyone\\algorithms\\bit_manipulation\\gray_code.py",
+    "subdir": "mutated_offbyone",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": [
+        {
+          "file": "gray_code.py",
+          "line": 24,
+          "entity": "n",
+          "claim": "off_by_one_bound"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_offbyone\\algorithms\\bit_manipulation\\reverse_bits.py",
+    "subdir": "mutated_offbyone",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": [
+        {
+          "file": "reverse_bits.py",
+          "line": 32,
+          "entity": "_",
+          "claim": "off_by_one_bound"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_offbyone\\algorithms\\bit_manipulation\\single_number2.py",
+    "subdir": "mutated_offbyone",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": [
+        {
+          "file": "single_number2.py",
+          "line": 37,
+          "entity": "index",
+          "claim": "off_by_one_bound"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_offbyone\\algorithms\\bit_manipulation\\subsets.py",
+    "subdir": "mutated_offbyone",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": [
+        {
+          "file": "subsets.py",
+          "line": 37,
+          "entity": "mask",
+          "claim": "off_by_one_bound"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_offbyone\\algorithms\\data_structures\\b_tree.py",
+    "subdir": "mutated_offbyone",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": [
+        {
+          "file": "b_tree.py",
+          "line": 94,
+          "entity": "max_number_of_keys",
+          "claim": "off_by_one_bound"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_offbyone\\algorithms\\data_structures\\fenwick_tree.py",
+    "subdir": "mutated_offbyone",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": [
+        {
+          "file": "fenwick_tree.py",
+          "line": 84,
+          "entity": "i",
+          "claim": "off_by_one_bound"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_offbyone\\algorithms\\data_structures\\iterative_segment_tree.py",
+    "subdir": "mutated_offbyone",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": [
+        {
+          "file": "iterative_segment_tree.py",
+          "line": 28,
+          "entity": "arr",
+          "claim": "off_by_one_bound"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_offbyone\\algorithms\\data_structures\\segment_tree.py",
+    "subdir": "mutated_offbyone",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": [
+        {
+          "file": "segment_tree.py",
+          "line": 9,
+          "entity": "x",
+          "claim": "unused_variable"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_offbyone\\algorithms\\data_structures\\sqrt_decomposition.py",
+    "subdir": "mutated_offbyone",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": [
+        {
+          "file": "sqrt_decomposition.py",
+          "line": 76,
+          "entity": "index",
+          "claim": "off_by_one_bound"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_offbyone\\algorithms\\data_structures\\veb_tree.py",
+    "subdir": "mutated_offbyone",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": [
+        {
+          "file": "veb_tree.py",
+          "line": 62,
+          "entity": "upper_sqrt",
+          "claim": "off_by_one_bound"
+        },
+        {
+          "file": "veb_tree.py",
+          "line": 170,
+          "entity": "u",
+          "claim": "off_by_one_bound"
+        },
+        {
+          "file": "veb_tree.py",
+          "line": 189,
+          "entity": "u",
+          "claim": "off_by_one_bound"
+        },
+        {
+          "file": "veb_tree.py",
+          "line": 237,
+          "entity": "first_cluster",
+          "claim": "null_safety_violation"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_offbyone\\algorithms\\dynamic_programming\\bitmask.py",
+    "subdir": "mutated_offbyone",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": [
+        {
+          "file": "bitmask.py",
+          "line": 39,
+          "entity": "city",
+          "claim": "off_by_one_bound"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_offbyone\\algorithms\\dynamic_programming\\buy_sell_stock.py",
+    "subdir": "mutated_offbyone",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": [
+        {
+          "file": "buy_sell_stock.py",
+          "line": 37,
+          "entity": "i",
+          "claim": "off_by_one_bound"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_offbyone\\algorithms\\dynamic_programming\\climbing_stairs.py",
+    "subdir": "mutated_offbyone",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": [
+        {
+          "file": "climbing_stairs.py",
+          "line": 37,
+          "entity": "i",
+          "claim": "off_by_one_bound"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_offbyone\\algorithms\\dynamic_programming\\coin_change.py",
+    "subdir": "mutated_offbyone",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": [
+        {
+          "file": "coin_change.py",
+          "line": 34,
+          "entity": "i",
+          "claim": "off_by_one_bound"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_offbyone\\algorithms\\dynamic_programming\\combination_sum.py",
+    "subdir": "mutated_offbyone",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": [
+        {
+          "file": "combination_sum.py",
+          "line": 76,
+          "entity": "i",
+          "claim": "off_by_one_bound"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_offbyone\\algorithms\\dynamic_programming\\count_paths_dp.py",
+    "subdir": "mutated_offbyone",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": [
+        {
+          "file": "count_paths_dp.py",
+          "line": 42,
+          "entity": "i",
+          "claim": "off_by_one_bound"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_offbyone\\algorithms\\dynamic_programming\\edit_distance.py",
+    "subdir": "mutated_offbyone",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": [
+        {
+          "file": "edit_distance.py",
+          "line": 35,
+          "entity": "edit",
+          "claim": "off_by_one_bound"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_offbyone\\algorithms\\dynamic_programming\\egg_drop.py",
+    "subdir": "mutated_offbyone",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": []
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_offbyone\\algorithms\\dynamic_programming\\fib.py",
+    "subdir": "mutated_offbyone",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": [
+        {
+          "file": "fib.py",
+          "line": 58,
+          "entity": "i",
+          "claim": "off_by_one_bound"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_offbyone\\algorithms\\dynamic_programming\\hosoya_triangle.py",
+    "subdir": "mutated_offbyone",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": [
+        {
+          "file": "hosoya_triangle.py",
+          "line": 56,
+          "entity": "height",
+          "claim": "off_by_one_bound"
+        }
+      ]
+    }
+  },
+  {
+    "file_path": "code_review_project\\data\\mutated_offbyone\\algorithms\\dynamic_programming\\int_divide.py",
+    "subdir": "mutated_offbyone",
+    "run_id": 1,
+    "model": "deepseek-v4-pro",
+    "output": {
+      "comments": [
+        {
+          "file": "int_divide.py",
+          "line": 32,
+          "entity": "i",
+          "claim": "unused_variable"
+        },
+        {
+          "file": "int_divide.py",
+          "line": 32,
+          "entity": "j",
+          "claim": "unused_variable"
+        }
+      ]
+    }
+  }
+]
