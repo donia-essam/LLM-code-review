@@ -1,0 +1,11 @@
+{
+  "comments": [
+    {
+      "file": "code_review_project\\data\\mutated_null\\algorithms\\array\\limit.py",
+      "line": 3,
+      "entity": "mock_x",
+      "claim": "unused_variable",
+      "grounded": false
+    }
+  ]
+}

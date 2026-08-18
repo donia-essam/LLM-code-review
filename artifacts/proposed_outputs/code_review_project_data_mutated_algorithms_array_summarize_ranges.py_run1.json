@@ -1,0 +1,11 @@
+{
+  "comments": [
+    {
+      "file": "summarize_ranges.py",
+      "line": 30,
+      "entity": "unused_temp",
+      "claim": "unused_variable",
+      "grounded": true
+    }
+  ]
+}

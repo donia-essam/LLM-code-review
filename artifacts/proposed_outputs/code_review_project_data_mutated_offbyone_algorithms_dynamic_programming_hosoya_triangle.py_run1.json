@@ -1,0 +1,11 @@
+{
+  "comments": [
+    {
+      "file": "hosoya_triangle.py",
+      "line": 55,
+      "entity": "i",
+      "claim": "off_by_one_bound",
+      "grounded": false
+    }
+  ]
+}

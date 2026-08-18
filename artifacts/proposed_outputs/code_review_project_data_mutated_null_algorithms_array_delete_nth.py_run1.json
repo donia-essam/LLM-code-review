@@ -1,0 +1,11 @@
+{
+  "comments": [
+    {
+      "file": "delete_nth.py",
+      "line": 38,
+      "entity": "temp_var",
+      "claim": "null_safety_violation",
+      "grounded": false
+    }
+  ]
+}

@@ -1,10 +1,10 @@
 {
   "comments": [
     {
-      "file": "code_review_project\\data\\mutated_null\\algorithms\\backtracking\\array_sum_combinations.py",
-      "line": 3,
-      "entity": "mock_x",
-      "claim": "unused_variable"
+      "file": "array_sum_combinations.py",
+      "line": 44,
+      "entity": "temp_var",
+      "claim": "null_safety_violation"
     }
   ]
 }

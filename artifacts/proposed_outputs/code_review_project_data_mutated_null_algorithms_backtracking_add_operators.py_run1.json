@@ -1,0 +1,11 @@
+{
+  "comments": [
+    {
+      "file": "add_operators.py",
+      "line": 33,
+      "entity": "temp_var",
+      "claim": "null_safety_violation",
+      "grounded": false
+    }
+  ]
+}

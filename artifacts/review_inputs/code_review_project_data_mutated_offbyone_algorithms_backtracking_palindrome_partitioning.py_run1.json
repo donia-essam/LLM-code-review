@@ -1,10 +1,10 @@
 {
   "comments": [
     {
-      "file": "code_review_project\\data\\mutated_offbyone\\algorithms\\backtracking\\palindrome_partitioning.py",
-      "line": 3,
-      "entity": "mock_x",
-      "claim": "unused_variable"
+      "file": "palindrome_partitioning.py",
+      "line": 35,
+      "entity": "text",
+      "claim": "off_by_one_bound"
     }
   ]
 }

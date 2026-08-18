@@ -1,10 +1,10 @@
 {
   "comments": [
     {
-      "file": "code_review_project\\data\\mutated_offbyone\\algorithms\\array\\rotate.py",
-      "line": 3,
-      "entity": "mock_x",
-      "claim": "unused_variable",
+      "file": "rotate.py",
+      "line": 34,
+      "entity": "k",
+      "claim": "off_by_one_bound",
       "grounded": true,
       "baseline_b_plausible": true,
       "baseline_b_confidence": 0.65,

@@ -1,0 +1,18 @@
+{
+  "comments": [
+    {
+      "file": "red_black_tree.py",
+      "line": 208,
+      "entity": "node",
+      "claim": "null_safety_violation",
+      "grounded": false
+    },
+    {
+      "file": "red_black_tree.py",
+      "line": 267,
+      "entity": "node",
+      "claim": "null_safety_violation",
+      "grounded": false
+    }
+  ]
+}

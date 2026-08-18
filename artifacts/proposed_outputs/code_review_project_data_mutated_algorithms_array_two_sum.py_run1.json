@@ -1,0 +1,11 @@
+{
+  "comments": [
+    {
+      "file": "two_sum.py",
+      "line": 31,
+      "entity": "unused_temp",
+      "claim": "unused_variable",
+      "grounded": true
+    }
+  ]
+}

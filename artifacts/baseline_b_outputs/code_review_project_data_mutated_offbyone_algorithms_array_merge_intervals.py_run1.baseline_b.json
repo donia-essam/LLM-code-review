@@ -1,10 +1,20 @@
 {
   "comments": [
     {
-      "file": "code_review_project\\data\\mutated_offbyone\\algorithms\\array\\merge_intervals.py",
-      "line": 3,
-      "entity": "mock_x",
-      "claim": "unused_variable",
+      "file": "merge_intervals.py",
+      "line": 34,
+      "entity": "i",
+      "claim": "off_by_one_bound",
+      "grounded": true,
+      "baseline_b_plausible": true,
+      "baseline_b_confidence": 0.65,
+      "baseline_b_reasoning": "Fallback deterministic judgment used because no standard Gemini API key was configured."
+    },
+    {
+      "file": "merge_intervals.py",
+      "line": 120,
+      "entity": "intervals",
+      "claim": "off_by_one_bound",
       "grounded": true,
       "baseline_b_plausible": true,
       "baseline_b_confidence": 0.65,

@@ -1,0 +1,11 @@
+{
+  "comments": [
+    {
+      "file": "josephus.py",
+      "line": 35,
+      "entity": "temp_var",
+      "claim": "null_safety_violation",
+      "grounded": false
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "comments": [
+    {
+      "file": "palindrome_partitioning.py",
+      "line": 20,
+      "entity": "temp_var",
+      "claim": "null_safety_violation",
+      "grounded": false
+    }
+  ]
+}

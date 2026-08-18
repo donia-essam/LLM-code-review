@@ -1,10 +1,16 @@
 {
   "comments": [
     {
-      "file": "code_review_project\\data\\clean_negative_controls\\algorithms\\graph\\pacific_atlantic.py",
-      "line": 3,
-      "entity": "mock_x",
-      "claim": "unused_variable"
+      "file": "pacific_atlantic.py",
+      "line": 38,
+      "entity": "atlantic",
+      "claim": "off_by_one_bound"
+    },
+    {
+      "file": "pacific_atlantic.py",
+      "line": 39,
+      "entity": "pacific",
+      "claim": "off_by_one_bound"
     }
   ]
 }

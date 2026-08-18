@@ -1,9 +1,9 @@
 {
   "comments": [
     {
-      "file": "code_review_project\\data\\clean_negative_controls\\algorithms\\graph\\a_star.py",
-      "line": 3,
-      "entity": "mock_x",
+      "file": "a_star.py",
+      "line": 47,
+      "entity": "f_score",
       "claim": "unused_variable"
     }
   ]

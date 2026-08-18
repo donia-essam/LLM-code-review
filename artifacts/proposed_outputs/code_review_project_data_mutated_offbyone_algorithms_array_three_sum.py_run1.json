@@ -1,0 +1,11 @@
+{
+  "comments": [
+    {
+      "file": "three_sum.py",
+      "line": 32,
+      "entity": "array",
+      "claim": "off_by_one_bound",
+      "grounded": false
+    }
+  ]
+}

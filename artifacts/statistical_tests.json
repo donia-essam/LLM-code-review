@@ -1,0 +1,29 @@
+{
+  "sample_size": 730,
+  "baseline_b_accuracy": 0.14246575342465753,
+  "proposed_accuracy": 0.9041095890410958,
+  "accuracy_difference": 0.7616438356164383,
+  "bootstrap_95_ci": [
+    0.7191780821917808,
+    0.8041095890410959
+  ],
+  "overall_contingency_table": {
+    "A_both_correct": 34,
+    "B_baseline_b_only": 70,
+    "C_proposed_only": 626,
+    "D_both_incorrect": 0
+  },
+  "overall_mcnemar_p_value": 1.513380709734021e-112,
+  "hallucination_detection": {
+    "total_hallucinations": 626,
+    "baseline_b_catch_rate": 0.0,
+    "proposed_catch_rate": 1.0,
+    "contingency_table": {
+      "A_both_caught": 0,
+      "B_baseline_b_only": 0,
+      "C_proposed_only": 626,
+      "D_both_missed": 0
+    },
+    "mcnemar_p_value": 7.182120874830735e-189
+  }
+}

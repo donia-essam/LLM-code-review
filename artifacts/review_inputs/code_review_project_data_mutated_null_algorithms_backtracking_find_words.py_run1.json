@@ -1,10 +1,10 @@
 {
   "comments": [
     {
-      "file": "code_review_project\\data\\mutated_null\\algorithms\\backtracking\\find_words.py",
-      "line": 3,
-      "entity": "mock_x",
-      "claim": "unused_variable"
+      "file": "find_words.py",
+      "line": 37,
+      "entity": "temp_var",
+      "claim": "null_safety_violation"
     }
   ]
 }

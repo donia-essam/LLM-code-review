@@ -46,7 +46,6 @@ class ClassificationResult:
 @dataclass(slots=True)
 class MetricsResult:
     """Metrics for one run of one system."""
-
     tp: int
     fp: int
     fn: int
@@ -55,13 +54,21 @@ class MetricsResult:
     recall: float
     f1: float
     hallucination_rate: float
+    # Grounding metrics
+    # Grounding accuracy on true positives (TP-side): share of TP comments marked grounded=True
     grounding_accuracy: Optional[float]
+    # Hallucination-detection metrics (hallucinated-side):
+    # Recall for detecting hallucinations: among classifier-labeled hallucinations, share the system marked grounded=False
+    hallucination_catch_rate: Optional[float]
+    # Of hallucinated comments, share incorrectly marked grounded=True
+    false_grounding_rate: Optional[float]
+    # Of comments the system marked grounded=False (predicted hallucination), share that were actually hallucinations
+    grounding_precision: Optional[float]
 
 
 @dataclass(slots=True)
 class AggregatedMetrics:
     """Mean and standard deviation over multiple runs of the same system."""
-
     mean_precision: float
     std_precision: float
     mean_recall: float
@@ -72,3 +79,9 @@ class AggregatedMetrics:
     std_hallucination_rate: float
     mean_grounding_accuracy: Optional[float]
     std_grounding_accuracy: Optional[float]
+    mean_hallucination_catch_rate: Optional[float]
+    std_hallucination_catch_rate: Optional[float]
+    mean_false_grounding_rate: Optional[float]
+    std_false_grounding_rate: Optional[float]
+    mean_grounding_precision: Optional[float]
+    std_grounding_precision: Optional[float]

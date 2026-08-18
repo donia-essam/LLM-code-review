@@ -1,0 +1,11 @@
+{
+  "comments": [
+    {
+      "file": "array_sum_combinations.py",
+      "line": 44,
+      "entity": "temp_var",
+      "claim": "null_safety_violation",
+      "grounded": false
+    }
+  ]
+}

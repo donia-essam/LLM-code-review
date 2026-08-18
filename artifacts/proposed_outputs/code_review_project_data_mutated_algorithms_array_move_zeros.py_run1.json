@@ -1,0 +1,11 @@
+{
+  "comments": [
+    {
+      "file": "move_zeros.py",
+      "line": 34,
+      "entity": "unused_temp",
+      "claim": "unused_variable",
+      "grounded": true
+    }
+  ]
+}

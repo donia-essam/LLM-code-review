@@ -1,0 +1,11 @@
+{
+  "comments": [
+    {
+      "file": "code_review_project\\data\\mutated_offbyone\\algorithms\\dynamic_programming\\int_divide.py",
+      "line": 3,
+      "entity": "mock_x",
+      "claim": "unused_variable",
+      "grounded": false
+    }
+  ]
+}

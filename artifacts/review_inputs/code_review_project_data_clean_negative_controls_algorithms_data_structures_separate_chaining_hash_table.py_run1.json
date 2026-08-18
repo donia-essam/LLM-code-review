@@ -1,10 +1,10 @@
 {
   "comments": [
     {
-      "file": "code_review_project\\data\\clean_negative_controls\\algorithms\\data_structures\\separate_chaining_hash_table.py",
-      "line": 3,
-      "entity": "mock_x",
-      "claim": "unused_variable"
+      "file": "separate_chaining_hash_table.py",
+      "line": 76,
+      "entity": "node_",
+      "claim": "off_by_one_bound"
     }
   ]
 }

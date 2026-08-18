@@ -1,0 +1,11 @@
+{
+  "comments": [
+    {
+      "file": "trimmean.py",
+      "line": 35,
+      "entity": "unused_temp",
+      "claim": "unused_variable",
+      "grounded": true
+    }
+  ]
+}

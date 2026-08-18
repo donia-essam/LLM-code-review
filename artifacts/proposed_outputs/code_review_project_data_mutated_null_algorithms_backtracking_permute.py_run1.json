@@ -1,0 +1,11 @@
+{
+  "comments": [
+    {
+      "file": "permute.py",
+      "line": 32,
+      "entity": "temp_var",
+      "claim": "null_safety_violation",
+      "grounded": false
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "comments": [
+    {
+      "file": "pattern_match.py",
+      "line": 43,
+      "entity": "string",
+      "claim": "off_by_one_bound",
+      "grounded": false
+    }
+  ]
+}

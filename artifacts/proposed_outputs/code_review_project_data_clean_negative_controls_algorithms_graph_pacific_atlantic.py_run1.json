@@ -1,0 +1,18 @@
+{
+  "comments": [
+    {
+      "file": "pacific_atlantic.py",
+      "line": 38,
+      "entity": "atlantic",
+      "claim": "off_by_one_bound",
+      "grounded": false
+    },
+    {
+      "file": "pacific_atlantic.py",
+      "line": 39,
+      "entity": "pacific",
+      "claim": "off_by_one_bound",
+      "grounded": false
+    }
+  ]
+}

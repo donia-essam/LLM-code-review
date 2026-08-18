@@ -1,4 +1,4 @@
-system,precision,recall,f1,hallucination_rate,grounding_accuracy
-Baseline B,0.000 ± 0.000,0.000 ± 0.000,0.000 ± 0.000,1.000 ± 0.000,N/A
-Baseline A,N/A,N/A,N/A,N/A,N/A
-Proposed,N/A,N/A,N/A,N/A,N/A
+system,paradigm,comments_emitted,precision,recall,f1,hallucination_rate,grounding_accuracy,hallucination_catch_rate
+Baseline A,Unverified Single-Shot,730,0.143,0.086,0.107,0.858,N/A,N/A
+Baseline B,Reference-Free LLM-Judge,730,0.143,0.086,0.107,0.858,1.000,0.000
+Proposed,Static-Analysis Grounded,34,1.000,0.028,0.055,0.000,0.327,1.000

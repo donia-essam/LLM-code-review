@@ -1,10 +1,10 @@
 {
   "comments": [
     {
-      "file": "code_review_project\\data\\clean_negative_controls\\algorithms\\data_structures\\stack.py",
-      "line": 3,
-      "entity": "mock_x",
-      "claim": "unused_variable"
+      "file": "stack.py",
+      "line": 94,
+      "entity": "_top",
+      "claim": "off_by_one_bound"
     }
   ]
 }

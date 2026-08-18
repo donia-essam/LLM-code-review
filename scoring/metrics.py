@@ -29,7 +29,26 @@ def compute_metrics(
     hallucination_rate = fp / total_comments if total_comments else 0.0
 
     grounded_tp = [item for item in classifications if item.label == "TP" and item.grounded is True]
+    # Grounding accuracy on true positives (TP-side)
     grounding_accuracy = len(grounded_tp) / tp if (tp and verifier_enabled) else None
+
+    # Hallucination-detection metrics (hallucinated-side)
+    hallucinated_items = [item for item in classifications if item.label in {"hallucination", "grounded_but_wrong"}]
+    n_hallucinated = len(hallucinated_items)
+    if n_hallucinated:
+        hallucination_catch_rate = sum(1 for item in hallucinated_items if item.grounded is False) / n_hallucinated
+        false_grounding_rate = sum(1 for item in hallucinated_items if item.grounded is True) / n_hallucinated
+    else:
+        hallucination_catch_rate = None
+        false_grounding_rate = None
+
+    # grounding_precision: of all comments the system marked grounded=False (predicted hallucination),
+    # what share were actually hallucinations
+    grounded_pred = [item for item in classifications if item.grounded is False]
+    if grounded_pred:
+        grounding_precision = sum(1 for item in grounded_pred if item.label in {"hallucination", "grounded_but_wrong"}) / len(grounded_pred)
+    else:
+        grounding_precision = None
 
     return MetricsResult(
         tp=tp,
@@ -41,6 +60,9 @@ def compute_metrics(
         f1=f1,
         hallucination_rate=hallucination_rate,
         grounding_accuracy=grounding_accuracy,
+        hallucination_catch_rate=hallucination_catch_rate,
+        false_grounding_rate=false_grounding_rate,
+        grounding_precision=grounding_precision,
     )
 
 

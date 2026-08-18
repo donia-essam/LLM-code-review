@@ -1,0 +1,11 @@
+{
+  "comments": [
+    {
+      "file": "garage.py",
+      "line": 47,
+      "entity": "current",
+      "claim": "off_by_one_bound",
+      "grounded": false
+    }
+  ]
+}

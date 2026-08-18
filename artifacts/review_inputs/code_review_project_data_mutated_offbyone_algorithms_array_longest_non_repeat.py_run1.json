@@ -1,10 +1,16 @@
 {
   "comments": [
     {
-      "file": "code_review_project\\data\\mutated_offbyone\\algorithms\\array\\longest_non_repeat.py",
-      "line": 3,
-      "entity": "mock_x",
-      "claim": "unused_variable"
+      "file": "longest_non_repeat.py",
+      "line": 35,
+      "entity": "string",
+      "claim": "off_by_one_bound"
+    },
+    {
+      "file": "longest_non_repeat.py",
+      "line": 143,
+      "entity": "string",
+      "claim": "null_safety_violation"
     }
   ]
 }

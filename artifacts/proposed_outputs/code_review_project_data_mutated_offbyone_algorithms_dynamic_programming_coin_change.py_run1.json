@@ -1,0 +1,11 @@
+{
+  "comments": [
+    {
+      "file": "coin_change.py",
+      "line": 34,
+      "entity": "i",
+      "claim": "off_by_one_bound",
+      "grounded": false
+    }
+  ]
+}

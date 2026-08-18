@@ -1,0 +1,11 @@
+{
+  "comments": [
+    {
+      "file": "stack.py",
+      "line": 94,
+      "entity": "_top",
+      "claim": "off_by_one_bound",
+      "grounded": false
+    }
+  ]
+}

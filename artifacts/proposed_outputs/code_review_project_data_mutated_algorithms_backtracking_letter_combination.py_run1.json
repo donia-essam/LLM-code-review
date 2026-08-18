@@ -1,0 +1,11 @@
+{
+  "comments": [
+    {
+      "file": "letter_combination.py",
+      "line": 30,
+      "entity": "unused_temp",
+      "claim": "unused_variable",
+      "grounded": true
+    }
+  ]
+}

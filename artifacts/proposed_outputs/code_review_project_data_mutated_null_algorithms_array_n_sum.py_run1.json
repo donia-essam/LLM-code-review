@@ -1,0 +1,11 @@
+{
+  "comments": [
+    {
+      "file": "n_sum.py",
+      "line": 47,
+      "entity": "temp_var",
+      "claim": "null_safety_violation",
+      "grounded": false
+    }
+  ]
+}

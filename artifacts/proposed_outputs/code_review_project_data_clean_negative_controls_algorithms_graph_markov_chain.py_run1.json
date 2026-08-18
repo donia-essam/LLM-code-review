@@ -1,0 +1,11 @@
+{
+  "comments": [
+    {
+      "file": "markov_chain.py",
+      "line": 54,
+      "entity": "next_state_map",
+      "claim": "null_safety_violation",
+      "grounded": false
+    }
+  ]
+}

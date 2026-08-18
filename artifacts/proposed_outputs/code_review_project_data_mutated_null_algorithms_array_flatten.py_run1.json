@@ -1,0 +1,11 @@
+{
+  "comments": [
+    {
+      "file": "flatten.py",
+      "line": 34,
+      "entity": "output_arr",
+      "claim": "null_safety_violation",
+      "grounded": false
+    }
+  ]
+}

@@ -1,9 +1,9 @@
 {
   "comments": [
     {
-      "file": "code_review_project\\data\\mutated\\algorithms\\backtracking\\find_words.py",
-      "line": 3,
-      "entity": "mock_x",
+      "file": "find_words.py",
+      "line": 36,
+      "entity": "unused_temp",
       "claim": "unused_variable",
       "grounded": true,
       "baseline_b_plausible": true,

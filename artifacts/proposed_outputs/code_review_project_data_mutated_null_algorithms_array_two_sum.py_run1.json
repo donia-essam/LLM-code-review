@@ -1,0 +1,11 @@
+{
+  "comments": [
+    {
+      "file": "two_sum.py",
+      "line": 29,
+      "entity": "temp_var",
+      "claim": "null_safety_violation",
+      "grounded": false
+    }
+  ]
+}

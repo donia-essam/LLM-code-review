@@ -1,0 +1,11 @@
+{
+  "comments": [
+    {
+      "file": "sqrt_decomposition.py",
+      "line": 76,
+      "entity": "index",
+      "claim": "off_by_one_bound",
+      "grounded": false
+    }
+  ]
+}

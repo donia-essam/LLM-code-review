@@ -1,0 +1,11 @@
+{
+  "comments": [
+    {
+      "file": "iterative_segment_tree.py",
+      "line": 28,
+      "entity": "tree",
+      "claim": "off_by_one_bound",
+      "grounded": false
+    }
+  ]
+}

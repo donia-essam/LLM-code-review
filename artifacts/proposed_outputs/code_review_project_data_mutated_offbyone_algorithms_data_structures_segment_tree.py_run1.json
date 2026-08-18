@@ -1,0 +1,18 @@
+{
+  "comments": [
+    {
+      "file": "segment_tree.py",
+      "line": 10,
+      "entity": "arr",
+      "claim": "off_by_one_bound",
+      "grounded": false
+    },
+    {
+      "file": "segment_tree.py",
+      "line": 10,
+      "entity": "x",
+      "claim": "unused_variable",
+      "grounded": false
+    }
+  ]
+}

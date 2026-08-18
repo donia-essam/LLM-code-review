@@ -1,0 +1,11 @@
+{
+  "comments": [
+    {
+      "file": "a_star.py",
+      "line": 47,
+      "entity": "f_score",
+      "claim": "unused_variable",
+      "grounded": false
+    }
+  ]
+}

@@ -1,9 +1,9 @@
 {
   "comments": [
     {
-      "file": "code_review_project\\data\\clean_negative_controls\\algorithms\\graph\\prims_minimum_spanning.py",
-      "line": 3,
-      "entity": "mock_x",
+      "file": "prims_minimum_spanning.py",
+      "line": 37,
+      "entity": "prim",
       "claim": "unused_variable"
     }
   ]

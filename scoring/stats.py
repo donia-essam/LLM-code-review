@@ -28,11 +28,9 @@ def exact_mcnemar_test(baseline_right: List[bool], proposed_right: List[bool]) -
     if discordant == 0:
         return 1.0, b, c, d
 
-    p_value = 0.0
-    for k in range(0, discordant + 1):
-        prob = comb(discordant, k) * (0.5**discordant)
-        if k >= min(b, c) and k <= max(b, c):
-            p_value += prob
+    min_discordant = min(b, c)
+    # Sum the two binomial tails (k <= min_discordant and k >= discordant - min_discordant)
+    p_value = min(1.0, 2.0 * sum(comb(discordant, k) * (0.5**discordant) for k in range(0, min_discordant + 1)))
     return p_value, b, c, d
 
 

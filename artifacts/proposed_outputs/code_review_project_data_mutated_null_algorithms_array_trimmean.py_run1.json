@@ -1,0 +1,11 @@
+{
+  "comments": [
+    {
+      "file": "trimmean.py",
+      "line": 36,
+      "entity": "temp_var",
+      "claim": "null_safety_violation",
+      "grounded": false
+    }
+  ]
+}

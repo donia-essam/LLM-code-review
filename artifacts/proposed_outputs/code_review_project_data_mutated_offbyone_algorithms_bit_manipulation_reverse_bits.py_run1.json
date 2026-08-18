@@ -1,0 +1,11 @@
+{
+  "comments": [
+    {
+      "file": "reverse_bits.py",
+      "line": 32,
+      "entity": "_",
+      "claim": "off_by_one_bound",
+      "grounded": false
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "comments": [
+    {
+      "file": "find_words.py",
+      "line": 48,
+      "entity": "board",
+      "claim": "off_by_one_bound",
+      "grounded": false
+    }
+  ]
+}

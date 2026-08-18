@@ -1,10 +1,10 @@
 {
   "comments": [
     {
-      "file": "code_review_project\\data\\mutated_null\\algorithms\\backtracking\\permute_unique.py",
-      "line": 3,
-      "entity": "mock_x",
-      "claim": "unused_variable"
+      "file": "permute_unique.py",
+      "line": 31,
+      "entity": "temp_var",
+      "claim": "null_safety_violation"
     }
   ]
 }

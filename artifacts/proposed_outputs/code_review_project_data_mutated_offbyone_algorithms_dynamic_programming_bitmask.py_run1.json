@@ -1,0 +1,11 @@
+{
+  "comments": [
+    {
+      "file": "bitmask.py",
+      "line": 39,
+      "entity": "city",
+      "claim": "off_by_one_bound",
+      "grounded": false
+    }
+  ]
+}

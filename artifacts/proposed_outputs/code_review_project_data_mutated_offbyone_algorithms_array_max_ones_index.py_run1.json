@@ -1,0 +1,11 @@
+{
+  "comments": [
+    {
+      "file": "max_ones_index.py",
+      "line": 37,
+      "entity": "current",
+      "claim": "off_by_one_bound",
+      "grounded": false
+    }
+  ]
+}

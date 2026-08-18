@@ -1,0 +1,18 @@
+{
+  "comments": [
+    {
+      "file": "int_divide.py",
+      "line": 32,
+      "entity": "i",
+      "claim": "unused_variable",
+      "grounded": false
+    },
+    {
+      "file": "int_divide.py",
+      "line": 32,
+      "entity": "j",
+      "claim": "unused_variable",
+      "grounded": false
+    }
+  ]
+}

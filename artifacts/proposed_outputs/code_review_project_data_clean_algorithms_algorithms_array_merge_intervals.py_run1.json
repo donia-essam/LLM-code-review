@@ -1,0 +1,11 @@
+{
+  "comments": [
+    {
+      "file": "merge_intervals.py",
+      "line": 44,
+      "entity": "item",
+      "claim": "off_by_one_bound",
+      "grounded": false
+    }
+  ]
+}

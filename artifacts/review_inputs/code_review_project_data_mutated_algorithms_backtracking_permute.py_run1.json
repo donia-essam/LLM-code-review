@@ -1,9 +1,9 @@
 {
   "comments": [
     {
-      "file": "code_review_project\\data\\mutated\\algorithms\\backtracking\\permute.py",
-      "line": 3,
-      "entity": "mock_x",
+      "file": "permute.py",
+      "line": 31,
+      "entity": "unused_temp",
       "claim": "unused_variable"
     }
   ]

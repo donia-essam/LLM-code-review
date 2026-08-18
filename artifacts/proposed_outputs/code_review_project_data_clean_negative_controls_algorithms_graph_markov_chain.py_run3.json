@@ -1,0 +1,11 @@
+{
+  "comments": [
+    {
+      "file": "code_review_project\\data\\clean_negative_controls\\algorithms\\graph\\markov_chain.py",
+      "line": 3,
+      "entity": "mock_x",
+      "claim": "unused_variable",
+      "grounded": false
+    }
+  ]
+}

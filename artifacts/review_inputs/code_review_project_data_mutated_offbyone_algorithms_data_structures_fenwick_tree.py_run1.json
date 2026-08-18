@@ -1,10 +1,10 @@
 {
   "comments": [
     {
-      "file": "code_review_project\\data\\mutated_offbyone\\algorithms\\data_structures\\fenwick_tree.py",
-      "line": 3,
-      "entity": "mock_x",
-      "claim": "unused_variable"
+      "file": "fenwick_tree.py",
+      "line": 84,
+      "entity": "i",
+      "claim": "off_by_one_bound"
     }
   ]
 }

@@ -1,0 +1,11 @@
+{
+  "comments": [
+    {
+      "file": "separate_chaining_hash_table.py",
+      "line": 76,
+      "entity": "node_",
+      "claim": "off_by_one_bound",
+      "grounded": false
+    }
+  ]
+}

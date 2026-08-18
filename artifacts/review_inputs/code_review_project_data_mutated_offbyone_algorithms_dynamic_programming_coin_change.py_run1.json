@@ -1,10 +1,10 @@
 {
   "comments": [
     {
-      "file": "code_review_project\\data\\mutated_offbyone\\algorithms\\dynamic_programming\\coin_change.py",
-      "line": 3,
-      "entity": "mock_x",
-      "claim": "unused_variable"
+      "file": "coin_change.py",
+      "line": 34,
+      "entity": "i",
+      "claim": "off_by_one_bound"
     }
   ]
 }

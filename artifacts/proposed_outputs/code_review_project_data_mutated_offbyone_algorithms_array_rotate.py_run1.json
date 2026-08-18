@@ -1,0 +1,11 @@
+{
+  "comments": [
+    {
+      "file": "rotate.py",
+      "line": 34,
+      "entity": "k",
+      "claim": "off_by_one_bound",
+      "grounded": false
+    }
+  ]
+}

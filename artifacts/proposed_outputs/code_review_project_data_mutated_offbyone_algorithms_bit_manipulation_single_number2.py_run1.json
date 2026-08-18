@@ -1,0 +1,11 @@
+{
+  "comments": [
+    {
+      "file": "single_number2.py",
+      "line": 38,
+      "entity": "index",
+      "claim": "off_by_one_bound",
+      "grounded": false
+    }
+  ]
+}

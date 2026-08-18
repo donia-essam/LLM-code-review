@@ -1,0 +1,11 @@
+{
+  "comments": [
+    {
+      "file": "veb_tree.py",
+      "line": 62,
+      "entity": "upper_sqrt",
+      "claim": "off_by_one_bound",
+      "grounded": false
+    }
+  ]
+}

@@ -1,10 +1,22 @@
 {
   "comments": [
     {
-      "file": "code_review_project\\data\\mutated\\algorithms\\array\\merge_intervals.py",
-      "line": 3,
-      "entity": "mock_x",
+      "file": "merge_intervals.py",
+      "line": 44,
+      "entity": "__contains__",
+      "claim": "off_by_one_bound"
+    },
+    {
+      "file": "merge_intervals.py",
+      "line": 114,
+      "entity": "unused_temp",
       "claim": "unused_variable"
+    },
+    {
+      "file": "merge_intervals.py",
+      "line": 118,
+      "entity": "intervals",
+      "claim": "off_by_one_bound"
     }
   ]
 }

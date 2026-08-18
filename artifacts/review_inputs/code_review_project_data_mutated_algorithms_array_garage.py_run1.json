@@ -1,9 +1,9 @@
 {
   "comments": [
     {
-      "file": "code_review_project\\data\\mutated\\algorithms\\array\\garage.py",
-      "line": 3,
-      "entity": "mock_x",
+      "file": "garage.py",
+      "line": 33,
+      "entity": "unused_temp",
       "claim": "unused_variable"
     }
   ]

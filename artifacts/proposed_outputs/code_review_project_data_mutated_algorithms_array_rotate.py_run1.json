@@ -1,0 +1,11 @@
+{
+  "comments": [
+    {
+      "file": "rotate.py",
+      "line": 32,
+      "entity": "unused_temp",
+      "claim": "unused_variable",
+      "grounded": true
+    }
+  ]
+}

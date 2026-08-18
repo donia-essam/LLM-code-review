@@ -1,0 +1,11 @@
+{
+  "comments": [
+    {
+      "file": "limit.py",
+      "line": 36,
+      "entity": "unused_temp",
+      "claim": "unused_variable",
+      "grounded": true
+    }
+  ]
+}

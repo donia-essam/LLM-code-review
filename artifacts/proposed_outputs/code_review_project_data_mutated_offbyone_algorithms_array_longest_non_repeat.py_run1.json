@@ -1,0 +1,18 @@
+{
+  "comments": [
+    {
+      "file": "longest_non_repeat.py",
+      "line": 35,
+      "entity": "string",
+      "claim": "off_by_one_bound",
+      "grounded": false
+    },
+    {
+      "file": "longest_non_repeat.py",
+      "line": 143,
+      "entity": "string",
+      "claim": "null_safety_violation",
+      "grounded": false
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "comments": [
+    {
+      "file": "remove_duplicates.py",
+      "line": 37,
+      "entity": "temp_var",
+      "claim": "null_safety_violation",
+      "grounded": false
+    }
+  ]
+}

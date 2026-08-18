@@ -1,10 +1,10 @@
 {
   "comments": [
     {
-      "file": "code_review_project\\data\\clean_negative_controls\\algorithms\\data_structures\\queue.py",
-      "line": 3,
-      "entity": "mock_x",
-      "claim": "unused_variable",
+      "file": "queue.py",
+      "line": 91,
+      "entity": "_rear",
+      "claim": "off_by_one_bound",
       "grounded": true,
       "baseline_b_plausible": true,
       "baseline_b_confidence": 0.65,
