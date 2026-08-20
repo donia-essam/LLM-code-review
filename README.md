@@ -11,8 +11,8 @@ The agent statically analyzes target Python files using **DeepSeek-v4-Flash (via
 * **Target Language:** Python
 * **LLM Engine:** DeepSeek-v4-Flash (OpenCode API)
 * **Supported Bug Classes:**
-  * `unused_variable` (Cross-checked via `pyflakes`)
-  * `null_safety_violation` (Cross-checked via `mypy`)
+  * `unused_variable` (Cross-checked via custom AST parsing)
+  * `null_safety_violation` (Cross-checked via custom AST parsing)
   * `off_by_one_bound` (Cross-checked via custom AST parsing)
 * **Structured Output:** Strictly outputs JSON data matching a Pydantic schema (`file`, `line`, `entity`, `claim`) without conversational prose or markdown formatting to guarantee seamless integration with Member 3's verifier pipeline.
 * **Scale-up Benchmark Scope:** Configured to run batch analysis across target dataset subsets (e.g., 240 files) and automatically output results to `scale_up_results.json`.
